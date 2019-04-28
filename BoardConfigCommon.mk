@@ -174,6 +174,9 @@ TARGET_USES_MKE2FS := true
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/configs/vintf/manifest.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/configs/vintf/compatibility_matrix.xml
 
+# Releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)
+
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
