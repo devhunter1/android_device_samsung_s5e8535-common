@@ -244,6 +244,10 @@ PRODUCT_SOONG_NAMESPACES += \
 
 $(call inherit-product, hardware/samsung_slsi-linaro/config/config.mk)
 
+### SYSCONFIG
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/config/sysconfig/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
+
 # Telephony
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml \
