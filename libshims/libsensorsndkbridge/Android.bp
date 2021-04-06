@@ -19,6 +19,7 @@ cc_library_shared {
     shared_libs: [
         "libbase",
         "libsensorndkbridge",
+        "libutils",
     ],
     include_dirs: [
         "frameworks/hardware/interfaces/sensorservice/libsensorndkbridge",
