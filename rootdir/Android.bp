@@ -1,0 +1,56 @@
+//
+// Copyright (C) 2024 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+// Init scripts
+sh_binary {
+    name: "gps.sh",
+    src: "bin/gps.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "enable_test_mode.sh",
+    src: "bin/enable_test_mode.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.insmod.sh",
+    src: "bin/init.insmod.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "install-recovery.sh",
+    src: "bin/install-recovery.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "mx_log_collection.sh",
+    src: "bin/mx_log_collection.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "mx_logger.sh",
+    src: "bin/mx_logger.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "mx_logger_dump.sh",
+    src: "bin/mx_logger_dump.sh",
+    vendor: true,
+}
+
+// Init configuration files
+// fstab
+prebuilt_etc {
+    name: "fstab.s5e8535",
+    src: "etc/fstab.s5e8535",
+    vendor: true,
+}

@@ -1,0 +1,13 @@
+# sysbta
+/system/bin/hw/android\.hardware\.bluetooth\.audio-service-system                   u:object_r:hal_audio_sysbta_exec:s0
+
+# vendor overlay
+/(product|system/product)/vendor_overlay/[0-9]+/app(/.*)?   u:object_r:vendor_app_file:s0
+/(product|system/product)/vendor_overlay/[0-9]+/etc(/.*)?   u:object_r:vendor_configs_file:s0
+/(product|system/product)/vendor_overlay/[0-9]+/lib(64)?(/.*)?     u:object_r:vendor_file:s0
+
+#
+/system/bin/lpm                 u:object_r:lpm_exec:s0
+
+
+

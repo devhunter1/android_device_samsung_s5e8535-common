@@ -1,0 +1,33 @@
+
+# Define types and assign them to attributes
+type lpm, domain, coredomain;
+type lpm_exec, system_file_type, exec_type, file_type;
+
+# Define lpm as an init daemon domain
+init_daemon_domain(lpm);
+
+# Allow lpm to perform specific capabilities
+allow lpm self:capability { sys_boot net_admin sys_tty_config };
+allow lpm self:process execmem;
+
+# Allow lpm to use netlink_kobject_uevent_socket
+allow lpm self:netlink_kobject_uevent_socket { create bind read setopt };
+
+# Permissions for GPU device files and directories
+allow lpm gpu_device:file create_file_perms;
+allow lpm gpu_device:dir rw_dir_perms;
+allow lpm gpu_device:chr_file rw_file_perms;
+
+# Permissions for EFS files and directories
+allow lpm efs_file:dir rw_dir_perms;
+allow lpm efs_file:file create_file_perms;
+
+# Allow lpm to interact with property and init sockets
+
+# Allow lpm to set specific properties
+set_prop(lpm, sec_charger_mode_prop);
+
+
+
+
+

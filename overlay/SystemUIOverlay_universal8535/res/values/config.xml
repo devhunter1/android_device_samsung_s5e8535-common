@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+  Copyright (C) 2023 The LineageOS Project
+
+  SPDX-License-Identifier: Apache-2.0
+-->
+
+<!-- These resources are around just to allow their values to be customized
+     for different hardware and product builds.  Do not translate.
+
+     NOTE: The naming convention is "config_camelCaseValue". Some legacy
+     entries do not follow the convention, but all new entries should. -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<dimen name="status_bar_padding_start">40px</dimen>
+	<dimen name="status_bar_padding_top">35px</dimen>
+	<dimen name="physical_power_button_center_screen_location_y">1150px</dimen>
+</resources>

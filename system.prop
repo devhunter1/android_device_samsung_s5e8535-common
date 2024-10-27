@@ -1,0 +1,25 @@
+# Camera
+vendor.camera.aux.packagelist=android.camera.cts
+
+# Charger
+ro.charger.enable_suspend=true
+
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+
+# Display
+debug.sf.disable_backpressure=1
+debug.sf.early.app.duration=20000000
+debug.sf.early.sf.duration=27600000
+debug.sf.earlyGl.app.duration=20000000
+debug.sf.earlyGl.sf.duration=27600000
+debug.sf.enable_hwc_vds=0
+debug.sf.hwc.min.duration=23000000
+debug.sf.latch_unsignaled=1
+debug.sf.late.app.duration=20000000
+debug.sf.late.sf.duration=27600000
+debug.sf.treat_170m_as_sRGB=1
+debug.sf.use_phase_offsets_as_durations=1
+
+# DRM
+ro.netflix.bsp_rev=EXYNOS1330-36497-1

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<device xmlns:android="http://schemas.android.com/apk/res/android" name="Android">
+    <item name="none">0
+    </item>
+    <item name="screen.on">71.5
+    </item>
+    <item name="screen.full">255.25
+    </item>
+    <item name="audio">23
+    </item>
+    <item name="video">56
+    </item>
+    <item name="camera.avg">173.6
+    </item>
+    <item name="camera.flashlight">151.8
+    </item>
+    <item name="radio.scanning">103.3
+    </item>
+    <array name="radio.on">
+        <value>8.4
+        </value>
+        <value>8.4
+        </value>
+    </array>
+    <item name="modem.controller.sleep">0
+    </item>
+    <item name="modem.controller.idle">82
+    </item>
+    <item name="modem.controller.rx">93
+    </item>
+    <array name="modem.controller.tx">
+        <value>130
+        </value>
+        <value>143
+        </value>
+        <value>195
+        </value>
+        <value>257
+        </value>
+        <value>323
+        </value>
+    </array>
+    <item name="modem.controller.voltage">3700
+    </item>
+    <item name="wifi.controller.idle">2.1
+    </item>
+    <item name="wifi.controller.rx">75
+    </item>
+    <item name="wifi.controller.tx">275
+    </item>
+    <array name="wifi.controller.tx_levels">
+        <value>0
+        </value>
+    </array>
+    <item name="wifi.controller.voltage">4000
+    </item>
+    <array name="wifi.batchedscan">
+        <value>.0002
+        </value>
+        <value>.002
+        </value>
+        <value>.02
+        </value>
+        <value>.2
+        </value>
+        <value>2
+        </value>
+    </array>
+    <item name="gps.on">37.8
+    </item>
+    <item name="bluetooth.controller.idle">1.2
+    </item>
+    <item name="bluetooth.controller.rx">109
+    </item>
+    <item name="bluetooth.controller.tx">93
+    </item>
+    <item name="bluetooth.controller.voltage">4000
+    </item>
+    <item name="cpu.suspend">6.1
+    </item>
+    <item name="cpu.idle">19.6
+    </item>
+    <array name="cpu.clusters.cores">
+        <value>6
+        </value>
+        <value>2
+        </value>
+    </array>
+    <array name="cpu.core_speeds.cluster0">
+        <value>533000
+        </value>
+        <value>672000
+        </value>
+        <value>768000
+        </value>
+        <value>864000
+        </value>
+        <value>960000
+        </value>
+        <value>1056000
+        </value>
+        <value>1152000
+        </value>
+        <value>1248000
+        </value>
+        <value>1344000
+        </value>
+        <value>1440000
+        </value>
+        <value>1536000
+        </value>
+        <value>1632000
+        </value>
+        <value>1728000
+        </value>
+        <value>1824000
+        </value>
+        <value>1920000
+        </value>
+        <value>2002000
+        </value>
+    </array>
+    <array name="cpu.core_power.cluster0">
+        <value>21
+        </value>
+        <value>24
+        </value>
+        <value>24
+        </value>
+        <value>27
+        </value>
+        <value>28
+        </value>
+        <value>29
+        </value>
+        <value>31
+        </value>
+        <value>34
+        </value>
+        <value>36
+        </value>
+        <value>38
+        </value>
+        <value>42
+        </value>
+        <value>45
+        </value>
+        <value>50
+        </value>
+        <value>57
+        </value>
+        <value>62
+        </value>
+        <value>70
+        </value>
+    </array>
+    <array name="cpu.core_speeds.cluster1">
+        <value>533000
+        </value>
+        <value>672000
+        </value>
+        <value>768000
+        </value>
+        <value>864000
+        </value>
+        <value>960000
+        </value>
+        <value>1056000
+        </value>
+        <value>1152000
+        </value>
+        <value>1248000
+        </value>
+        <value>1344000
+        </value>
+        <value>1440000
+        </value>
+        <value>1536000
+        </value>
+        <value>1632000
+        </value>
+        <value>1728000
+        </value>
+        <value>1824000
+        </value>
+        <value>1920000
+        </value>
+        <value>2016000
+        </value>
+        <value>2112000
+        </value>
+        <value>2208000
+        </value>
+        <value>2288000
+        </value>
+        <value>2340000
+        </value>
+        <value>2400000
+        </value>
+    </array>
+    <array name="cpu.core_power.cluster1">
+        <value>46
+        </value>
+        <value>55
+        </value>
+        <value>65
+        </value>
+        <value>71
+        </value>
+        <value>86
+        </value>
+        <value>91
+        </value>
+        <value>102
+        </value>
+        <value>110
+        </value>
+        <value>130
+        </value>
+        <value>136
+        </value>
+        <value>154
+        </value>
+        <value>170
+        </value>
+        <value>185
+        </value>
+        <value>210
+        </value>
+        <value>236
+        </value>
+        <value>267
+        </value>
+        <value>310
+        </value>
+        <value>358
+        </value>
+        <value>399
+        </value>
+        <value>443
+        </value>
+        <value>485
+        </value>
+    </array>
+    <array name="gpu.speeds">
+        <value>208000
+        </value>
+        <value>312000
+        </value>
+        <value>403000
+        </value>
+        <value>507000
+        </value>
+        <value>611000
+        </value>
+        <value>728000
+        </value>
+        <value>845000
+        </value>
+        <value>949000
+        </value>
+    </array>
+    <array name="gpu.active">
+        <value>22
+        </value>
+        <value>31
+        </value>
+        <value>45
+        </value>
+        <value>66
+        </value>
+        <value>86
+        </value>
+        <value>108
+        </value>
+        <value>139
+        </value>
+        <value>170
+        </value>
+    </array>
+    <item name="battery.capacity">5830
+    </item>
+    <item name="battery.typical.capacity">6000
+    </item>
+</device>

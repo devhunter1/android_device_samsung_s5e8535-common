@@ -1,0 +1,2 @@
+system_internal_prop(sec_charger_mode_prop)
+typeattribute sec_charger_mode_prop               extended_core_property_type;
