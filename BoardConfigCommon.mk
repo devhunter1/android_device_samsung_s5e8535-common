@@ -61,6 +61,8 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION) --pagesize
 BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --vendor_bootconfig $(COMMON_PATH)/bootconfig
 
+BOARD_MOVE_GSI_AVB_KEYS_TO_VENDOR_BOOT := true
+
 # Display
 TARGET_SCREEN_DENSITY := 450
 
