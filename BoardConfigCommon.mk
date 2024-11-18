@@ -60,6 +60,7 @@ BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET) --second_offse
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION) --pagesize $(BOARD_KERNEL_PAGESIZE) --board $(BOARD_NAME)
 BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --vendor_bootconfig $(COMMON_PATH)/bootconfig
+BOARD_CUSTOM_BOOTIMG_MK := $(COMMON_PATH)/mkboot/bootimg.mk
 
 BOARD_MOVE_GSI_AVB_KEYS_TO_VENDOR_BOOT := true
 
