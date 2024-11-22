@@ -62,6 +62,17 @@ BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --vendor_bootconfig $(COMMON_PATH)/bootconfig
 BOARD_CUSTOM_BOOTIMG_MK := $(COMMON_PATH)/mkboot/bootimg.mk
 
+# Build dtbs
+BOARD_DTB_CFG := $(COMMON_PATH)/configs/kernel/s5e8535.cfg
+
+ifeq ($(PRODUCT_DEVICE),a14x)
+    BOARD_DTBO_CFG := $(COMMON_PATH)/configs/kernel/a14x.cfg
+endif
+
+ifeq ($(PRODUCT_DEVICE),m14x)
+    BOARD_DTBO_CFG := $(COMMON_PATH)/configs/kernel/m14x.cfg
+endif
+
 BOARD_MOVE_GSI_AVB_KEYS_TO_VENDOR_BOOT := true
 
 # Display
