@@ -44,7 +44,6 @@ BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth/include
 
 # Boot
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-BOARD_CUSTOM_BOOTIMG := true
 BOARD_BOOT_HEADER_VERSION := 4
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_CMDLINE := bootconfig buildtime_bootconfig=enable loop.max_part=7 androidboot.init_fatal_reboot_target=recovery
@@ -60,7 +59,6 @@ BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET) --second_offse
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION) --pagesize $(BOARD_KERNEL_PAGESIZE) --board $(BOARD_NAME)
 BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --vendor_bootconfig $(COMMON_PATH)/bootconfig
-BOARD_CUSTOM_BOOTIMG_MK := $(COMMON_PATH)/mkboot/bootimg.mk
 
 # Build dtbs
 BOARD_DTB_CFG := $(COMMON_PATH)/configs/kernel/s5e8535.cfg
@@ -185,6 +183,7 @@ BOARD_AVB_RECOVERY_KEY_PATH := external/avb/test/data/testkey_rsa4096.pem
 BOARD_AVB_RECOVERY_ALGORITHM := SHA256_RSA4096
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX := 1
 BOARD_AVB_RECOVERY_ROLLBACK_INDEX_LOCATION := 1
+BOARD_AVB_RECOVERY_ADD_HASH_FOOTER_ARGS :=  --image $(PRODUCT_OUT)/recovery.img --partition_size $(BOARD_RECOVERYIMAGE_PARTITION_SIZE) --partition_name recovery --algorithm $(BOARD_AVB_RECOVERY_ALGORITHM) --key $(BOARD_AVB_RECOVERY_KEY_PATH)
 
 BOARD_AVB_VENDOR_BOOT_KEY_PATH := external/avb/test/data/testkey_rsa4096.pem
 BOARD_AVB_VENDOR_BOOT_ALGORITHM := SHA256_RSA4096
