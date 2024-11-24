@@ -157,6 +157,10 @@ BOARD_RECOVERY_MKBOOTIMG_ARGS += --dtb_offset 0x00000000
 BOARD_INCLUDE_RECOVERY_DTBO := true
 TARGET_USES_MKE2FS := true
 
+# Manifest
+DEVICE_MANIFEST_FILE += $(COMMON_PATH)/configs/vintf/manifest.xml
+DEVICE_MATRIX_FILE := $(COMMON_PATH)/configs/vintf/compatibility_matrix.xml
+
 # RIL
 ENABLE_VENDOR_RIL_SERVICE := true
 
