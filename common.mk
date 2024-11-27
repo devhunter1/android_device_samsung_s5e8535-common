@@ -91,7 +91,8 @@ PRODUCT_PACKAGES += \
     SystemUIOverlay_universal8535
     
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
+    $(COMMON_PATH)/overlay-lineage \
+    $(COMMON_PATH)/overlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
