@@ -117,7 +117,7 @@ BOARD_ROOT_EXTRA_FOLDERS := \
 # Dynamic Partitions
 BOARD_SUPER_PARTITION_GROUPS := samsung_dynamic_partitions
 BOARD_SAMSUNG_DYNAMIC_PARTITIONS_SIZE := 8283750400
-BOARD_SAMSUNG_DYNAMIC_PARTITIONS_PARTITION_LIST := system vendor product odm vendor_dlkm system_dlkm system_ext
+BOARD_SAMSUNG_DYNAMIC_PARTITIONS_PARTITION_LIST := system vendor product odm vendor_dlkm system_dlkm
 -include vendor/lineage/config/BoardConfigReservedSize.mk
  
 BOARD_PRODUCTIMAGE_FILE_SYSTEM_TYPE := ext4
