@@ -17,7 +17,7 @@ static const variant_info_t m14x_info = {
     .brand = "Samsung",
     .device = "m14x",
     .marketname = "Samsung Galaxy M14",
-    .model = "SM-M146B",
+    .model = "SM-M146X",
     .build_fingerprint = "samsung/m14xins/essi:14/UP1A.231005.007/E146BXXS5CXH1:user/release-keys"
 };
 
@@ -28,7 +28,7 @@ static const variant_info_t a14x_info = {
     .brand = "Samsung",
     .device = "a14x",
     .marketname = "Samsung Galaxy A14",
-    .model = "SM-A146B",
+    .model = "SM-A146X",
     .build_fingerprint = "samsung/a14xins/essi:14/UP1A.231005.007/A146BXXS5CXH1:user/release-keys"
 };
 
