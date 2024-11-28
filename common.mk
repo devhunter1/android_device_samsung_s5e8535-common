@@ -95,7 +95,8 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    SystemUIOverlay_universal8535
+    SystemUIOverlay_universal8535 \
+    FrameworksResOverlay_universal8535
     
 DEVICE_PACKAGE_OVERLAYS += \
     $(COMMON_PATH)/overlay-lineage \
