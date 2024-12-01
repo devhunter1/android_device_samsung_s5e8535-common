@@ -19,6 +19,9 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
 # Generic Ramdisk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 
+# Soong namespaces
+$(call inherit-product, hardware/samsung_slsi-linaro/config/config.mk)
+
 # API levels
 PRODUCT_SHIPPING_API_LEVEL := 33
 PRODUCT_FULL_TREBLE_OVERRIDE := true
