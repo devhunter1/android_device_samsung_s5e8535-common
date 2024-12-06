@@ -1,4 +1,0 @@
-# vendor_overlay
-allow init vendor_file:dir mounton;
-allow init vendor_configs_file:dir mounton;
-allow init vendor_app_file:dir mounton;
