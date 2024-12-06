@@ -98,6 +98,10 @@ PRODUCT_PACKAGES += \
 #LPM
 PRODUCT_PACKAGES += \
     system_ext_33.0.cil
+    
+# FastCharge
+PRODUCT_PACKAGES += \
+    vendor.lineage.fastcharge@1.0-service.samsung
 
 # Overlays
 PRODUCT_PACKAGES += \
