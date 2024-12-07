@@ -1,1 +1,1 @@
-buildtime_bootconfig=enable
+androidboot.selinux=permissive buildtime_bootconfig=enable
