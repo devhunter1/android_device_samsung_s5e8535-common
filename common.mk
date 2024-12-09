@@ -69,6 +69,11 @@ PRODUCT_COPY_FILES += \
 # Camera
 TARGET_BUILD_APERTURE_CAMERA := true
 
+PRODUCT_PACKAGES += \
+    android.hardware.camera.provider@2.5-service_64.exynos1330 \
+    libsensorndkbridge
+    
+
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.ar.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.xml \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
