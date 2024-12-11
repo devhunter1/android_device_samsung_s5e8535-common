@@ -126,6 +126,11 @@ PRODUCT_PACKAGES += \
     vendor.samsung_slsi.hardware.epic@1.0-impl \
     libepicoperator \
     vendor.samsung_slsi.hardware.epic@1.0-service
+    
+# GNSS
+PRODUCT_PACKAGES += \
+    android.frameworks.sensorservice@1.0.vendor:64 \
+    android.hardware.gnss@2.1.vendor:64
 
 # Overlays
 PRODUCT_PACKAGES += \
