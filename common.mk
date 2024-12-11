@@ -98,6 +98,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.fastboot@1.1-impl-mock \
     fastbootd
+    
+# Display
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.composer@2.4-service
 
 # HIDL
 PRODUCT_PACKAGES += \
