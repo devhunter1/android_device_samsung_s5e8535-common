@@ -120,6 +120,12 @@ PRODUCT_PACKAGES += \
 # FastCharge
 PRODUCT_PACKAGES += \
     vendor.lineage.fastcharge@1.0-service.samsung
+    
+# Epic
+PRODUCT_PACKAGES += \
+    vendor.samsung_slsi.hardware.epic@1.0-impl \
+    libepicoperator \
+    vendor.samsung_slsi.hardware.epic@1.0-service
 
 # Overlays
 PRODUCT_PACKAGES += \
