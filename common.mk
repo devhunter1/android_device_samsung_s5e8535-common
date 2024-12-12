@@ -131,6 +131,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor:64 \
     android.hardware.gnss@2.1.vendor:64
+    
+# Keymaster
+PRODUCT_PACKAGES += \
+    libkeymaster4_1support.vendor:64
 
 # Overlays
 PRODUCT_PACKAGES += \
