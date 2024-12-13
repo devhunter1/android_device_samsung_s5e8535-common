@@ -96,6 +96,10 @@ PRODUCT_PACKAGES += \
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
+
+# RIL
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.2.vendor:64
     
 # Memtrack
 PRODUCT_PACKAGES += \
