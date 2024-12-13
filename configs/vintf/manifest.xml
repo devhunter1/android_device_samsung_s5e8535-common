@@ -93,16 +93,6 @@
         </interface>
         <fqname>@1.2::IComponentStore/default</fqname>
     </hal>
-    <hal format="hidl">
-        <name>android.hardware.renderscript</name>
-        <transport arch="32+64">passthrough</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IDevice</name>
-            <instance>default</instance>
-        </interface>
-        <fqname>@1.0::IDevice/default</fqname>
-    </hal>
     <hal format="aidl" override="true">
         <name>android.hardware.security.keymint</name>
         <version>2</version>
