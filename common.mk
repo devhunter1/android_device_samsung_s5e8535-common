@@ -92,6 +92,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
+    
+# DRM
+PRODUCT_PACKAGES += \
+    android.hardware.drm-service.clearkey
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2408 
