@@ -60,6 +60,11 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.1-service \
     libbt-vendor:64
     
+    
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb-service.samsung
+    
 
 PRODUCT_COPY_FILES += \
     hardware/samsung_slsi/libbt/conf/bt_did.conf:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/bt_did.conf \
