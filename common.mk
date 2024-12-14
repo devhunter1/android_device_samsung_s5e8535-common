@@ -133,6 +133,10 @@ PRODUCT_PACKAGES += \
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@2.0.vendor
+   
+# Power
+PRODUCT_PACKAGES += \
+    android.hardware.power-service.lineage-libperfmgr
 
 # Keymint
 PRODUCT_COPY_FILES += \
@@ -213,7 +217,8 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/interfaces \
     hardware/google/pixel \
     $(COMMON_PATH) \
-    hardware/samsung 
+    hardware/samsung \
+    hardware/lineage/interfaces/power-libperfmgr
 	
 # VNDK API
 PRODUCT_TARGET_VNDK_VERSION := 33
