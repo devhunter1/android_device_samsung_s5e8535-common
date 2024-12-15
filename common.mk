@@ -168,6 +168,11 @@ PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor:64 \
     android.hardware.gnss@2.1.vendor:64
     
+# Health
+PRODUCT_PACKAGES += \
+    android.hardware.health-service.samsung \
+    android.hardware.health-service.samsung-recovery
+    
 # Keymaster
 PRODUCT_PACKAGES += \
     libkeymaster4_1support.vendor:64
