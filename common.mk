@@ -240,6 +240,10 @@ PRODUCT_SOONG_NAMESPACES += \
     $(COMMON_PATH) \
     hardware/samsung \
     hardware/lineage/interfaces/power-libperfmgr
+    
+# Protobuf
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full-3.9.1-vendorcompat
 	
 # VNDK API
 PRODUCT_TARGET_VNDK_VERSION := 33
