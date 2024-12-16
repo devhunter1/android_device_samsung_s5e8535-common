@@ -36,6 +36,8 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 TARGET_2ND_CPU_VARIANT_RUNTIME := cortex-a53
 
+# Audio
+$(call soong_config_set, android_hardware_audio, run_64bit, true)
 
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
