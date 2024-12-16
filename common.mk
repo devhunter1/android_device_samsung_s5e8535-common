@@ -128,7 +128,8 @@ PRODUCT_PACKAGES += \
     
 # Display
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.4-service
+    android.hardware.graphics.composer@2.4-service \
+    libdrm.vendor:64
     
 # Thermal
 PRODUCT_PACKAGES += \
