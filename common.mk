@@ -105,6 +105,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.2.vendor:64
     
+PRODUCT_PACKAGES += \
+    sehradiomanager
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/ril/sehradiomanager.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sehradiomanager.conf
+    
 # Sensor
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-service.multihal
