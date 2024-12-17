@@ -125,7 +125,11 @@ PRODUCT_PACKAGES += \
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2408 
-TARGET_SCREEN_WIDTH := 1080 
+TARGET_SCREEN_WIDTH := 1080
+
+# Vendor service manager
+PRODUCT_PACKAGES += \
+    vndservicemanager 
 
 # Charger
 PRODUCT_PACKAGES += \
