@@ -44,7 +44,8 @@ PRODUCT_PACKAGES += \
     libaudioroute \
     libtinyalsa \
     libtinycompress \
-    libaudiofoundation.vendor
+    libaudiofoundation.vendor \
+    android.hardware.soundtrigger@2.0-impl
     
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/audio/configs/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
