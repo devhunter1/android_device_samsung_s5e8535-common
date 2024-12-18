@@ -43,7 +43,8 @@ PRODUCT_PACKAGES += \
     audio.usb.default \
     libaudioroute \
     libtinyalsa \
-    libtinycompress
+    libtinycompress \
+    libaudiofoundation.vendor
     
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/audio/configs/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
@@ -67,7 +68,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     hardware/samsung_slsi/libbt/conf/bt_did.conf:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/bt_did.conf
     
-    # USB
+# USB
 PRODUCT_PACKAGES += \
     android.hardware.usb-service.samsung
     
