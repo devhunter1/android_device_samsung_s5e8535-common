@@ -72,10 +72,6 @@ vendor/lib64/libspatializerparamstorage.so
 vendor/lib64/libvibrator.so
 vendor/lib64/spatializer-aidl-cpp.so
 
-# Audio configs
-etc/audio_effects.xml
-etc/audio_effects_common.conf
-
 # Bluetooth
 vendor/lib64/vendor.samsung.hardware.bluetooth@2.0.so
 
@@ -155,9 +151,6 @@ vendor/lib64/liboemcrypto.so
 vendor/lib64/libteecl.so
 vendor/lib64/libwvaidl.so
 
-# Dumpstate
-vendor/bin/hw/android.hardware.dumpstate-service
-
 # Gatekeeper
 vendor/lib/hw/gatekeeper.s5e8535.so
 vendor/lib64/hw/gatekeeper.s5e8535.so
@@ -171,30 +164,6 @@ vendor/etc/gnss/gps.issuetracker.cfg
 vendor/etc/gnss/hardware_factors.conf
 
 # Media
-etc/seccomp_policy/mediacodec.policy
-lib/libdatasource.so
-lib/libdatasource_local_cache.so
-lib/libmedia_codeclist.so
-lib/libomafldrm.so
-lib/libstagefright_aidl_bufferpool2.so
-lib/libstagefright_bufferpool@2.0.1.so
-lib/libstagefright_codecbase.so
-lib/libstagefright_framecapture_utils.so
-lib/libstagefright_surface_utils.so
-lib64/libdatasource.so
-lib64/libdatasource_local_cache.so
-lib64/libhdcp2.so
-lib64/libhdcp_client_aidl.so
-lib64/libmedia_codeclist.so
-lib64/libomafldrm.so
-lib64/libstagefright_aidl_bufferpool2.so
-lib64/libstagefright_bufferpool@2.0.1.so
-lib64/libstagefright_codecbase.so
-lib64/libstagefright_framecapture_utils.so
-lib64/libstagefright_hdcp.so
-lib64/libstagefright_httplive_sec.so
-lib64/libstagefright_surface_utils.so
-lib64/vendor.samsung.hardware.security.hdcp.wifidisplay-V2-ndk.so
 vendor/lib/libFrucSSMLib.so
 vendor/lib/libcodecsolutionhelper_vendor.so
 vendor/lib/libpredeflicker_native.so
@@ -302,7 +271,6 @@ vendor/bin/hw/vendor.samsung.hardware.wifi@2.0-service
 vendor/bin/hw/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0-service
 vendor/bin/abox_log
 vendor/bin/add.tflite
-vendor/bin/applypatch
 vendor/bin/cass
 vendor/bin/cbd
 vendor/bin/cld
@@ -335,7 +303,6 @@ vendor/etc/hyper/config_vendor.json
 vendor/etc/init/camera.unihal.rc
 vendor/etc/init/cass.rc
 vendor/etc/init/dmd.rc
-vendor/etc/init/dumpstate-default.rc
 vendor/etc/init/emservice.rc
 vendor/etc/init/epic.rc
 vendor/etc/init/face-default-sec.rc
@@ -405,14 +372,9 @@ vendor/etc/str/str_preference_data.dat
 vendor/etc/sysconfig/vendor-apex-allowlist.xml
 vendor/etc/vintf/manifest/bluetooth_audio.xml
 vendor/etc/vintf/manifest/dmd.xml
-vendor/etc/vintf/manifest/dumpstate-default.xml
 vendor/etc/vintf/manifest/engmode_manifest.xml
 vendor/etc/vintf/manifest/face-default-sec.xml
 vendor/etc/vintf/manifest/hyper-default-sec.xml
-vendor/etc/vintf/manifest/lights-default-sec.xml
-vendor/etc/vintf/manifest/memtrack.xml
-vendor/etc/vintf/manifest/power-samsung.xml
-vendor/etc/vintf/manifest/sec_c2_manifest_default0_1_2.xml
 vendor/etc/vintf/manifest/vaultkeeper_manifest.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.biometrics.fingerprint-service.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.camera.provider-service.xml
@@ -442,7 +404,6 @@ vendor/etc/fstab.s5e8535
 vendor/etc/gps_debug.conf
 vendor/etc/hqm_device.xml
 vendor/etc/init.insmod.s5e8535.cfg
-vendor/etc/linker.config.pb
 vendor/etc/mercury.json
 vendor/etc/mixer_gains.xml
 vendor/etc/mixer_usb_default.xml
