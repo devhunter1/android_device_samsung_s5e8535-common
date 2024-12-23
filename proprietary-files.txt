@@ -427,10 +427,7 @@ vendor/etc/ueventd.rc
 vendor/etc/vramdiskd.xml
 vendor/etc/wlan_common_rc
 vendor/etc/wlan_vendor_rc
-vendor/firmware/abov/a96t396_a14x_main.bin
-vendor/firmware/abov/a96t396_a14x_sub.bin
 vendor/firmware/APDV_AUDIO_SLSI.bin
-vendor/firmware/APMS_AUDIO_SLSI.bin
 vendor/firmware/AP_AUDIO_SLSI.bin
 vendor/firmware/OD_V2.4.2_06_30_QVGA_RICE_VRA_RGB1P.bin
 vendor/firmware/OD_V2.5.1_06_30_VGA_RICE_VRA_RGB1P.bin
@@ -443,8 +440,6 @@ vendor/firmware/abox_system.conf
 vendor/firmware/abox_tplg.bin
 vendor/firmware/abox_tplg.conf
 vendor/firmware/avsyncmix.bin
-vendor/firmware/aw882xx_pid_2055a_acf.bin
-vendor/firmware/aw882xx_pid_2055b_acf.bin
 vendor/firmware/calliope_dram.bin
 vendor/firmware/calliope_sram.bin
 vendor/firmware/camera_tilt_calibration_info_1_4
@@ -452,13 +447,8 @@ vendor/firmware/cs40l26.wmfw
 vendor/firmware/dax_param.bin
 vendor/firmware/default_configuration.flm.cfg.bin
 vendor/firmware/dolby.bin
-vendor/firmware/ili7807_a14x.bin
 vendor/firmware/listenbackeffect.bin
 vendor/firmware/mfc_fw.bin
-vendor/firmware/nt36672_a14x_2ndbr_tianma.bin
-vendor/firmware/nt36672_a14x_2ndbr_tianma_mp.bin
-vendor/firmware/nt36672_a14x_tianma.bin
-vendor/firmware/nt36672_a14x_tianma_mp.bin
 vendor/firmware/os.checked.bin
 vendor/firmware/pablo_icpufw.bin
 vendor/firmware/rxse.bin
@@ -475,9 +465,6 @@ vendor/firmware/setfile_hi1336.bin
 vendor/firmware/setfile_jn1.bin
 vendor/firmware/setfile_sc201.bin
 vendor/firmware/setfile_sc201_macro.bin
-vendor/firmware/spkamp_aw882xx.bin
-vendor/firmware/spkamp_param_aw882xx.bin
-vendor/firmware/td4160_a13x_boe.bin
 vendor/firmware/txse1.bin
 vendor/firmware/txse2.bin
 vendor/firmware/volumemonitor.bin
