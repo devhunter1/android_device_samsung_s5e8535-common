@@ -46,7 +46,8 @@ DEXPREOPT_GENERATE_APEX_IMAGE := true
 BOARD_HAVE_BLUETOOTH_SLSI := true
 
 # Boot
-BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+BOARD_CUSTOM_BOOTIMG := true
+BOARD_CUSTOM_BOOTIMG_MK := $(COMMON_PATH)/mkbootimg.mk
 BOARD_BOOT_HEADER_VERSION := 4
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_KERNEL_CMDLINE := bootconfig buildtime_bootconfig=enable loop.max_part=7 androidboot.init_fatal_reboot_target=recovery
@@ -64,8 +65,6 @@ BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --vendor_bootconfig $(COMMON_PATH)/bootconfig
 
 # Build dtbs
-BOARD_DTB_CFG := $(COMMON_PATH)/configs/kernel/s5e8535.cfg
-
 ifeq ($(PRODUCT_DEVICE),a14x)
     BOARD_DTBO_CFG := $(COMMON_PATH)/configs/kernel/a14x.cfg
 endif
