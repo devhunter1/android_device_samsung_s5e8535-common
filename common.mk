@@ -267,6 +267,17 @@ PRODUCT_SHIPPING_API_LEVEL := 33
 PRODUCT_PACKAGES += \
     libepicoperator
     
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.common-V2-ndk.vendor \
+    android.hardware.biometrics.fingerprint-V2-ndk.vendor
+
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint-service.samsung
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
+    
 # WIFI
 PRODUCT_PACKAGES += \
     hostapd \
