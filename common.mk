@@ -80,8 +80,7 @@ PRODUCT_PACKAGES += \
 TARGET_BUILD_APERTURE_CAMERA := true
 
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.5-service_64.exynos1330 \
-    libsensorndkbridge
+    android.hardware.camera.provider-service.samsung
 
     
 # Gatekeeper
