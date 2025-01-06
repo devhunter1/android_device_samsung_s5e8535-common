@@ -1,4 +1,0 @@
-#service sec-biometrics-face-aidl /vendor/bin/hw/vendor.samsung.hardware.biometrics.face-service
-#    class hal
-##    user system
-#    group system input uhid

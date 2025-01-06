@@ -308,10 +308,6 @@ PRODUCT_PACKAGES += \
 # VNDK API
 PRODUCT_TARGET_VNDK_VERSION := 33
 PRODUCT_EXTRA_VNDK_VERSIONS := 33
-
-# Vendor_overlays
-PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(COMMON_PATH)/vendor_overlay/,$(TARGET_COPY_OUT_PRODUCT)/vendor_overlay/33/)
 	
 
 # Inherit the proprietary files
