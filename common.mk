@@ -281,6 +281,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     hostapd \
     wpa_supplicant \
+    hostapd_cli \
+    wpa_cli \
+    libwifi-hal \
+    libkeystore-wifi-hidl \
     android.hardware.wifi-service
     
 PRODUCT_COPY_FILES += \
