@@ -263,6 +263,7 @@ PRODUCT_SHIPPING_API_LEVEL := 33
 
 # OMX
 PRODUCT_PACKAGES += \
+    android.hardware.media.omx@1.0-service \
     libepicoperator
     
 # Fingerprint
