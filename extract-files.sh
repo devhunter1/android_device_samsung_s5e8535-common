@@ -58,6 +58,7 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
+
 if [ -z "${ONLY_TARGET}" ]; then
     # Initialize the helper for common device
     setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" true "${CLEAN_VENDOR}"

@@ -24,10 +24,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 PRODUCT_SHIPPING_API_LEVEL := 33
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := true
 
-# VNDK
-PRODUCT_PACKAGES += \
-    libcrypto-v33
-
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl \
@@ -114,6 +110,10 @@ PRODUCT_COPY_FILES += \
 # DOZE
 PRODUCT_PACKAGES += \
     SamsungDoze
+    
+# Security
+PRODUCT_PACKAGES += \
+    android.hardware.security.keymint-service
     
 # Memtrack
 PRODUCT_PACKAGES += \
