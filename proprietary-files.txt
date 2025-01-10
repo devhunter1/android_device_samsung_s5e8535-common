@@ -375,7 +375,6 @@ vendor/etc/vintf/manifest/vendor.samsung.hardware.security.widevine.keyprov-serv
 vendor/etc/vintf/manifest/vendor.samsung.hardware.sehradio_manifest_2_33.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.iccc@1.0-manifest.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.tlc.kg@1.1-manifest.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.vibrator-default.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.wifi@2.0-service.xml
 vendor/etc/SoundBoosterParam.txt
 vendor/etc/audio_board_info.xml

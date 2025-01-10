@@ -115,6 +115,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.security.keymint-service
     
+# VIB
+PRODUCT_PACKAGES += \
+    android.hardware.vibrator-service.samsung
+    
 # Memtrack
 PRODUCT_PACKAGES += \
     android.hardware.memtrack-service.samsung-mali
