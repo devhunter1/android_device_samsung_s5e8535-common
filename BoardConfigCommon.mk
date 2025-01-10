@@ -145,7 +145,7 @@ TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 TARGET_BOARD_PLATFORM := universal8535
 
 # Properties
-TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
+TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
 
 # Recovery
