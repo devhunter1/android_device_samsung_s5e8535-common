@@ -19,11 +19,6 @@
         </interface>
         <fqname>@7.0::IEffectsFactory/default</fqname>
     </hal>
-    <hal format="aidl">
-        <name>android.hardware.biometrics.face</name>
-        <version>2</version>
-        <fqname>IFace/default</fqname>
-    </hal>
     <hal format="hidl">
         <name>android.hardware.bluetooth</name>
         <transport>hwbinder</transport>

@@ -242,7 +242,6 @@ vendor/bin/hw/macloader
 vendor/bin/hw/mfgloader
 vendor/bin/hw/samsung.hardware.media.c2@1.2-service
 vendor/bin/hw/samsung.software.media.c2@1.0-service
-vendor/bin/hw/vendor.samsung.hardware.biometrics.face-service
 vendor/bin/hw/vendor.samsung.hardware.biometrics.fingerprint-service
 vendor/bin/hw/vendor.samsung.hardware.camera.provider-service_64
 vendor/bin/hw/vendor.samsung.hardware.gnss-service
@@ -297,7 +296,6 @@ vendor/etc/init/cass.rc
 vendor/etc/init/dmd.rc
 vendor/etc/init/emservice.rc
 vendor/etc/init/epic.rc
-vendor/etc/init/face-default-sec.rc
 vendor/etc/init/fingerprint_common.rc
 vendor/etc/init/hyper-default-sec.rc
 vendor/etc/init/init.baseband.rc
@@ -365,7 +363,6 @@ vendor/etc/sysconfig/vendor-apex-allowlist.xml
 vendor/etc/vintf/manifest/bluetooth_audio.xml
 vendor/etc/vintf/manifest/dmd.xml
 vendor/etc/vintf/manifest/engmode_manifest.xml
-vendor/etc/vintf/manifest/face-default-sec.xml
 vendor/etc/vintf/manifest/hyper-default-sec.xml
 vendor/etc/vintf/manifest/vaultkeeper_manifest.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.radio.exclude.slsi.xml
@@ -520,7 +517,6 @@ vendor/lib/libwrappergps.so
 vendor/lib/mali_symlink.so
 vendor/lib/shared-file-region-aidl-cpp.so
 vendor/lib/vendor.samsung.hardware.audio@1.0.so
-vendor/lib/vendor.samsung.hardware.biometrics.face-V3-ndk.so
 vendor/lib/vendor.samsung.hardware.biometrics.fingerprint-V1-ndk.so
 vendor/lib/vendor.samsung.hardware.bluetooth.audio-impl.so
 vendor/lib/vendor.samsung.hardware.gnss-V3-ndk.so
@@ -662,7 +658,6 @@ vendor/lib64/unihal_scenario.so
 vendor/lib64/unihal_uniplugin@1.0.so
 vendor/lib64/vendor.samsung.frameworks.security.dsms-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.audio@1.0.so
-vendor/lib64/vendor.samsung.hardware.biometrics.face-V3-ndk.so
 vendor/lib64/vendor.samsung.hardware.biometrics.fingerprint-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.bluetooth.audio-impl.so
 vendor/lib64/vendor.samsung.hardware.camera.device-V1-ndk.so
