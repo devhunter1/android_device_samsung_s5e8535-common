@@ -292,7 +292,10 @@ PRODUCT_PACKAGES += \
     wpa_cli \
     libwifi-hal \
     libkeystore-wifi-hidl \
-    android.hardware.wifi-service
+    android.hardware.wifi-service \
+    libkeystore-engine-wifi-hidl \
+    android.system.keystore2-V1-ndk
+    
     
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/wifi/p2p_supplicant_overlay.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant_overlay.conf \
