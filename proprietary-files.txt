@@ -301,9 +301,6 @@ vendor/etc/init/hyper-default-sec.rc
 vendor/etc/init/init.baseband.rc
 vendor/etc/init/init.fingerprint.rc
 vendor/etc/init/init.gps.rc
-vendor/etc/init/init.ramplus.rc
-vendor/etc/init/init.s5e8535.rc
-vendor/etc/init/init.s5e8535.usb.rc
 vendor/etc/init/init.sensorhub.rc
 vendor/etc/init/init.vendor.onebinary.rc
 vendor/etc/init/init.vendor.rilcommon.rc
@@ -381,11 +378,8 @@ vendor/etc/ems.json
 vendor/etc/ems_parameter.json
 vendor/etc/epic.json
 vendor/etc/floating_feature.xml
-vendor/etc/fstab.ramplus
-vendor/etc/fstab.s5e8535
 vendor/etc/gps_debug.conf
 vendor/etc/hqm_device.xml
-vendor/etc/init.insmod.s5e8535.cfg
 vendor/etc/mercury.json
 vendor/etc/mixer_gains.xml
 vendor/etc/mixer_usb_default.xml
