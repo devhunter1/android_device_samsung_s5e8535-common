@@ -829,6 +829,9 @@ on property:ro.debuggable=1
 
 on property:sys.boot_completed=1
     start insmod_sh_common
+    
+# Enable PowerHAL hint processing
+    setprop vendor.powerhal.init 1
 
 service insmod_sh_common /vendor/bin/init.insmod.sh /vendor/etc/init.insmod.${ro.hardware}.cfg
     class main
