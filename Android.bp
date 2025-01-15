@@ -5,4 +5,11 @@
 //
 
 soong_namespace {
+    imports: [
+        "hardware/google/interfaces",
+        "hardware/google/pixel",
+        "hardware/samsung",
+        "hardware/lineage/interfaces/power-libperfmgr",
+        "hardware/lineage/interfaces",
+    ],
 }

@@ -65,7 +65,7 @@ PRODUCT_COPY_FILES += \
     
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb-service.samsung
+    android.hardware.usb@1.3-service.dual_role_usb
     
 # Lights
 PRODUCT_PACKAGES += \
@@ -316,7 +316,8 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/google/pixel \
     $(COMMON_PATH) \
     hardware/samsung \
-    hardware/lineage/interfaces/power-libperfmgr
+    hardware/lineage/interfaces/power-libperfmgr \
+    hardware/lineage/interfaces
     
 PRODUCT_SOONG_NAMESPACES += \
     hardware/samsung_slsi-linaro/graphics \
