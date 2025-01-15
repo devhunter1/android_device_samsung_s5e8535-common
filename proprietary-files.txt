@@ -1,3 +1,5 @@
+# All unpinned blobs are extracted from A146BXXS3CXC2
+
 # Audio
 vendor/lib/hw/audio.primary.s5e8535.so
 vendor/lib/libSamsungPostProcessConvertor.so
