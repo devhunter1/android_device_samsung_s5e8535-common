@@ -9,7 +9,7 @@ package {
 }
 
 filegroup {
-    name: "android.hardware.audio-impl_srcs",
+    name: "android.hardware.audio-impl_universal8535_srcs",
     srcs: [
         "Device.cpp",
         "DevicesFactory.cpp",
@@ -22,18 +22,18 @@ filegroup {
 }
 
 cc_library_headers {
-    name: "android.hardware.audio-impl_headers",
+    name: "android.hardware.audio-impl_universal8535_headers",
     proprietary: true,
     vendor: true,
     export_include_dirs: ["include"],
 }
 
 cc_defaults {
-    name: "android.hardware.audio-impl_default",
+    name: "android.hardware.audio-impl_universal8535_default",
     relative_install_path: "hw",
     proprietary: true,
     vendor: true,
-    srcs: [":android.hardware.audio-impl_srcs"],
+    srcs: [":android.hardware.audio-impl_universal8535_srcs"],
 
     defaults: ["hidl_defaults"],
 
@@ -56,7 +56,7 @@ cc_defaults {
     ],
 
     header_libs: [
-        "android.hardware.audio-impl_headers",
+        "android.hardware.audio-impl_universal8535_headers",
         "android.hardware.audio.common.util@all-versions",
         "libaudioutils_headers",
         "libaudio_system_headers",
@@ -66,13 +66,13 @@ cc_defaults {
     ],
 
     export_header_lib_headers: [
-        "android.hardware.audio-impl_headers",
+        "android.hardware.audio-impl_universal8535_headers",
     ],
 }
 
 cc_library_shared {
-    name: "android.hardware.audio@2.0-impl",
-    defaults: ["android.hardware.audio-impl_default"],
+    name: "android.hardware.audio@2.0-impl_universal8535",
+    defaults: ["android.hardware.audio-impl_universal8535_default"],
     shared_libs: [
         "android.hardware.audio@2.0",
         "android.hardware.audio@2.0-util",
@@ -87,8 +87,8 @@ cc_library_shared {
 }
 
 cc_library_shared {
-    name: "android.hardware.audio@4.0-impl",
-    defaults: ["android.hardware.audio-impl_default"],
+    name: "android.hardware.audio@4.0-impl_universal8535",
+    defaults: ["android.hardware.audio-impl_universal8535_default"],
 
     shared_libs: [
         "android.hardware.audio@4.0",
@@ -104,8 +104,8 @@ cc_library_shared {
 }
 
 cc_library_shared {
-    name: "android.hardware.audio@5.0-impl",
-    defaults: ["android.hardware.audio-impl_default"],
+    name: "android.hardware.audio@5.0-impl_universal8535",
+    defaults: ["android.hardware.audio-impl_universal8535_default"],
     shared_libs: [
         "android.hardware.audio@5.0",
         "android.hardware.audio@5.0-util",
@@ -120,8 +120,8 @@ cc_library_shared {
 }
 
 cc_defaults {
-    name: "android.hardware.audio@6.0-impl_default",
-    defaults: ["android.hardware.audio-impl_default"],
+    name: "android.hardware.audio@6.0-impl_universal8535_default",
+    defaults: ["android.hardware.audio-impl_universal8535_default"],
     shared_libs: [
         "android.hardware.audio@6.0",
         "android.hardware.audio@6.0-util",
@@ -136,13 +136,13 @@ cc_defaults {
 }
 
 cc_library_shared {
-    name: "android.hardware.audio@6.0-impl",
-    defaults: ["android.hardware.audio@6.0-impl_default"],
+    name: "android.hardware.audio@6.0-impl_universal8535",
+    defaults: ["android.hardware.audio@6.0-impl_universal8535_default"],
 }
 
 cc_defaults {
-    name: "android.hardware.audio@7.0-impl_default",
-    defaults: ["android.hardware.audio-impl_default"],
+    name: "android.hardware.audio@7.0-impl_universal8535_default",
+    defaults: ["android.hardware.audio-impl_universal8535_default"],
     shared_libs: [
         "android.hardware.audio@7.0",
         "android.hardware.audio@7.0-util",
@@ -159,13 +159,13 @@ cc_defaults {
 }
 
 cc_library_shared {
-    name: "android.hardware.audio@7.0-impl",
-    defaults: ["android.hardware.audio@7.0-impl_default"],
+    name: "android.hardware.audio@7.0-impl_universal8535",
+    defaults: ["android.hardware.audio@7.0-impl_universal8535_default"],
 }
 
 cc_defaults {
-    name: "android.hardware.audio@7.1-impl_default",
-    defaults: ["android.hardware.audio-impl_default"],
+    name: "android.hardware.audio@7.1-impl_universal8535_default",
+    defaults: ["android.hardware.audio-impl_universal8535_default"],
     shared_libs: [
         "android.hardware.audio@7.0",
         "android.hardware.audio@7.1",
@@ -185,6 +185,6 @@ cc_defaults {
 }
 
 cc_library_shared {
-    name: "android.hardware.audio@7.1-impl",
-    defaults: ["android.hardware.audio@7.1-impl_default"],
+    name: "android.hardware.audio@7.1-impl_universal8535",
+    defaults: ["android.hardware.audio@7.1-impl_universal8535_default"],
 }
