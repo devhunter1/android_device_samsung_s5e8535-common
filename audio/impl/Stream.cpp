@@ -16,10 +16,10 @@
 
 #define LOG_TAG "StreamHAL"
 
-#include "Stream.h"
+#include "core/default/Stream.h"
 #include "common/all-versions/HidlSupport.h"
 #include "common/all-versions/default/EffectMap.h"
-#include "Util.h"
+#include "core/default/Util.h"
 
 #include <inttypes.h>
 
@@ -114,7 +114,7 @@ Return<void> Stream::getSupportedSampleRates(AudioFormat format,
     SampleRateSet halSampleRates;
     if (result == Result::OK) {
         halSampleRates =
-            samplingRatesFromString(halListValue.c_str(), AudioParameter::valueListSeparator);
+                samplingRatesFromString(halListValue.c_str(), AudioParameter::valueListSeparator);
         sampleRates = hidl_vec<uint32_t>(halSampleRates.begin(), halSampleRates.end());
         // Legacy get_parameter does not return a status_t, thus can not advertise of failure.
         // Note that this method must succeed (non empty list) if the format is supported.
@@ -140,7 +140,7 @@ Return<void> Stream::getSupportedChannelMasks(AudioFormat format,
     ChannelMaskSet halChannelMasks;
     if (result == Result::OK) {
         halChannelMasks =
-            channelMasksFromString(halListValue.c_str(), AudioParameter::valueListSeparator);
+                channelMasksFromString(halListValue.c_str(), AudioParameter::valueListSeparator);
         channelMasks.resize(halChannelMasks.size());
         size_t i = 0;
         for (auto channelMask : halChannelMasks) {

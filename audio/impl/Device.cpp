@@ -16,11 +16,11 @@
 
 #define LOG_TAG "DeviceHAL"
 
-#include "Device.h"
+#include "core/default/Device.h"
 #include "common/all-versions/default/EffectMap.h"
-#include "StreamIn.h"
-#include "StreamOut.h"
-#include "Util.h"
+#include "core/default/StreamIn.h"
+#include "core/default/StreamOut.h"
+#include "core/default/Util.h"
 
 //#define LOG_NDEBUG 0
 
@@ -30,6 +30,7 @@
 #include <algorithm>
 
 #include <android/log.h>
+#include <hidl/HidlTransportSupport.h>
 #include <mediautils/MemoryLeakTrackUtil.h>
 #include <memunreachable/memunreachable.h>
 
@@ -183,6 +184,7 @@ std::tuple<Result, sp<IStreamOut>> Device::openOutputStreamCore(int32_t ioHandle
     if (status == OK) {
         streamOut = new StreamOut(this, halStream);
         ++mOpenedStreamsCount;
+        android::hardware::setMinSchedulerPolicy(streamOut, SCHED_NORMAL, ANDROID_PRIORITY_AUDIO);
     }
     status_t convertStatus =
             HidlUtils::audioConfigFromHal(halConfig, false /*isInput*/, suggestedConfig);
@@ -220,6 +222,7 @@ std::tuple<Result, sp<IStreamIn>> Device::openInputStreamCore(
     if (status == OK) {
         streamIn = new StreamIn(this, halStream);
         ++mOpenedStreamsCount;
+        android::hardware::setMinSchedulerPolicy(streamIn, SCHED_NORMAL, ANDROID_PRIORITY_AUDIO);
     }
     status_t convertStatus =
             HidlUtils::audioConfigFromHal(halConfig, true /*isInput*/, suggestedConfig);
@@ -401,6 +404,10 @@ template <typename HalPort>
 Return<void> Device::getAudioPortImpl(const AudioPort& port, getAudioPort_cb _hidl_cb,
                                       int (*halGetter)(audio_hw_device_t*, HalPort*),
                                       const char* halGetterName) {
+    if (halGetter == nullptr) {
+        _hidl_cb(Result::NOT_SUPPORTED, port);
+        return Void();
+    }
     HalPort halPort;
     if (status_t status = HidlUtils::audioPortToHal(port, &halPort); status != NO_ERROR) {
         _hidl_cb(analyzeStatus("audioPortToHal", status), port);

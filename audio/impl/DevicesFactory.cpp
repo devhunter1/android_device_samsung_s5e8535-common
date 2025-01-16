@@ -16,13 +16,15 @@
 
 #define LOG_TAG "DevicesFactoryHAL"
 
-#include "DevicesFactory.h"
-#include "Device.h"
-#include "PrimaryDevice.h"
+#include "core/default/DevicesFactory.h"
+#include "core/default/Device.h"
+#include "core/default/PrimaryDevice.h"
 
 #include <string.h>
 
 #include <android/log.h>
+#include <hidl/HidlTransportSupport.h>
+#include <system/thread_defs.h>
 
 namespace android {
 namespace hardware {
@@ -103,6 +105,7 @@ Return<void> DevicesFactory::openDevice(const char* moduleName, Callback _hidl_c
     int halStatus = loadAudioInterface(moduleName, &halDevice);
     if (halStatus == OK) {
         result = new DeviceShim(halDevice);
+        android::hardware::setMinSchedulerPolicy(result, SCHED_NORMAL, ANDROID_PRIORITY_AUDIO);
         retval = Result::OK;
     } else if (halStatus == -EINVAL) {
         retval = Result::NOT_INITIALIZED;
@@ -142,7 +145,7 @@ out:
 }
 
 IDevicesFactory* HIDL_FETCH_IDevicesFactory(const char* name) {
-    return new DevicesFactory();
+    return strcmp(name, "default") == 0 ? new DevicesFactory() : nullptr;
 }
 
 }  // namespace implementation

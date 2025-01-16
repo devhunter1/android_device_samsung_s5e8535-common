@@ -16,8 +16,8 @@
 
 #define LOG_TAG "StreamInHAL"
 
-#include "StreamIn.h"
-#include "Util.h"
+#include "core/default/StreamIn.h"
+#include "core/default/Util.h"
 #include "common/all-versions/HidlSupport.h"
 
 //#define LOG_NDEBUG 0

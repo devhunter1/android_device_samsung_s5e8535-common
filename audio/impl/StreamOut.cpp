@@ -16,8 +16,8 @@
 
 #define LOG_TAG "StreamOutHAL"
 
-#include "StreamOut.h"
-#include "Util.h"
+#include "core/default/StreamOut.h"
+#include "core/default/Util.h"
 
 //#define LOG_NDEBUG 0
 #define ATRACE_TAG ATRACE_TAG_AUDIO
