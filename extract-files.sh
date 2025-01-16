@@ -60,6 +60,13 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
+function blob_fixup() {
+    case "${1}" in
+        vendor/lib64/libsec-ril.so)
+            sed -i 's/ril.dds.call.ongoing/vendor.calls.slot_id/g' "${2}"
+            ;;
+    esac
+}
 
 if [ -z "${ONLY_TARGET}" ]; then
     # Initialize the helper for common device
