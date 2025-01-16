@@ -111,10 +111,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     SamsungDoze
     
-# Security
-PRODUCT_PACKAGES += \
-    android.hardware.security.keymint-service
-    
 # VIB
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.samsung
