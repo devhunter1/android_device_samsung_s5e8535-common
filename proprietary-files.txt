@@ -245,12 +245,8 @@ vendor/bin/hw/macloader
 vendor/bin/hw/mfgloader
 vendor/bin/hw/samsung.hardware.media.c2@1.2-service
 vendor/bin/hw/samsung.software.media.c2@1.0-service
-vendor/bin/hw/vendor.samsung.hardware.biometrics.fingerprint-service
-vendor/bin/hw/vendor.samsung.hardware.camera.provider-service_64
 vendor/bin/hw/vendor.samsung.hardware.gnss-service
-vendor/bin/hw/vendor.samsung.hardware.health-service
 vendor/bin/hw/vendor.samsung.hardware.hyper-service
-vendor/bin/hw/vendor.samsung.hardware.light-service
 vendor/bin/hw/vendor.samsung.hardware.securesnap-service
 vendor/bin/hw/vendor.samsung.hardware.security.drk@2.0-service
 vendor/bin/hw/vendor.samsung.hardware.security.skpm@1.0-service
@@ -260,7 +256,6 @@ vendor/bin/hw/vendor.samsung.hardware.sysinput@1.3-service
 vendor/bin/hw/vendor.samsung.hardware.thermal@1.0-service
 vendor/bin/hw/vendor.samsung.hardware.tlc.iccc@1.0-service
 vendor/bin/hw/vendor.samsung.hardware.tlc.kg@1.1-service
-vendor/bin/hw/vendor.samsung.hardware.vibrator-service
 vendor/bin/hw/vendor.samsung.hardware.wifi@2.0-service
 vendor/bin/hw/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0-service
 vendor/bin/abox_log
@@ -308,18 +303,13 @@ vendor/etc/init/init.sensorhub.rc
 vendor/etc/init/init.vendor.onebinary.rc
 vendor/etc/init/init.vendor.rilcommon.rc
 vendor/etc/init/init.vendor.sysfw.rc
-vendor/etc/init/lights-default-sec.rc
 vendor/etc/init/pa_daemon_teegris.rc
-vendor/etc/init/power-default-sec.rc
 vendor/etc/init/samsung.hardware.media.c2@1.2-service.rc
 vendor/etc/init/samsung.software.media.c2@1.0-service.rc
 vendor/etc/init/snap_utility.rc
 vendor/etc/init/teegris.rc
 vendor/etc/init/vaultkeeper_common.rc
-vendor/etc/init/vendor.samsung.hardware.biometrics.fingerprint-service.rc
-vendor/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc
 vendor/etc/init/vendor.samsung.hardware.gnss-service.rc
-vendor/etc/init/vendor.samsung.hardware.health-service.rc
 vendor/etc/init/vendor.samsung.hardware.securesnap-lazy.rc
 vendor/etc/init/vendor.samsung.hardware.security.drk@2.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.security.engmode@1.0-service.rc
@@ -331,7 +321,6 @@ vendor/etc/init/vendor.samsung.hardware.sysinput@1.3-service.rc
 vendor/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.tlc.iccc@1.0-service.rc
 vendor/etc/init/vendor.samsung.hardware.tlc.kg@1.1-service.rc
-vendor/etc/init/vendor.samsung.hardware.vibrator-default.rc
 vendor/etc/init/vendor.samsung.hardware.wifi@2.0-service.rc
 vendor/etc/init/vendor.samsung.rilchip.slsi.rc
 vendor/etc/init/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0-service.rc
@@ -514,7 +503,6 @@ vendor/lib/libwrappergps.so
 vendor/lib/mali_symlink.so
 vendor/lib/shared-file-region-aidl-cpp.so
 vendor/lib/vendor.samsung.hardware.audio@1.0.so
-vendor/lib/vendor.samsung.hardware.biometrics.fingerprint-V1-ndk.so
 vendor/lib/vendor.samsung.hardware.bluetooth.audio-impl.so
 vendor/lib/vendor.samsung.hardware.gnss-V3-ndk.so
 vendor/lib/vendor.samsung_slsi.telephony.hardware.oemservice@1.0.so
@@ -655,13 +643,8 @@ vendor/lib64/unihal_scenario.so
 vendor/lib64/unihal_uniplugin@1.0.so
 vendor/lib64/vendor.samsung.frameworks.security.dsms-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.audio@1.0.so
-vendor/lib64/vendor.samsung.hardware.biometrics.fingerprint-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.bluetooth.audio-impl.so
-vendor/lib64/vendor.samsung.hardware.camera.device-V1-ndk.so
-vendor/lib64/vendor.samsung.hardware.camera.provider-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.gnss-V3-ndk.so
-vendor/lib64/vendor.samsung.hardware.health-V1-ndk.so
-vendor/lib64/vendor.samsung.hardware.light-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.radio.channel-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.security.drk@2.0.so
 vendor/lib64/vendor.samsung.hardware.security.engmode@1.0.so
@@ -678,7 +661,6 @@ vendor/lib64/vendor.samsung.hardware.tlc.iccc@1.0-impl.so
 vendor/lib64/vendor.samsung.hardware.tlc.iccc@1.0.so
 vendor/lib64/vendor.samsung.hardware.tlc.kg@1.0.so
 vendor/lib64/vendor.samsung.hardware.tlc.kg@1.1.so
-vendor/lib64/vendor.samsung.hardware.vibrator-V5-ndk.so
 vendor/lib64/vendor.samsung.hardware.wifi@2.0.so
 vendor/lib64/vendor.samsung.hardware.wifi@2.1.so
 vendor/lib64/vendor.samsung.hardware.wifi@2.2.so
