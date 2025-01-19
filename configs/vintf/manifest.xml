@@ -165,6 +165,14 @@
         </interface>
         <fqname>ISehKeyMintFactory/default</fqname>
     </hal>
+    <hal format="aidl">
+        <name>android.hardware.camera.provider</name>
+        <version>1</version>
+        <interface>
+            <name>ICameraProvider</name>
+            <instance>internal/0</instance>
+        </interface>
+    </hal>
     <hal format="hidl" override="true">
         <name>vendor.samsung.hardware.security.drk</name>
         <transport>hwbinder</transport>

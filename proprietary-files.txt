@@ -78,6 +78,8 @@ vendor/lib64/spatializer-aidl-cpp.so
 vendor/lib64/vendor.samsung.hardware.bluetooth@2.0.so
 
 # Camera
+vendor/bin/vendor.samsung.hardware.camera.provider-service_64
+vendor/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc
 vendor/lib/libacryl.so
 vendor/lib/libarcsoft_super_night_raw.so
 vendor/lib/libexynosgraphicbuffer.so
