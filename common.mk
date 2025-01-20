@@ -35,7 +35,6 @@ PRODUCT_PACKAGES += \
     audio.sec_primary.default \
     audio.usb.default \
     libaudioroute \
-    libtinyalsa \
     libtinycompress \
     libaudiofoundation.vendor \
     android.hardware.soundtrigger@2.0-impl \
