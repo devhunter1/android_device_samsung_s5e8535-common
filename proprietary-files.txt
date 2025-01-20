@@ -288,9 +288,6 @@ vendor/bin/vendor.samsung.hardware.security.vaultkeeper@2.0-service
 vendor/bin/wlbtd
 vendor/bin/wvkprov
 vendor/etc/beauty/settings.dat
-vendor/etc/hyper/config_chipset.json
-vendor/etc/hyper/config_hyper_permission.json
-vendor/etc/hyper/config_vendor.json
 vendor/etc/init/camera.unihal.rc
 vendor/etc/init/cass.rc
 vendor/etc/init/dmd.rc
