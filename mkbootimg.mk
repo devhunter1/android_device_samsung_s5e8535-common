@@ -15,7 +15,7 @@ LOCAL_PATH := $(call my-dir)
 
 PATCH_AVB  := $(COMMON_PATH)/modavb.py
 
-MKDTIMG    := $(HOST_OUT_EXECUTABLES)/mkdtimg$(HOST_EXECUTABLE_SUFFIX)
+MKDTBOIMG := $(HOST_OUT_EXECUTABLES)/mkdtboimg$(HOST_EXECUTABLE_SUFFIX)
 KERNEL_OUT := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ
 DTB_DIR    := $(KERNEL_OUT)/arch/$(KERNEL_ARCH)/boot/dts/exynos
 DTB_CFG    := $(COMMON_PATH)/configs/kernel/$(TARGET_BOOTLOADER_BOARD_NAME).cfg
@@ -23,10 +23,10 @@ INSTALLED_DTBIMAGE_TARGET := $(PRODUCT_OUT)/dtb.img
 
 define build-dtbimage-target
 	@echo "Building dtb.img"
-	$(MKDTIMG) cfg_create $@ $(DTB_CFG) -d $(DTB_DIR)
+	$(MKDTBOIMG) cfg_create $@ $(DTB_CFG) -d $(DTB_DIR)
 endef
 
-$(INSTALLED_DTBIMAGE_TARGET): $(INSTALLED_KERNEL_TARGET) $(MKDTIMG)
+$(INSTALLED_DTBIMAGE_TARGET): $(INSTALLED_KERNEL_TARGET) $(MKDTBOIMG)
 	$(build-dtbimage-target)
 .PHONY: dtbimage
 dtbimage: $(INSTALLED_DTBIMAGE_TARGET)
