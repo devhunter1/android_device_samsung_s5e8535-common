@@ -191,9 +191,10 @@ include device/samsung_slsi/sepolicy/sepolicy.mk
 
 
 # Vendor_boot
-BOARD_VENDOR_RAMDISK_FRAGMENTS := dlkm
-BOARD_VENDOR_RAMDISK_FRAGMENT.dlkm.KERNEL_MODULE_DIRS := top
 BOARD_MOVE_GSI_AVB_KEYS_TO_VENDOR_BOOT := true
+
+# vendor_dlkm
+BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(COMMON_PATH)/modules.load))
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
