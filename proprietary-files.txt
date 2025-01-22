@@ -1,4 +1,4 @@
-# All unpinned blobs are extracted from A146BXXS3CXC2
+# All unpinned blobs are extracted from A146BXXU8CXK1
 
 # Audio
 vendor/lib/hw/audio.primary.s5e8535.so
