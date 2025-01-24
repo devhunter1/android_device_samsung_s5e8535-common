@@ -3,14 +3,6 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <compatibility-matrix version="5.0" type="framework">
-    <hal format="aidl" optional="true">
-        <name>android.hardware.biometrics.fingerprint</name>
-        <version>2</version>
-        <interface>
-            <name>IFingerprint</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.audio</name>
         <transport>hwbinder</transport>
