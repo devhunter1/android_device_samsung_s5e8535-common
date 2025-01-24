@@ -155,9 +155,6 @@
         <interface>
             <name>ISehSnap</name>
             <instance>default</instance>
-        </interface>
-        <interface>
-            <name>ISehSnap</name>
             <instance>secsnap</instance>
         </interface>
     </hal>
