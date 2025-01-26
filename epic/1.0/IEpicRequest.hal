@@ -1,0 +1,44 @@
+/*
+ * Copyright (C) 2018 The Android Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+package vendor.samsung_slsi.hardware.epic@1.0;
+
+import IEpicHandle;
+
+interface IEpicRequest {
+    init(int32_t scenario_id) generates
+	(IEpicHandle ret);
+    init_multi(vec<int32_t> scenario_id_list) generates
+        (IEpicHandle ret);
+    update_handle_id(IEpicHandle req, string handle_id) generates
+	(uint32_t ret);
+    acquire_lock(IEpicHandle req) generates
+	(uint32_t ret);
+    release_lock(IEpicHandle req) generates
+	(uint32_t ret);
+    acquire_lock_option(IEpicHandle req, uint32_t value, uint32_t usec) generates
+	(uint32_t ret);
+    acquire_lock_multi_option(IEpicHandle req, vec<uint32_t> value_list, vec<uint32_t> usec_list) generates
+	(uint32_t ret);
+    acquire_lock_conditional(IEpicHandle req, string condition_name) generates
+	(uint32_t ret);
+    release_lock_conditional(IEpicHandle req, string condition_name) generates
+	(uint32_t ret);
+    perf_hint(IEpicHandle req, string name) generates
+        (uint32_t ret);
+    hint_release(IEpicHandle req, string name) generates
+        (uint32_t ret);
+};

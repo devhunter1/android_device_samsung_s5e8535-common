@@ -1,0 +1,23 @@
+cc_library {
+    name: "libepicoperator",
+    proprietary: true,
+    srcs: [
+	"EpicConnector.cpp",
+        "EpicBaseOperator.cpp",
+	"EpicCommonOperator.cpp",
+	"EpicCommonMultiOperator.cpp",
+	"EpicVideoDecodingOperator.cpp",
+	"EpicVideoEncodingOperator.cpp",
+	"OperatorFactory.cpp",
+	"EpicExportAPI.cpp"
+    ],
+    shared_libs: [
+	"libbinder",
+	"libutils",
+	"libcutils",
+	"libhidlbase",
+	"liblog",
+        "vendor.samsung_slsi.hardware.epic@1.0"
+    ],
+    export_include_dirs: ["./"]
+}
