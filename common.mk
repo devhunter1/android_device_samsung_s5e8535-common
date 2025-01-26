@@ -319,11 +319,6 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/lineage/interfaces/power-libperfmgr \
     hardware/lineage/interfaces
     
-PRODUCT_SOONG_NAMESPACES += \
-    hardware/samsung_slsi-linaro/graphics \
-    hardware/samsung_slsi-linaro/interfaces \
-    hardware/samsung_slsi-linaro/openmax
-    
 # Protobuf
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-3.9.1-vendorcompat
