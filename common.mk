@@ -32,13 +32,11 @@ PRODUCT_PACKAGES += \
     audio.bluetooth.default \
     audio.primary.default \
     audio.r_submix.default \
-    audio.sec_primary.default \
     audio.usb.default \
     libaudioroute \
     libtinycompress \
     libaudiofoundation.vendor \
-    android.hardware.soundtrigger@2.0-impl \
-    audio.sec_primary.default
+    android.hardware.soundtrigger@2.0-impl
     
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/audio/configs/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \

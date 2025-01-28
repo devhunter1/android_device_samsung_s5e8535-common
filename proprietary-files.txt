@@ -2,6 +2,7 @@
 
 # Audio
 vendor/lib/hw/audio.primary.s5e8535.so
+vendor/lib/hw/audio.sec_primary.default.so
 vendor/lib/libSamsungPostProcessConvertor.so
 vendor/lib/lib_SamsungRec_07010.so
 vendor/lib/lib_SoundAlive_SRC384_ver320.so
@@ -22,6 +23,7 @@ vendor/lib/libsecril-client.so
 vendor/lib/libsehbluetooth_audio_session_aidl.so
 vendor/lib/vendor.samsung.hardware.bluetooth.audio-V1-ndk.so
 vendor/lib64/hw/audio.primary.s5e8535.so
+vendor/lib64/hw/audio.sec_primary.default.so
 vendor/lib64/libSamsungPostProcessConvertor.so
 vendor/lib64/lib_SamsungRec_07010.so
 vendor/lib64/lib_SoundAlive_SRC384_ver320.so
