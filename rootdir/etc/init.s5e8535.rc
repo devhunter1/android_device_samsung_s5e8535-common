@@ -594,7 +594,6 @@ on early-fs
 #    write /sys/devices/platform/fmp/fmp-fips/fmp_fips_run 1
 
 on late-fs
-    wait_for_prop hwservicemanager.ready true
     mount_all /vendor/etc/fstab.${ro.hardware} --late
 
 on fs
