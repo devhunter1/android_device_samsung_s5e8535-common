@@ -204,10 +204,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     system_ext_33.0.cil
     
-# FastCharge
-PRODUCT_PACKAGES += \
-    vendor.lineage.fastcharge@1.0-service.samsung
-    
 # Epic
 PRODUCT_PACKAGES += \
     vendor.samsung_slsi.hardware.epic@1.0-impl \
