@@ -260,8 +260,8 @@ PRODUCT_PACKAGES += \
     libepicoperator
     
 # Fingerprint
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint-service.samsung
+#PRODUCT_PACKAGES += \
+#    android.hardware.biometrics.fingerprint-service.samsung
     
 # WIFI
 PRODUCT_PACKAGES += \
