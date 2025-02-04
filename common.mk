@@ -52,7 +52,6 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.1-impl \
     android.hardware.bluetooth@1.1-service \
     libbt-vendor:64
     
@@ -112,13 +111,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.samsung
     
-# Biometrics face
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.face-service.example
-    
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.biometrics.face.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.biometrics.face.xml
-    
 # Memtrack
 PRODUCT_PACKAGES += \
     android.hardware.memtrack-service.samsung-mali
@@ -133,12 +125,10 @@ PRODUCT_PACKAGES += \
 
 # Charger
 PRODUCT_PACKAGES += \
-    charger_res_images_vendor \
-    libsuspends
+    charger_res_images_vendor
 
 # Fastbootd
 PRODUCT_PACKAGES += \
-    android.hardware.fastboot@1.1-impl-mock \
     fastbootd
     
 # Display
@@ -199,10 +189,6 @@ PRODUCT_PACKAGES += \
     libhidltransport \
     libhardware \
     libhwbinder
-
-#LPM
-PRODUCT_PACKAGES += \
-    system_ext_33.0.cil
     
 # Epic
 PRODUCT_PACKAGES += \
@@ -244,7 +230,6 @@ PRODUCT_CHARACTERISTICS := phone
 
 # Rootdir
 PRODUCT_PACKAGES += \
-    scsc_get_platform_info.sh \
     mx_logger_dump.sh \
     init.insmod.sh \
     gps.sh \
@@ -276,14 +261,7 @@ PRODUCT_PACKAGES += \
     
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.common-V2-ndk.vendor \
-    android.hardware.biometrics.fingerprint-V2-ndk.vendor
-
-PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint-service.samsung
-
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
     
 # WIFI
 PRODUCT_PACKAGES += \
