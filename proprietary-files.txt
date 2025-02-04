@@ -346,7 +346,7 @@ vendor/etc/seccomp_policy/samsung.software.media.c2-base-policy
 vendor/etc/seccomp_policy/samsung.software.media.c2-ext-policy
 vendor/etc/str/str_preference_data.dat
 vendor/etc/sysconfig/vendor-apex-allowlist.xml
-vendor/etc/vintf/manifest/bluetooth_audio.xml
+vendor/etc/vintf/manifest/bluetooth_audio.xml:vendor/etc/vintf/manifest/bluetooth_audio-vendor.xml
 vendor/etc/vintf/manifest/dmd.xml
 vendor/etc/vintf/manifest/engmode_manifest.xml
 vendor/etc/vintf/manifest/hyper-default-sec.xml
