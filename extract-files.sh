@@ -65,6 +65,9 @@ function blob_fixup() {
         vendor/lib64/libsec-ril.so)
             sed -i 's/ril.dds.call.ongoing/vendor.calls.slot_id/g' "${2}"
             ;;
+        vendor/lib64/libwvaidl.so)
+            "${PATCHELF}" --replace-needed libprotobuf-cpp-lite-3.9.1.so libprotobuf-cpp-full-3.9.1.so "${2}"
+            ;;
     esac
 }
 
