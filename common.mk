@@ -263,6 +263,10 @@ PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-service \
     libepicoperator
     
+# VNDK
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v33/arm64/arch-arm64-armv8-a/shared/vndk-core/libcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcrypto-v33.so
+    
 # Fingerprint
 #PRODUCT_PACKAGES += \
 #    android.hardware.biometrics.fingerprint-service.samsung
