@@ -129,14 +129,6 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="aidl">
-        <name>vendor.samsung.hardware.hyper</name>
-        <version>2</version>
-        <interface>
-            <name>ISehHyPer</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
     <hal format="hidl">
         <name>vendor.samsung.hardware.security.vaultkeeper</name>
         <transport>hwbinder</transport>

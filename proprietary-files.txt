@@ -107,7 +107,6 @@ vendor/lib64/libexynosv4l2.so
 vendor/lib64/libgiantmscl.so
 vendor/lib64/libgrallocusage.so
 vendor/lib64/libhwjpeg.so
-vendor/lib64/libhypervintf.so
 vendor/lib64/libion_exynos.so
 vendor/lib64/libmpbase.so
 vendor/lib64/libomp.so
@@ -122,7 +121,6 @@ vendor/lib64/libvra.so
 vendor/lib64/unihal_android.so
 vendor/lib64/unihal_cutils.so
 vendor/lib64/unihal_entry.so
-vendor/lib64/vendor.samsung.hardware.hyper-V2-ndk.so
 vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
 
 # Display
@@ -246,7 +244,6 @@ vendor/bin/hw/mfgloader
 vendor/bin/hw/samsung.hardware.media.c2@1.2-service
 vendor/bin/hw/samsung.software.media.c2@1.0-service
 vendor/bin/hw/vendor.samsung.hardware.gnss-service
-vendor/bin/hw/vendor.samsung.hardware.hyper-service
 vendor/bin/hw/vendor.samsung.hardware.securesnap-service
 vendor/bin/hw/vendor.samsung.hardware.security.drk@2.0-service
 vendor/bin/hw/vendor.samsung.hardware.security.skpm@1.0-service
@@ -292,7 +289,6 @@ vendor/etc/init/dmd.rc
 vendor/etc/init/emservice.rc
 vendor/etc/init/epic.rc
 vendor/etc/init/fingerprint_common.rc
-vendor/etc/init/hyper-default-sec.rc
 vendor/etc/init/init.baseband.rc
 vendor/etc/init/init.fingerprint.rc
 vendor/etc/init/init.gps.rc
@@ -349,7 +345,6 @@ vendor/etc/sysconfig/vendor-apex-allowlist.xml
 vendor/etc/vintf/manifest/bluetooth_audio.xml:vendor/etc/vintf/manifest/bluetooth_audio-vendor.xml
 vendor/etc/vintf/manifest/dmd.xml
 vendor/etc/vintf/manifest/engmode_manifest.xml
-vendor/etc/vintf/manifest/hyper-default-sec.xml
 vendor/etc/vintf/manifest/vaultkeeper_manifest.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.radio.exclude.slsi.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.securesnap-default.xml
@@ -571,7 +566,6 @@ vendor/lib64/libgf_in_system_lib.so
 vendor/lib64/libgmc.so
 vendor/lib64/libgpudataproducer.so
 vendor/lib64/libhigh_dynamic_range_bokeh.so
-vendor/lib64/libhyper.so
 vendor/lib64/libhypermotion_core.so
 vendor/lib64/libhypermotion_interface.so
 vendor/lib64/libimgproc_sw.unifunc@common.so
