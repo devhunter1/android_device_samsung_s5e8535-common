@@ -70,6 +70,7 @@ function blob_fixup() {
             ;;
         vendor/bin/hw/android.hardware.security.keymint-service|vendor/lib*/libskeymint*.so)
             "${PATCHELF}" --replace-needed libcrypto.so libcrypto-v33.so "${2}"
+            "${PATCHELF}" --replace-needed libcppbor_external.so libcppbor.so "${2}"
             ;;
     esac
 }
