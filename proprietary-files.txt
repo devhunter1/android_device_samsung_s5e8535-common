@@ -239,7 +239,6 @@ vendor/etc/wifi/slsi_reg_database.bin
 
 # Miscellaneous
 vendor/bin/hw/gpsd
-vendor/bin/hw/macloader
 vendor/bin/hw/mfgloader
 vendor/bin/hw/samsung.hardware.media.c2@1.2-service
 vendor/bin/hw/samsung.software.media.c2@1.0-service
