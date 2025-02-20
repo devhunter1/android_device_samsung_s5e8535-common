@@ -87,6 +87,9 @@ ro.incremental.enable=yes
 ## RIL
 ro.radio.noril=no
 
+## Netflix
+ro.netflix.bsp_rev=EXYNOS1330-36497-1
+
 ## Miscellaneous
 persist.sys.dalvik.vm.lib.2=libart.so
 persist.sys.fuse.bpf.override=false
@@ -103,7 +106,6 @@ ro.sys.kernelmemory.nandswap.slot_count_map=5,6,8,8,12
 ro.sys.kernelmemory.nandswap.writeback_on_bg=true
 ro.carrier=unknown
 ro.config.systemaudiodebug=abox
-
 ro.telephony.default_cdma_sub=0
 ro.vendor.epdg.support=true
 ro.vendor.gpu.dataspace=1
