@@ -258,6 +258,13 @@ PRODUCT_COPY_FILES += \
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 33
 
+# NFC
+PRODUCT_PACKAGES += \
+    com.android.nfc_extras \
+    NfcNci \
+    Tag \
+    android.hardware.nfc@1.2.vendor:64
+
 # OMX
 PRODUCT_PACKAGES += \
     android.hardware.media.omx@1.0-service \
