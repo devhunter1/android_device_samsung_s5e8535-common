@@ -281,10 +281,7 @@ PRODUCT_PACKAGES += \
     hostapd_cli \
     wpa_cli \
     libwifi-hal \
-    libkeystore-wifi-hidl \
-    android.hardware.wifi-service \
-    libkeystore-engine-wifi-hidl \
-    android.system.keystore2-V1-ndk
+    android.hardware.wifi-service
     
     
 PRODUCT_COPY_FILES += \

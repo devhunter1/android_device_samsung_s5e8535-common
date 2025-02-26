@@ -211,6 +211,9 @@ vendor/etc/init/android.hardware.security.keymint-service.rc
 vendor/lib64/libskeymint10device.so
 vendor/lib64/libskeymint_cli.so
 vendor/lib64/vendor.samsung.hardware.keymint-V2-ndk.so
+vendor/lib64/android.system.keystore2-V1-ndk.so
+vendor/lib64/libkeystore-engine-wifi-hidl.so
+vendor/lib64/libkeystore-wifi-hidl.so
 
 # Sensors
 vendor/lib/sensors.grip.so
