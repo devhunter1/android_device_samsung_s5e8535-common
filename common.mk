@@ -22,7 +22,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 
 # API levels
 BOARD_SHIPPING_API_LEVEL := 33
-PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := true
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -299,10 +298,6 @@ PRODUCT_SOONG_NAMESPACES += \
 # Protobuf
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-3.9.1-vendorcompat
-	
-# VNDK API
-PRODUCT_TARGET_VNDK_VERSION := 33
-PRODUCT_EXTRA_VNDK_VERSIONS := 33
 	
 
 # Inherit the proprietary files
