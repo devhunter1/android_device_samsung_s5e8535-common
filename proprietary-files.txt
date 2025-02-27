@@ -206,6 +206,15 @@ vendor/lib64/vendor.samsung.hardware.radio.messaging-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.radio.sim-V1-ndk.so
 
 # Security
+vendor/lib64/libkeymaster4_1support.so;MODULE_SUFFIX=_vendor
+vendor/lib64/android.hardware.keymaster@3.0.so;MODULE_SUFFIX=_vendor
+vendor/lib64/android.hardware.keymaster@4.0.so;MODULE_SUFFIX=_vendor
+vendor/lib64/android.hardware.keymaster@4.1.so;MODULE_SUFFIX=_vendor
+vendor/lib64/libkeymaster4support.so;MODULE_SUFFIX=_vendor
+vendor/lib64/libkeymaster_messages.so;MODULE_SUFFIX=_vendor
+vendor/lib64/libkeymaster_portable.so;MODULE_SUFFIX=_vendor
+vendor/lib64/android.hardware.security.keymint-V1-ndk.so;MODULE_SUFFIX=_vendor
+vendor/lib64/libpuresoftkeymasterdevice.so;MODULE_SUFFIX=_vendor
 vendor/bin/hw/android.hardware.security.keymint-service
 vendor/etc/init/android.hardware.security.keymint-service.rc
 vendor/lib64/libskeymint10device.so
