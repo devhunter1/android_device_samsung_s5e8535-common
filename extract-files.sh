@@ -71,6 +71,7 @@ function blob_fixup() {
         vendor/bin/hw/android.hardware.security.keymint-service|vendor/lib*/libskeymint*.so)
             grep -q "android.hardware.security.rkp-V3-ndk.so" "${2}" || "${PATCHELF}" --add-needed "android.hardware.security.rkp-V3-ndk.so" "${2}"
             "${PATCHELF}" --replace-needed libcrypto.so libcrypto-v33.so "${2}"
+            "${PATCHELF}" --replace-needed libcppbor_external.so libcppbor.so "${2}"
             ;;
     esac
 }
