@@ -259,6 +259,10 @@ PRODUCT_PACKAGES += \
     NfcNci \
     Tag \
     android.hardware.nfc@1.2.vendor:64
+    
+# VNDK
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v33/arm64/arch-arm64-armv8-a/shared/vndk-core/libcrypto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcrypto-v33.so
 
 # OMX
 PRODUCT_PACKAGES += \
