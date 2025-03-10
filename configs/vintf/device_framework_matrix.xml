@@ -45,36 +45,6 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl" override="true">
-        <name>vendor.samsung.hardware.security.drk</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>ISehDrk</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl" override="true">
-        <name>vendor.samsung.hardware.security.skpm</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISehSkpm</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.samsung.hardware.sysinput</name>
-        <transport>hwbinder</transport>
-        <version>1.3</version>
-        <interface>
-            <name>ISehSysInputCallback</name>
-        </interface>
-        <interface>
-            <name>ISehSysInputDev</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
     <hal format="hidl">
         <name>vendor.samsung_slsi.hardware.ExynosHWCServiceTW</name>
         <transport>hwbinder</transport>
@@ -109,60 +79,9 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <hal format="hidl">
-        <name>vendor.samsung_slsi.telephony.hardware.oemservice</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>IOemService</name>
-            <instance>dm0</instance>
-            <instance>dm1</instance>
-            <instance>pst</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.samsung.hardware.security.engmode</name>
-        <transport>hwbinder</transport>
-        <version>1.0</version>
-        <interface>
-            <name>ISehEngmode</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.samsung.hardware.security.vaultkeeper</name>
-        <transport>hwbinder</transport>
-        <version>2.0</version>
-        <interface>
-            <name>ISehVaultKeeper</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
     <hal override="true" format="hidl">
         <name>vendor.samsung_slsi.hardware.radio</name>
         <transport>hwbinder</transport>
-    </hal>
-    <hal format="aidl">
-        <name>vendor.samsung.hardware.snap</name>
-        <interface>
-            <name>ISehSnap</name>
-            <instance>default</instance>
-            <instance>secsnap</instance>
-        </interface>
-    </hal>
-    <hal format="aidl">
-        <name>vendor.samsung.hardware.security.fkeymaster</name>
-        <interface>
-            <name>ISehFkeymaster</name>
-            <instance>default</instance>
-        </interface>
-    </hal>
-    <hal format="aidl">
-        <name>vendor.samsung.hardware.security.widevine.keyprov</name>
-        <interface>
-            <name>ISehWidevineKeyProv</name>
-            <instance>default</instance>
-        </interface>
     </hal>
     <hal format="aidl">
         <name>vendor.samsung.hardware.radio.network</name>
@@ -212,24 +131,6 @@
             <name>ISehRadioMessaging</name>
             <instance>slot1</instance>
             <instance>slot2</instance>
-        </interface>
-    </hal>
-    <hal format="hidl">
-    <name>vendor.samsung.hardware.tlc.iccc</name>
-    <transport>hwbinder</transport>
-    <version>1.0</version>
-    <interface>
-        <name>ISehIccc</name>
-        <instance>default</instance>
-    </interface>
-    </hal>
-    <hal format="hidl">
-        <name>vendor.samsung.hardware.tlc.kg</name>
-        <transport>hwbinder</transport>
-        <version>1.1</version>
-        <interface>
-            <name>ISehKg</name>
-            <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl">
