@@ -4,6 +4,20 @@ aaudio.mmap_exclusive_policy=2
 aaudio.mmap_policy=2
 audio.offload.min.duration.secs=30
 
+## Bluetooth profiles
+bluetooth.profile.asha.central.enabled=true
+bluetooth.profile.a2dp.source.enabled=true
+bluetooth.profile.avrcp.target.enabled=true
+bluetooth.profile.gatt.enabled=true
+bluetooth.profile.hfp.ag.enabled=true
+bluetooth.profile.hid.device.enabled=true
+bluetooth.profile.hid.host.enabled=true
+bluetooth.profile.map.server.enabled=true
+bluetooth.profile.opp.enabled=true
+bluetooth.profile.pan.nap.enabled=true
+bluetooth.profile.pan.panu.enabled=true
+bluetooth.profile.pbap.server.enabled=true
+
 ## Codec
 debug.c2.use_dmabufheaps=1
 debug.stagefright.c2-poolmask=458752
@@ -66,31 +80,19 @@ ro.soc.model=s5e8535
 ro.hardware.egl=mali
 ro.hardware.vulkan=mali
 
-## Security
-ro.hardware.keystore=mdfpp
-ro.hardware.keystore_desede=true
-ro.security.cass.feature=1
-ro.security.keystore.keytype=gak,rkp
-ro.security.vpnpp.release=2.0
-ro.security.vpnpp.ver=2.4
-security.ADP.policy_version=00000000
-security.ADP.version=0
-security.ASKS.policy_version=00000000
-security.ASKS.rufs_enable=true
-security.ASKS.time_value=00000000
-security.ASKS.version=0
-security.securehw.available=false
-security.securenvm.available=false
-
 ## IncrementalFS
 ro.incremental.enable=yes
+
+## Power HAL
+vendor.powerhal.disp.idle_support=false
 
 ## Crypto
 ro.crypto.volume.options=aes-256-xts:aes-256-cts:v2
 ro.crypto.dm_default_key.options_format.version=2
+ro.crypto.volume.metadata.method=dm-default-key
+
 # Call deleteAllKeys if vold detects a factory reset
 ro.crypto.metadata_init_delete_all_keys.enabled=true
-ro.crypto.volume.metadata.method=dm-default-key
 
 ## RIL
 ro.radio.noril=no
@@ -98,30 +100,12 @@ ro.radio.noril=no
 ## Netflix
 ro.netflix.bsp_rev=EXYNOS1330-36497-1
 
-## Miscellaneous
-persist.sys.dalvik.vm.lib.2=libart.so
-persist.sys.fuse.bpf.override=false
-persist.sys.fuse.passthrough.enable=true
-persist.sys.sf.color_saturation=1.0
-persist.vendor.config.dm.autostart=0
-persist.vendor.sys.dm.zip=0
-persist.vendor.wlbtlog.maxfiles=5
-persist.vendor.wlbtlog.maxfilesize=50
-dev.usbsetting.embedded=on
-ro.sys.kernelmemory.nandswap.expand_action=true
-ro.sys.kernelmemory.nandswap.prefetch_action=true
-ro.sys.kernelmemory.nandswap.slot_count_map=5,6,8,8,12
-ro.sys.kernelmemory.nandswap.writeback_on_bg=true
-ro.carrier=unknown
-ro.config.systemaudiodebug=abox
-ro.telephony.default_cdma_sub=0
-ro.vendor.epdg.support=true
-ro.vendor.gpu.dataspace=1
-ro.vendor.qb.id=87014159
-ro.vendor.sec.radio.def_network=9
-sys.config.activelaunch_enable=true
-sys.config.hardcoder.enable=false
-sys.config.ibs.enable=false
-sys.perf.hmp=6:2
-vendor.hwc.exynos.vsync_mode=0
-wifi.interface=wlan0
+## Samsung specific
+ro.product_ship=true
+# Set csc support in OMX
+# If not set or set to 0, OMX will only use BT.601 colorspace.
+ro.vendor.cscsupported=1
+
+## Wi-Fi
+wifi.direct.interface=p2p0
+ro.boot.wificountrycode=00
