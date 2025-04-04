@@ -138,7 +138,6 @@ $(call soong_config_set,samsungUsbGadgetVars,gadget_name,13200000.dwc3)
 
 # Properties
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
-TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/configs/init/etc/fstab.s5e8535
