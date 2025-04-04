@@ -11,20 +11,6 @@ cc_library_shared {
 }
 
 cc_library_shared {
-    name: "libshim_crypto",
-    enabled: false,
-    target: {
-        android_arm64: {
-            enabled: true,
-        },
-    },
-    srcs: ["libcrypto/crypto.c"],
-    compile_multilib: "64",
-    shared_libs: ["libcrypto-tm"],
-    vendor: true,
-}
-
-cc_library_shared {
     name: "libshim_sensorndkbridge",
     srcs: ["sensorndkbridge/ASensorManager.cpp"],
     shared_libs: [

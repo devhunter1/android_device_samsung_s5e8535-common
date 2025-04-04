@@ -41,10 +41,8 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib64/libskeymint_cli.so',
     ): blob_fixup()
         .add_needed('android.hardware.security.rkp-V3-ndk.so')
-        .replace_needed('libcrypto.so', 'libcrypto-tm.so')
-        .replace_needed('libcppbor_external.so', 'libcppbor.so')
-        .add_needed('libshim_crypto.so')
-        .add_needed('libssl-tm.so'),
+        .replace_needed('libcrypto.so', 'libcrypto-v33.so')
+        .replace_needed('libcppbor_external.so', 'libcppbor.so'),
     'vendor/etc/init/android.hardware.security.keymint-service.rc': blob_fixup()
         .regex_replace('android.hardware.security.keymint-service', 'android.hardware.security.keymint-service.samsung'),
     'vendor/lib64/libwvaidl.so': blob_fixup()
