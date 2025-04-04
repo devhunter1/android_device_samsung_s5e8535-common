@@ -13,8 +13,3 @@ soong_namespace {
         "hardware/lineage/interfaces",
     ],
 }
-
-hidl_package_root {
-    name: "vendor.samsung_slsi.hardware.epic",
-    path: "device/samsung/universal8535-common/epic",
-}
