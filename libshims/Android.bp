@@ -5,12 +5,6 @@
 //
 
 cc_library_shared {
-    name: "libhypervintf",
-    srcs: ["libhypervintf/libhypervintf.cpp"],
-    vendor: true,
-}
-
-cc_library_shared {
     name: "libshim_sensorndkbridge",
     srcs: ["sensorndkbridge/ASensorManager.cpp"],
     shared_libs: [
