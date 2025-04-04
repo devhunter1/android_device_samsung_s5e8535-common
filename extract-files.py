@@ -74,6 +74,11 @@ blob_fixups: blob_fixups_user_type = {
    ): blob_fixup()
         .replace_needed('libaudioroute.so', 'libaudioroute_vendor.so')
         .replace_needed('libtinyalsa.so', 'libtinyalsa_vendor.so'),
+   (
+       'vendor/lib64/hw/audio.primary.s5e8535.so',
+       'vendor/lib/hw/audio.primary.s5e8535.so',
+   ): blob_fixup()
+        .replace_needed('libaudioroute.so', 'libaudioroute_vendor.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
