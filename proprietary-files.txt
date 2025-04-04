@@ -191,6 +191,16 @@ vendor/etc/seccomp_policy/codec2.vendor.base.policy
 vendor/etc/seccomp_policy/codec2.vendor.ext.policy
 vendor/etc/seccomp_policy/mediaextractor_sec.policy
 
+# Software Media codecs
+vendor/bin/hw/samsung.software.media.c2@1.0-service
+vendor/etc/init/samsung.software.media.c2@1.0-service.rc
+vendor/lib64/libSecC2ComponentStore.so
+vendor/lib/libstagefright_foundation_vendor.so
+vendor/lib64/libstagefright_foundation_vendor.so
+vendor/etc/seccomp_policy/samsung.software.media.c2-base-policy
+vendor/etc/seccomp_policy/samsung.software.media.c2-ext-policy
+vendor/etc/vintf/manifest/sec_c2_manifest_default0_1_2.xml
+
 # TEE (TEEgris)
 vendor/lib/libteecl.so
 vendor/lib64/libteecl.so
