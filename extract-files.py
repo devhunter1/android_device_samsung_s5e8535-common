@@ -77,6 +77,8 @@ blob_fixups: blob_fixups_user_type = {
        'vendor/lib/hw/audio.primary.s5e8535.so',
    ): blob_fixup()
         .replace_needed('libaudioroute.so', 'libaudioroute_vendor.so'),
+    'vendor/bin/hw/samsung.hardware.media.c2@1.2-service': blob_fixup()
+        .replace_needed('libutils.so', 'libutils-v33.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
