@@ -83,6 +83,9 @@ ro.hardware.vulkan=mali
 ## IncrementalFS
 ro.incremental.enable=yes
 
+# Dex2oat
+dalvik.vm.dex2oat64.enabled=true
+
 ## Power HAL
 vendor.powerhal.disp.idle_support=false
 
