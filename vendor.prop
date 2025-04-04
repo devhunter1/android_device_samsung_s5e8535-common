@@ -40,6 +40,7 @@ ro.hw.use_virtual_display=1
 ro.hw.wfd_use_c2_encoder=1
 ro.hw.wfd_use_single_plane_in_drm=0
 ro.opengles.version=196610
+ro.vendor.ddk.set.afbc=1
 
 ## DRM
 drm.service.enabled=true
