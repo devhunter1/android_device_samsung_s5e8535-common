@@ -79,6 +79,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libaudioroute.so', 'libaudioroute_vendor.so'),
     'vendor/bin/hw/samsung.hardware.media.c2@1.2-service': blob_fixup()
         .replace_needed('libutils.so', 'libutils-v33.so'),
+    'vendor/lib64/libsamsungcamerahal.so': blob_fixup()
+        .sig_replace('10 8A', 'C0 8A'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
