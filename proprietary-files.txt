@@ -84,6 +84,7 @@ vendor/lib64/libsecaudiocoreutils.so
 
 # Camera
 vendor/bin/hw/vendor.samsung.hardware.camera.provider-service_64
+vendor/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc
 vendor/lib64/hw/camera.s5e8535.so
 vendor/lib64/hw/camera.unihal.default.so
 
