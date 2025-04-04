@@ -1,0 +1,75 @@
+## Data Files
+/data/vendor/camera(/.*)?                    u:object_r:camera_vendor_data_file:s0
+/data/vendor/media(/.*)?                     u:object_r:media_vendor_data_file:s0
+/data/vendor/mediadrm(/.*)?                  u:object_r:mediadrm_vendor_data_file:s0
+/data/camera(/.*)?                           u:object_r:camera_data_file:s0
+
+## Devices
+# Bluetooth
+/dev/scsc_h4_0                               u:object_r:bt_device:s0
+
+# Camera
+/dev/m2m1shot_scaler0                        u:object_r:m2m1shot_device:s0
+
+# GPS
+/dev/gnss_ipc                                u:object_r:gnss_device:s0
+
+# Graphics
+/dev/mali[0-9]                               u:object_r:gpu_device:s0
+/dev/g2d                                     u:object_r:graphics_device:s0
+
+# Secmem
+/dev/s5p-smem                                u:object_r:secmem_device:s0
+
+# ZRAM
+/dev/block/zram0                             u:object_r:swap_block_device:s0
+
+## EFS
+/efs/FactoryApp(/.*)?                        u:object_r:app_efs_file:s0
+/efs/TEE(/.*)?                               u:object_r:prov_efs_file:s0
+/efs/biometrics(/.*)?                        u:object_r:sec_efs_file:s0
+/efs/cpdebug(/.*)?                           u:object_r:cpdebug_efs_file:s0
+/efs/cirrus(/.*)?                            u:object_r:sec_efs_file:s0
+/efs/dsms(/.*)?                              u:object_r:dsms_efs_file:s0
+/efs/gatekeeper(/.*)?                        u:object_r:gatekeeper_efs_file:s0
+/efs/knoxai(/.*)?                            u:object_r:knoxai_efs_file:s0
+/efs/lpm(/.*)?                               u:object_r:sec_efs_file:s0
+/efs/mb_po(/.*)?                             u:object_r:mb_po_efs_file:s0
+/efs/pdp_bkup(/.*)?                          u:object_r:pdp_efs_file:s0
+/efs/recovery(/.*)?                          u:object_r:sec_efs_file:s0
+/efs/sec_efs(/.*)?                           u:object_r:sec_efs_file:s0
+/efs/sec_efs/kpm(/.*)?                       u:object_r:kpm_efs_file:s0
+/efs/ssm(/.*)?                               u:object_r:ssm_efs_file:s0
+/efs/tas25xx(/.*)?                           u:object_r:sec_efs_file:s0
+/efs/usb_hw_param(/.*)?                      u:object_r:sec_efs_file:s0
+/efs/wv.keys                                 u:object_r:sec_efs_file:s0
+
+## Sysfs
+# Block
+/sys/devices/platform/(.*)/block/sda/queue/discard_max_bytes  u:object_r:sysfs_block_writable:s0
+/sys/devices/platform/(.*)/block/sda/queue/read_ahead_kb      u:object_r:sysfs_block_writable:s0
+/sys/devices/platform/(.*)/block/mmcblk0/mmcblk0p[0-9]+/start u:object_r:sysfs_block:s0
+
+# Camera
+/sys/devices/virtual/camera/rear/fw_update                    u:object_r:sysfs_camera_writable:s0
+/sys/devices/virtual/camera/rear/ssrm_camera_info             u:object_r:sysfs_camera_writable:s0
+/sys/devices/virtual/camera(/.*)                              u:object_r:sysfs_camera:s0
+
+# Net
+/sys/devices/platform/119c0000.scsc_wifibt/net(/.*)/mtu       u:object_r:sysfs_net_mtu_writable:s0
+/sys/devices/virtual/net(/.*)/mtu                             u:object_r:sysfs_net_mtu_writable:s0
+
+# Sensors
+/sys/devices/platform/shub/iio:device[0-9]*(/.*)               u:object_r:sysfs_iio:s0
+/sys/devices/platform/shub/iio:device[0-9]*/buffer/enable      u:object_r:sysfs_sensors_writable:s0
+/sys/devices/platform/shub/iio:device[0-9]*/buffer/length      u:object_r:sysfs_sensors_writable:s0
+
+# GPS
+/sys/devices/soc0/machine                                     u:object_r:sysfs_sec_gps:s0
+/sys/devices/soc0/revision                                    u:object_r:sysfs_sec_gps:s0
+
+# Wakeup
+/sys/devices/platform/(.*)/wakeup[0-9]*(/.*)?                 u:object_r:sysfs_wakeup:s0
+
+## Vendor
+/(vendor|system/vendor)/bin/hw/gps.sh        u:object_r:gpsd_exec:s0
