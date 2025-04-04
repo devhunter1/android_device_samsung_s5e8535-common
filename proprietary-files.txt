@@ -44,6 +44,8 @@ vendor/etc/SoundBoosterParam.txt
 # VNDK
 vendor/lib64/vndk/libaudioroute.so:vendor/lib64/libaudioroute_vendor.so;FIX_SONAME
 vendor/lib/vndk/libaudioroute.so:vendor/lib/libaudioroute_vendor.so;FIX_SONAME
+vendor/lib64/vndk/libtinyalsa.so:vendor/lib64/libtinyalsa_vendor.so;FIX_SONAME
+vendor/lib/vndk/libtinyalsa.so:vendor/lib/libtinyalsa_vendor.so;FIX_SONAME
 
 # Audio calibration
 vendor/lib/hw/audio.sec_primary.default.so

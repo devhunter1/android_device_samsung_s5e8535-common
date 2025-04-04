@@ -72,7 +72,8 @@ blob_fixups: blob_fixups_user_type = {
        'vendor/lib/libaudioproxy2.so',
        'vendor/lib64/libaudioproxy2.so',
    ): blob_fixup()
-        .replace_needed('libaudioroute.so', 'libaudioroute_vendor.so'),
+        .replace_needed('libaudioroute.so', 'libaudioroute_vendor.so')
+        .replace_needed('libtinyalsa.so', 'libtinyalsa_vendor.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
