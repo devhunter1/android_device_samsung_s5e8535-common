@@ -213,6 +213,11 @@ PRODUCT_PACKAGES += \
     libcrypto-tm \
     libshim_crypto:64 \
     libssl-tm
+    
+PRODUCT_PACKAGES += \
+    libkeymaster4_1support.vendor:64 \
+    libkeymaster_portable.vendor:64 \
+    libpuresoftkeymasterdevice.vendor:64
 
 # Overlays
 PRODUCT_PACKAGES += \
