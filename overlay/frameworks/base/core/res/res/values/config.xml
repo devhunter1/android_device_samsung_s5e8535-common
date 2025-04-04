@@ -33,16 +33,6 @@
         <item>250</item>
     </integer-array>
     
-    <!-- Default list of files pinned by the Pinner Service -->
-    <string-array translatable="false" name="config_defaultPinnerServiceFiles">
-        <item>"/system/framework/framework.jar"</item>
-        <item>"/system/framework/services.jar"</item>
-        <item>"/apex/com.android.art/javalib/core-oj.jar"</item>
-        <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
-        <item>"/system_ext/priv-app/SystemUI/SystemUI.apk"</item>
-        <item>"/system/bin/surfaceflinger"</item>
-    </string-array>
-    
     <!-- Flag specifying whether VoLTE should be available for carrier: independent of
          carrier provisioning. If false: hard disabled. If true: then depends on carrier
          provisioning, availability etc -->
@@ -116,7 +106,7 @@
 
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
-    <string translatable="false" name="config_mainBuiltInDisplayCutout">M 0,0 H 55 V 38.85714285714286 H 0 V 0 Z @dp @left</string>
+    <string translatable="false" name="config_mainBuiltInDisplayCutout">M 0,0 H -25.6‬ V 22.75555555555556 H 25.6‬ V 0 H 0 Z @dp</string>
      
     <!-- User activity timeout: Minimum screen off timeout in milliseconds.
 
