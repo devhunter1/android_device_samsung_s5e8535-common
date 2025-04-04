@@ -7,7 +7,6 @@
 COMMON_PATH := device/samsung/universal8535-common
 
 BUILD_BROKEN_DUP_RULES := true
-BUILD_BROKEN_MISSING_REQUIRED_MODULES := true
 
 # A/B
 AB_OTA_UPDATER := false
