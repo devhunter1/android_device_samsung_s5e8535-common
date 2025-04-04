@@ -82,7 +82,7 @@ vendor/lib64/vendor.samsung.hardware.bluetooth@2.0.so
 # Camera
 vendor/bin/hw/vendor.samsung.hardware.camera.provider-service_64
 vendor/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc
-vendor/lib/libacryl.so
+
 vendor/lib/libarcsoft_super_night_raw.so
 vendor/lib/libexynosgraphicbuffer.so
 vendor/lib/libexynosutils.so
@@ -96,7 +96,6 @@ vendor/lib/libvra.so
 vendor/lib64/hw/camera.s5e8535.so
 vendor/lib64/hw/camera.unihal.default.so
 vendor/lib64/libIRTA.so
-vendor/lib64/libacryl.so
 vendor/lib64/libarcsoft_super_night_raw.so
 vendor/lib64/libcsc.so
 vendor/lib64/libdlrmsc.so
@@ -129,22 +128,26 @@ vendor/etc/init/android.hardware.graphics.allocator@4.0-service.rc
 vendor/lib/egl/libGLES_mali.so;SYMLINK=vendor/lib/libOpenCL.so;SYMLINK=vendor/lib/libOpenCL.so.1;SYMLINK=vendor/lib/libOpenCL.so.1.1;SYMLINK=vendor/lib/hw/vulkan.universal8535.so
 vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl.so
 vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl.so
-vendor/lib/hw/hwcomposer.s5e8535.so
 vendor/lib/hw/vulkan.mali.so
 vendor/lib/arm.graphics-V1-ndk.so
-vendor/lib/libExynosHWCService.so
 vendor/lib/libdrmresource.so
-vendor/lib/libexynosdisplay.so
 vendor/lib64/egl/libGLES_mali.so;SYMLINK=vendor/lib64/libOpenCL.so;SYMLINK=vendor/lib64/libOpenCL.so.1;SYMLINK=vendor/lib64/libOpenCL.so.1.1;SYMLINK=vendor/lib64/hw/vulkan.universal8535.so
 vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl.so
 vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl.so
-vendor/lib64/hw/hwcomposer.s5e8535.so
 vendor/lib64/hw/vulkan.mali.so
 vendor/lib64/arm.graphics-V1-ndk.so
-vendor/lib64/libExynosHWCService.so
 vendor/lib64/libdrmresource.so
+
+# HWC
+vendor/lib/hw/hwcomposer.s5e8535.so
+vendor/lib64/hw/hwcomposer.s5e8535.so
+vendor/lib/libExynosHWCService.so
+vendor/lib64/libExynosHWCService.so
+vendor/lib/libexynosdisplay.so
 vendor/lib64/libexynosdisplay.so
-vendor/lib64/libhwc2onfbadapter.so
+vendor/lib64/libacryl.so
+vendor/lib/libacryl.so
+
 
 # DRM
 vendor/bin/hw/android.hardware.drm-service.widevine
@@ -240,7 +243,6 @@ vendor/bin/hw/samsung.hardware.media.c2@1.2-service
 vendor/bin/hw/samsung.software.media.c2@1.0-service
 vendor/bin/hw/vendor.samsung.hardware.gnss-service
 vendor/bin/hw/vendor.samsung.hardware.thermal@1.0-service
-vendor/bin/hw/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0-service
 vendor/bin/cass
 vendor/bin/cbd
 vendor/bin/epic
@@ -264,7 +266,6 @@ vendor/etc/init/vaultkeeper_common.rc
 vendor/etc/init/vendor.samsung.hardware.gnss-service.rc
 vendor/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc
 vendor/etc/init/vendor.samsung.rilchip.slsi.rc
-vendor/etc/init/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0-service.rc
 vendor/etc/init/wifi.rc
 vendor/etc/init/wifi_slsi.rc
 vendor/etc/locale/plmn_delta_eng.bin
@@ -571,7 +572,6 @@ vendor/lib64/vendor.samsung.hardware.audio@1.0.so
 vendor/lib64/vendor.samsung.hardware.bluetooth.audio-impl.so
 vendor/lib64/vendor.samsung.hardware.gnss-V3-ndk.so
 vendor/lib64/vendor.samsung.hardware.radio.channel-V1-ndk.so
-vendor/lib64/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0.so
 vendor/saiv/image_understanding/db/aig_classifier/aig_classifier_cnn.tf
 vendor/saiv/image_understanding/db/aig_detector/aig_detector_cnn.tflite
 vendor/saiv/image_understanding/db/sce_detector/sce_detector_cnn.tflite
