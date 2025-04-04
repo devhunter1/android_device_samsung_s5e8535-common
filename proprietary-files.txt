@@ -293,12 +293,6 @@ vendor/lib64/vendor.samsung.frameworks.security.dsms-V1-ndk.so
 vendor/lib64/libstork_shared.so
 vendor/etc/init/vaultkeeper_common.rc
 
-# Thermal
-vendor/bin/hw/vendor.samsung.hardware.thermal@1.0-service
-vendor/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc
-vendor/etc/btcon.json
-vendor/etc/mercury.json
-
 # fingerprint
 vendor/etc/init/init.fingerprint.rc
 vendor/lib/libsfp_sensor.so
