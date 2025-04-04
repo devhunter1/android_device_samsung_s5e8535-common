@@ -68,6 +68,11 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libshim_sensorndkbridge.so'),
     'vendor/lib64/hw/camera.s5e8535.so': blob_fixup()
         .add_needed('libui_shim.so'),
+   (
+       'vendor/lib/libaudioproxy2.so',
+       'vendor/lib64/libaudioproxy2.so',
+   ): blob_fixup()
+        .replace_needed('libaudioroute.so', 'libaudioroute_vendor.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
