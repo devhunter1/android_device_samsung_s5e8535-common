@@ -1,0 +1,1 @@
+allow cbd self:capability2 block_suspend;
