@@ -84,6 +84,13 @@ security.securenvm.available=false
 ## IncrementalFS
 ro.incremental.enable=yes
 
+## Crypto
+ro.crypto.volume.options=aes-256-xts:aes-256-cts:v2
+ro.crypto.dm_default_key.options_format.version=2
+# Call deleteAllKeys if vold detects a factory reset
+ro.crypto.metadata_init_delete_all_keys.enabled=true
+ro.crypto.volume.metadata.method=dm-default-key
+
 ## RIL
 ro.radio.noril=no
 
