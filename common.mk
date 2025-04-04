@@ -137,6 +137,10 @@ PRODUCT_PACKAGES += \
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
+    
+# Display
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.composer@2.4-service
    
 # Power
 PRODUCT_PACKAGES += \
