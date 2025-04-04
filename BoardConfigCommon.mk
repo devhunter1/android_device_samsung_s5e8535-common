@@ -175,7 +175,6 @@ VENDOR_SECURITY_PATCH := 2025-02-01
 BOARD_SEPOLICY_TEE_FLAVOR := teegris
 include device/lineage/sepolicy/exynos/sepolicy.mk
 include device/samsung_slsi/sepolicy/sepolicy.mk
-include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 
 
 # Vendor_boot
