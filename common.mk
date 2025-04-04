@@ -25,7 +25,7 @@ BOARD_SHIPPING_API_LEVEL := 33
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio@7.0-impl_universal8535 \
+    android.hardware.audio@7.1-impl_universal8535 \
     android.hardware.audio.service \
     android.hardware.audio.effect@7.0-impl \
     audio.bluetooth.default \
