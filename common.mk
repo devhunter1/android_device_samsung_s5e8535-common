@@ -105,6 +105,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     SamsungDAP
     
+# Touch
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.samsung
+    
 # VIB
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.samsung
