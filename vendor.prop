@@ -20,6 +20,7 @@ bluetooth.profile.pbap.server.enabled=true
 
 ## Codec
 debug.stagefright.c2inputsurface=-1
+vendor.debug.c2.sbwc.enable=true
 
 ## Display
 debug.sf.auto_latch_unsignaled=0
