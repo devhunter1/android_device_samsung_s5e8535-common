@@ -81,6 +81,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libutils.so', 'libutils-v33.so'),
     'vendor/lib64/libsamsungcamerahal.so': blob_fixup()
         .sig_replace('10 8A', 'C0 8A'),
+    'vendor/lib64/libSecC2ComponentStore.so': blob_fixup()
+        .replace_needed('libcodec2_vndk.so', 'libcodec2_vendor.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
