@@ -206,7 +206,7 @@ vendor/lib64/vendor.samsung.hardware.radio.messaging-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.radio.sim-V1-ndk.so
 
 # Security
-vendor/bin/hw/android.hardware.security.keymint-service
+vendor/bin/hw/android.hardware.security.keymint-service:vendor/bin/hw/android.hardware.security.keymint-service.samsung
 vendor/etc/init/android.hardware.security.keymint-service.rc
 vendor/lib64/libskeymint10device.so
 vendor/lib64/libskeymint_cli.so

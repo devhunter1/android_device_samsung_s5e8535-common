@@ -45,6 +45,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libcppbor_external.so', 'libcppbor.so')
         .add_needed('libshim_crypto.so')
         .add_needed('libssl-tm.so'),
+    'vendor/etc/init/android.hardware.security.keymint-service.rc': blob_fixup()
+        .regex_replace('android.hardware.security.keymint-service', 'android.hardware.security.keymint-service.samsung'),
     'vendor/lib64/libwvaidl.so': blob_fixup()
         .replace_needed('libprotobuf-cpp-lite-3.9.1.so', 'libprotobuf-cpp-full-3.9.1.so'),
     'vendor/lib64/libsec-ril.so': blob_fixup()

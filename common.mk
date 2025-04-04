@@ -32,9 +32,6 @@ PRODUCT_PACKAGES += \
     audio.primary.default \
     audio.r_submix.default \
     audio.usb.default \
-    libaudioroute \
-    libtinycompress \
-    libaudiofoundation.vendor \
     android.hardware.soundtrigger@2.0-impl
     
 PRODUCT_COPY_FILES += \
@@ -85,9 +82,6 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.2.vendor:64
-    
-PRODUCT_PACKAGES += \
     sehradiomanager \
     secril_config_svc
 
@@ -132,12 +126,7 @@ PRODUCT_PACKAGES += \
     
 # Display
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.4-service \
-    libdrm.vendor:64
-    
-# Thermal
-PRODUCT_PACKAGES += \
-    android.hardware.thermal@2.0.vendor
+    android.hardware.graphics.composer@2.4-service
    
 # Power
 PRODUCT_PACKAGES += \
@@ -181,23 +170,10 @@ PRODUCT_COPY_FILES += \
      $(COMMON_PATH)/configs/permissions/android.software.vulkan.deqp.level.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml \
      $(COMMON_PATH)/configs/permissions/vendor.samsung.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/vendor.samsung.hardware.telephony.gsm.xml
     
-    
-# HIDL
-PRODUCT_PACKAGES += \
-    libhidltransport \
-    libhardware \
-    libhwbinder
-    
 # Epic
 PRODUCT_PACKAGES += \
     vendor.samsung_slsi.hardware.epic@1.0-impl \
-    libepicoperator \
     vendor.samsung_slsi.hardware.epic@1.0-service
-    
-# GNSS
-PRODUCT_PACKAGES += \
-    android.frameworks.sensorservice@1.0.vendor:64 \
-    android.hardware.gnss@2.1.vendor:64
     
 # Health
 PRODUCT_PACKAGES += \
@@ -208,16 +184,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml \
     $(COMMON_PATH)/configs/permissions/android.hardware.hardware_keystore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.hardware_keystore.xml
-    
-PRODUCT_PACKAGES += \
-    libcrypto-tm \
-    libshim_crypto:64 \
-    libssl-tm
-    
-PRODUCT_PACKAGES += \
-    libkeymaster4_1support.vendor:64 \
-    libkeymaster_portable.vendor:64 \
-    libpuresoftkeymasterdevice.vendor:64
 
 # Overlays
 PRODUCT_PACKAGES += \
@@ -265,13 +231,11 @@ PRODUCT_SHIPPING_API_LEVEL := 33
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
     NfcNci \
-    Tag \
-    android.hardware.nfc@1.2.vendor:64
+    Tag
 
 # OMX
 PRODUCT_PACKAGES += \
-    android.hardware.media.omx@1.0-service \
-    libepicoperator
+    android.hardware.media.omx@1.0-service
     
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -283,7 +247,6 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     hostapd_cli \
     wpa_cli \
-    libwifi-hal \
     android.hardware.wifi-service
     
     
@@ -302,10 +265,6 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/samsung \
     hardware/lineage/interfaces/power-libperfmgr \
     hardware/lineage/interfaces
-    
-# Protobuf
-PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full-3.9.1-vendorcompat
 	
 
 # Inherit the proprietary files
