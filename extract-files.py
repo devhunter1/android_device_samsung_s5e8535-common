@@ -83,6 +83,8 @@ blob_fixups: blob_fixups_user_type = {
         .sig_replace('10 8A', 'C0 8A'),
     'vendor/lib64/libSecC2ComponentStore.so': blob_fixup()
         .replace_needed('libcodec2_vndk.so', 'libcodec2_vendor.so'),
+    'vendor/lib64/libcodec2_vendor.so': blob_fixup()
+        .add_needed('libui_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
