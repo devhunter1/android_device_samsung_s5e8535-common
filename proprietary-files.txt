@@ -220,10 +220,6 @@ vendor/lib64/sensors.grip.so
 vendor/lib64/sensors.inputvirtual.so
 vendor/lib64/sensors.sensorhub.so
 
-# Wi-Fi
-vendor/lib64/vendor.samsung.hardware.wifi.hostapd-V1-ndk.so
-vendor/lib64/vendor.samsung.hardware.wifi.supplicant-V1-ndk.so
-
 # Wi-Fi configs
 vendor/etc/wifi/hydra_config.sdb
 vendor/etc/wifi/indoorchannel.info
@@ -244,7 +240,6 @@ vendor/bin/hw/samsung.hardware.media.c2@1.2-service
 vendor/bin/hw/samsung.software.media.c2@1.0-service
 vendor/bin/hw/vendor.samsung.hardware.gnss-service
 vendor/bin/hw/vendor.samsung.hardware.thermal@1.0-service
-vendor/bin/hw/vendor.samsung.hardware.wifi@2.0-service
 vendor/bin/hw/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0-service
 vendor/bin/cass
 vendor/bin/cbd
@@ -268,7 +263,6 @@ vendor/etc/init/teegris.rc
 vendor/etc/init/vaultkeeper_common.rc
 vendor/etc/init/vendor.samsung.hardware.gnss-service.rc
 vendor/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc
-vendor/etc/init/vendor.samsung.hardware.wifi@2.0-service.rc
 vendor/etc/init/vendor.samsung.rilchip.slsi.rc
 vendor/etc/init/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0-service.rc
 vendor/etc/init/wifi.rc
@@ -298,7 +292,6 @@ vendor/etc/str/str_preference_data.dat
 vendor/etc/vintf/manifest/bluetooth_audio.xml:vendor/etc/vintf/manifest/bluetooth_audio-vendor.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.radio.exclude.slsi.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.sehradio_manifest_2_33.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.wifi@2.0-service.xml
 vendor/etc/SoundBoosterParam.txt
 vendor/etc/audio_board_info.xml
 vendor/etc/btcon.json
@@ -578,10 +571,6 @@ vendor/lib64/vendor.samsung.hardware.audio@1.0.so
 vendor/lib64/vendor.samsung.hardware.bluetooth.audio-impl.so
 vendor/lib64/vendor.samsung.hardware.gnss-V3-ndk.so
 vendor/lib64/vendor.samsung.hardware.radio.channel-V1-ndk.so
-vendor/lib64/vendor.samsung.hardware.wifi@2.0.so
-vendor/lib64/vendor.samsung.hardware.wifi@2.1.so
-vendor/lib64/vendor.samsung.hardware.wifi@2.2.so
-vendor/lib64/vendor.samsung.hardware.wifi@2.3.so
 vendor/lib64/vendor.samsung_slsi.hardware.ExynosHWCServiceTW@1.0.so
 vendor/saiv/image_understanding/db/aig_classifier/aig_classifier_cnn.tf
 vendor/saiv/image_understanding/db/aig_detector/aig_detector_cnn.tflite
