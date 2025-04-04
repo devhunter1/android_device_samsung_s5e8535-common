@@ -304,8 +304,8 @@ vendor/lib/libsfp_teegw.so
 vendor/lib64/libsfp_teegw.so
 vendor/lib/vendor.samsung.hardware.biometrics.fingerprint-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.biometrics.fingerprint-V1-ndk.so
-vendor/lib/libsynaFpSensorTestNwd.so
-vendor/lib64/libsynaFpSensorTestNwd.so
+vendor/lib/libsynaFpSensorTestNwd.so;DISABLE_DEPS
+vendor/lib64/libsynaFpSensorTestNwd.so;DISABLE_DEPS
 vendor/lib/libegis_fp_normal_sensor_test.so
 vendor/lib64/libegis_fp_normal_sensor_test.so
 vendor/lib/libgf_in_system_lib.so
