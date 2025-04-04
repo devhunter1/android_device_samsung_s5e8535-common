@@ -19,7 +19,7 @@ vendor/lib/librecordalive.so
 vendor/lib/libsecaudioinfo.so
 vendor/lib/libsecaudiolevel.so
 vendor/lib/libsecnativefeature.so
-vendor/lib/libsecril-client.so
+vendor/lib/libsecril-client.so;MODULE_SUFFIX=_vendor
 vendor/lib/libsehbluetooth_audio_session_aidl.so
 vendor/lib/vendor.samsung.hardware.bluetooth.audio-V1-ndk.so
 vendor/lib64/hw/audio.primary.s5e8535.so
@@ -40,7 +40,7 @@ vendor/lib64/librecordalive.so
 vendor/lib64/libsecaudioinfo.so
 vendor/lib64/libsecaudiolevel.so
 vendor/lib64/libsecnativefeature.so
-vendor/lib64/libsecril-client.so
+vendor/lib64/libsecril-client.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libsehbluetooth_audio_session_aidl.so
 vendor/lib64/vendor.samsung.hardware.bluetooth.audio-V1-ndk.so
 
@@ -430,7 +430,7 @@ vendor/lib/libsnamrnb.so
 vendor/lib/libsnamrwb.so
 vendor/lib/libspeakercalibration.so
 vendor/lib/libsynaFpSensorTestNwd.so
-vendor/lib/libuuid.so
+vendor/lib/libuuid.so;MODULE_SUFFIX=_vendor
 vendor/lib/libvdis_interface.so
 vendor/lib/libvideobeauty.arcsoft.so
 vendor/lib/libvideobeauty_interface.so
@@ -558,7 +558,7 @@ vendor/lib64/libtlc_comm_iccc.so
 vendor/lib64/libtlc_direct_comm_iccc.so
 vendor/lib64/libtvm_runtime.so
 vendor/lib64/libtvm_wrapper.so
-vendor/lib64/libuuid.so
+vendor/lib64/libuuid.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libvdis_interface.so
 vendor/lib64/libvideobeauty.arcsoft.so
 vendor/lib64/libvideobeauty_interface.so
