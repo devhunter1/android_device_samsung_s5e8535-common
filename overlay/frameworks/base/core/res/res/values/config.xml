@@ -242,6 +242,9 @@
     <!-- If this is true, the screen will come on when you unplug usb/power/whatever. -->
     <bool name="config_unplugTurnsOnScreen">true</bool>
     
+    <!-- Whether the new Auto Selection Network UI should be shown -->
+    <bool name="config_enableNewAutoSelectNetworkUI">true</bool>
+    
     <!-- Flag indicating whether the current device is "voice capable".
          If true, this means that the device supports circuit-switched
          (i.e. voice) phone calls over the telephony network, and is
