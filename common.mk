@@ -57,7 +57,8 @@ PRODUCT_COPY_FILES += \
     
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb-service.samsung
+    android.hardware.usb-service.samsung \
+    android.hardware.usb.gadget-service.samsung
     
 # Lights
 PRODUCT_PACKAGES += \
