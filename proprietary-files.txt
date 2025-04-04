@@ -114,9 +114,7 @@ vendor/lib64/unihal_cutils.so
 vendor/lib64/unihal_android.so
 vendor/lib64/lib_profiler.so
 vendor/lib64/libsamsungcamerahal.so
-vendor/lib64/libmeminfo.so
 vendor/lib64/libsamsungcamerahalutils.so
-vendor/lib64/libgrallocusage.so
 vendor/lib64/vendor.samsung.hardware.camera.device-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.camera.provider-V1-ndk.so
 vendor/etc/init/camera.unihal.rc
@@ -160,8 +158,6 @@ vendor/bin/hw/samsung.hardware.media.c2@1.2-service
 vendor/etc/init/samsung.hardware.media.c2@1.2-service.rc
 vendor/lib/libExynosC2ComponentStore.so
 vendor/lib64/libExynosC2ComponentStore.so
-vendor/lib/libsfplugin_ccodec_utils.so
-vendor/lib64/libsfplugin_ccodec_utils.so
 vendor/lib/libexynosgraphicbuffer.so
 vendor/lib64/libexynosgraphicbuffer.so
 vendor/lib/libepicoperator.so
@@ -231,7 +227,6 @@ vendor/lib64/vendor.samsung.hardware.radio.messaging-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.radio.sim-V1-ndk.so
 vendor/lib/libsecril-client.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libsecril-client.so;MODULE_SUFFIX=_vendor
-vendor/lib64/librilutils.so
 vendor/lib/libsemnativecarrierfeature.so
 vendor/lib64/libsemnativecarrierfeature.so
 vendor/lib64/libSemDataProps.so
