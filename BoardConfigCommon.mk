@@ -137,7 +137,7 @@ $(call soong_config_set,samsungUsbGadgetVars,gadget_name,13200000.dwc3)
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
 
 # Recovery
-TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/configs/init/etc/fstab.s5e8535
+TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/configs/init/fstab.s5e8535
 BOARD_INCLUDE_RECOVERY_DTBO := true
 TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_USERIMAGES_USE_F2FS := true

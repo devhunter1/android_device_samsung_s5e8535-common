@@ -204,6 +204,7 @@ vendor/lib64/hw/gatekeeper.s5e8535.so
 
 # GNSS configs
 vendor/bin/hw/gpsd
+vendor/bin/hw/gps.sh
 vendor/bin/hw/vendor.samsung.hardware.gnss-service
 vendor/etc/gnss/ca.pem
 vendor/etc/gnss/deleteLogCommands
@@ -359,6 +360,3 @@ vendor/firmware/setfile_sc201_macro.bin
 vendor/firmware/txse1.bin
 vendor/firmware/txse2.bin
 vendor/firmware/volumemonitor.bin
-
-# ueventd
-vendor/etc/ueventd.rc
