@@ -23,3 +23,18 @@ cc_library_shared {
     shared_libs: ["libcrypto-tm"],
     vendor: true,
 }
+
+cc_library_shared {
+    name: "libshim_sensorndkbridge",
+    srcs: ["sensorndkbridge/ASensorManager.cpp"],
+    shared_libs: [
+        "libbase",
+        "libsensorndkbridge",
+        "libutils",
+    ],
+    include_dirs: [
+        "system/core/libutils/include",
+        "frameworks/hardware/interfaces/sensorservice/libsensorndkbridge",
+    ],
+    vendor: true,
+}

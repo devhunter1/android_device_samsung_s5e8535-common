@@ -62,7 +62,12 @@ blob_fixups: blob_fixups_user_type = {
        'vendor/lib64/libaudioparamupdate.so',
        'vendor/lib/libaudioparamupdate.so',
    ): blob_fixup()
-        .replace_needed('libaudioroute.so', 'libaudioroute_vendor.so')
+        .replace_needed('libaudioroute.so', 'libaudioroute_vendor.so'),
+    'vendor/lib64/unihal_android.so': blob_fixup()
+        .add_needed('libshim_sensorndkbridge.so')
+        .add_needed('libui_shim.so'),
+    'vendor/lib64/libsensorlistener.so': blob_fixup()
+        .add_needed('libshim_sensorndkbridge.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
