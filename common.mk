@@ -268,7 +268,8 @@ PRODUCT_SOONG_NAMESPACES += \
     $(COMMON_PATH) \
     hardware/samsung \
     hardware/lineage/interfaces/power-libperfmgr \
-    hardware/lineage/interfaces
+    hardware/lineage/interfaces \
+    hardware/lineage/compat
 	
 
 # Inherit the proprietary files
