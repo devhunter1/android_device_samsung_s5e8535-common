@@ -36,6 +36,9 @@ ro.vendor.ddk.set.afbc=1
 ## DRM
 drm.service.enabled=true
 
+# Filesystem
+fs_mgr.overlayfs.prefer_cache_backing_storage=true
+
 ## Verity
 ro.apk_verity.mode=2
 
