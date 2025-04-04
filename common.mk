@@ -100,6 +100,10 @@ PRODUCT_COPY_FILES += \
 # DOZE
 PRODUCT_PACKAGES += \
     SamsungDoze
+   
+# Dap 
+PRODUCT_PACKAGES += \
+    SamsungDAP
     
 # VIB
 PRODUCT_PACKAGES += \
