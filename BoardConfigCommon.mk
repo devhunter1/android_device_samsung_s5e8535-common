@@ -32,9 +32,6 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := generic
 
-# Audio
-$(call soong_config_set, android_hardware_audio, run_64bit, true)
-
 # APEX
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 

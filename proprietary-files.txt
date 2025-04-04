@@ -40,6 +40,7 @@ vendor/etc/mixer_gains.xml
 vendor/etc/mixer_paths.xml
 vendor/etc/sec_audio_volume_curve.xml
 vendor/etc/SoundBoosterParam.txt
+vendor/etc/usb_audio_policy_configuration.xml
 
 # VNDK
 vendor/lib64/vndk/libaudioroute.so:vendor/lib64/libaudioroute_vendor.so;FIX_SONAME

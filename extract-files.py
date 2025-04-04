@@ -47,8 +47,6 @@ blob_fixups: blob_fixups_user_type = {
         .regex_replace('android.hardware.security.keymint-service', 'android.hardware.security.keymint-service.samsung'),
     'vendor/lib64/libwvaidl.so': blob_fixup()
         .replace_needed('libprotobuf-cpp-lite-3.9.1.so', 'libprotobuf-cpp-full-3.9.1.so'),
-    'vendor/lib64/libsec-ril.so': blob_fixup()
-        .binary_regex_replace(b'ril.dds.call.ongoing', b'vendor.calls.slot_id'),
    (
        'vendor/lib/libexynosgraphicbuffer.so',
        'vendor/lib64/libexynosgraphicbuffer.so',
