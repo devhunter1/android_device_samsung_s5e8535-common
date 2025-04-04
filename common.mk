@@ -194,8 +194,6 @@ PRODUCT_COPY_FILES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    SystemUIOverlay_universal8535 \
-    FrameworksResOverlay_universal8535 \
     WifiOverlay
     
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
@@ -237,7 +235,6 @@ PRODUCT_SHIPPING_API_LEVEL := 33
 # NFC
 PRODUCT_PACKAGES += \
     com.android.nfc_extras \
-    NfcNci \
     Tag \
     android.hardware.nfc@1.2-service.samsung
     
@@ -269,7 +266,10 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/samsung \
     hardware/lineage/interfaces/power-libperfmgr \
     hardware/lineage/interfaces \
-    hardware/lineage/compat
+    hardware/lineage/compat \
+    hardware/samsung_slsi/libbt \
+    hardware/samsung_slsi/scsc_wifibt/wifi_hal \
+    hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib
 	
 
 # Inherit the proprietary files

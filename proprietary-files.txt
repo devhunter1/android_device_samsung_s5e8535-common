@@ -92,6 +92,8 @@ vendor/lib64/libexynosscaler.so
 vendor/lib64/libIRTA.so
 vendor/lib/libhwjpeg.so
 vendor/lib64/libhwjpeg.so
+vendor/lib/libgiantmscl.so
+vendor/lib64/libgiantmscl.so
 vendor/lib/libfloatingfeature.so
 vendor/lib64/libfloatingfeature.so
 vendor/lib64/libvpl.so
@@ -206,6 +208,8 @@ vendor/etc/init/init.gps.rc
 vendor/etc/init/vendor.samsung.hardware.gnss-service.rc
 vendor/lib/libwrappergps.so
 vendor/lib64/libwrappergps.so
+vendor/lib/vendor.samsung.hardware.gnss-V3-ndk.so
+vendor/lib64/vendor.samsung.hardware.gnss-V3-ndk.so
 
 # Media (Dolby)
 vendor/etc/dolby/dax-default.xml
