@@ -107,7 +107,11 @@ PRODUCT_PACKAGES += \
 # Touch
 PRODUCT_PACKAGES += \
     vendor.lineage.touch@1.0-service.samsung
-    
+
+# OTA
+AB_OTA_UPDATER := false
+PRODUCT_SOONG_NAMESPACES += bootable/deprecated-ota
+
 # VIB
 PRODUCT_PACKAGES += \
     android.hardware.vibrator-service.samsung
