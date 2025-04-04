@@ -55,8 +55,14 @@ blob_fixups: blob_fixups_user_type = {
        'vendor/lib/libexynosgraphicbuffer.so',
        'vendor/lib64/libexynosgraphicbuffer.so',
    ): blob_fixup()
-        .replace_needed('libui.so', 'libui_shim.so')
-  
+        .replace_needed('libui.so', 'libui_shim.so'),
+   (
+       'vendor/lib64/libaboxpcmdump.so',
+       'vendor/lib/libaboxpcmdump.so',
+       'vendor/lib64/libaudioparamupdate.so',
+       'vendor/lib/libaudioparamupdate.so',
+   ): blob_fixup()
+        .replace_needed('libaudioroute.so', 'libaudioroute_vendor.so')
 }  # fmt: skip
 
 module = ExtractUtilsModule(

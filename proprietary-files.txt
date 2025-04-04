@@ -41,6 +41,10 @@ vendor/etc/mixer_paths.xml
 vendor/etc/sec_audio_volume_curve.xml
 vendor/etc/SoundBoosterParam.txt
 
+# VNDK
+vendor/lib64/vndk/libaudioroute.so:vendor/lib64/libaudioroute_vendor.so;FIX_SONAME
+vendor/lib/vndk/libaudioroute.so:vendor/lib/libaudioroute_vendor.so;FIX_SONAME
+
 # Audio calibration
 vendor/lib/hw/audio.sec_primary.default.so
 vendor/lib64/hw/audio.sec_primary.default.so
