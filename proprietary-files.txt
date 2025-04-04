@@ -308,8 +308,6 @@ vendor/etc/init/wifi_slsi.rc
 # Vaultkeeperd
 vendor/bin/vaultkeeperd
 vendor/lib64/libvkservice.so
-vendor/lib64/libdsms_vendor.so
-vendor/lib64/vendor.samsung.frameworks.security.dsms-V1-ndk.so
 vendor/lib64/libstork_shared.so
 vendor/etc/init/vaultkeeper_common.rc
 
