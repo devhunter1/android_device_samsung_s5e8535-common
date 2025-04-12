@@ -30,7 +30,6 @@ lib_fixups: lib_fixups_user_type = {
     libs_proto_3_9_1: lib_fixup_vendorcompat,
     (
         'libuuid',
-        'libsecril-client',
     ) : lib_fixup_vendor_suffix,
 } # fmt: skip
 
@@ -43,42 +42,10 @@ blob_fixups: blob_fixups_user_type = {
    ): blob_fixup()
         .add_needed('android.hardware.security.rkp-V3-ndk.so')
         .replace_needed('libcrypto.so', 'libcrypto-v33.so'),
-    'vendor/etc/init/android.hardware.security.keymint-service.rc': blob_fixup()
+    'vendor/etc/init/android.hardware.security.keymint-service-samsung.rc': blob_fixup()
         .regex_replace('android.hardware.security.keymint-service', 'android.hardware.security.keymint-service.samsung'),
     'vendor/lib64/libwvaidl.so': blob_fixup()
         .replace_needed('libprotobuf-cpp-lite-3.9.1.so', 'libprotobuf-cpp-full-3.9.1.so'),
-   (
-       'vendor/lib/libexynosgraphicbuffer.so',
-       'vendor/lib64/libexynosgraphicbuffer.so',
-   ): blob_fixup()
-        .replace_needed('libui.so', 'libui_shim.so'),
-   (
-       'vendor/lib64/libaboxpcmdump.so',
-       'vendor/lib/libaboxpcmdump.so',
-       'vendor/lib64/libaudioparamupdate.so',
-       'vendor/lib/libaudioparamupdate.so',
-   ): blob_fixup()
-        .replace_needed('libaudioroute.so', 'libaudioroute_vendor.so'),
-    'vendor/lib64/unihal_android.so': blob_fixup()
-        .add_needed('libshim_sensorndkbridge.so')
-        .add_needed('libui_shim.so'),
-    'vendor/lib64/libsensorlistener.so': blob_fixup()
-        .add_needed('libshim_sensorndkbridge.so'),
-    'vendor/lib64/hw/camera.s5e8535.so': blob_fixup()
-        .add_needed('libui_shim.so'),
-   (
-       'vendor/lib/libaudioproxy2.so',
-       'vendor/lib64/libaudioproxy2.so',
-   ): blob_fixup()
-        .replace_needed('libaudioroute.so', 'libaudioroute_vendor.so')
-        .replace_needed('libtinyalsa.so', 'libtinyalsa_vendor.so'),
-   (
-       'vendor/lib64/hw/audio.primary.s5e8535.so',
-       'vendor/lib/hw/audio.primary.s5e8535.so',
-   ): blob_fixup()
-        .replace_needed('libaudioroute.so', 'libaudioroute_vendor.so'),
-    'vendor/bin/hw/samsung.hardware.media.c2@1.2-service': blob_fixup()
-        .replace_needed('libutils.so', 'libutils-v33.so'),
     'vendor/lib64/libsamsungcamerahal.so': blob_fixup()
         .sig_replace('10 8A', 'C0 8A'),
     'vendor/lib64/libSecC2ComponentStore.so': blob_fixup()

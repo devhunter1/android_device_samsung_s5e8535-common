@@ -283,6 +283,3 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Inherit the proprietary files
 $(call inherit-product, vendor/samsung/universal8535-common/universal8535-common-vendor.mk)
-
-# Inherit the sign keys
-#$(call inherit-product, vendor/lineage-priv/keys/keys.mk)
