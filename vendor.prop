@@ -77,6 +77,7 @@ vendor.powerhal.disp.idle_support=false
 ## RIL
 ro.radio.noril=no
 ro.telephony.default_network=26,26
+ro.telephony.default_cdma_sub=0
 
 ## Samsung specific
 ro.product_ship=true
