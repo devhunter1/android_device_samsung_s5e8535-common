@@ -59,10 +59,6 @@ PRODUCT_PACKAGES += \
     android.hardware.usb-service.samsung \
     android.hardware.usb.gadget-service.samsung
     
-# Lights
-PRODUCT_PACKAGES += \
-    android.hardware.light-service.samsung
-    
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
