@@ -19,10 +19,6 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Generic Ramdisk
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 
-
-# API levels
-BOARD_SHIPPING_API_LEVEL := 33
-
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.1-impl:32 \
@@ -242,7 +238,8 @@ PRODUCT_COPY_FILES += \
 
 	
 # Shipping API level
-PRODUCT_SHIPPING_API_LEVEL := 33
+BOARD_SHIPPING_API_LEVEL := 34
+PRODUCT_SHIPPING_API_LEVEL := $(BOARD_SHIPPING_API_LEVEL)
 
 # NFC
 PRODUCT_PACKAGES += \
