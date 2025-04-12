@@ -79,6 +79,7 @@ ro.crypto.metadata_init_delete_all_keys.enabled=true
 
 ## RIL
 ro.radio.noril=no
+ro.telephony.default_network=26,26
 
 ## Netflix
 ro.netflix.bsp_rev=EXYNOS1330-36497-1
