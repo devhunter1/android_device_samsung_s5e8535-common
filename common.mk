@@ -63,10 +63,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.light-service.samsung
     
-    
-# Camera
-TARGET_BUILD_APERTURE_CAMERA := true
-    
 # DebugFS
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 

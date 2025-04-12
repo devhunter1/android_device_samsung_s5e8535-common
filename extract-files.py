@@ -85,6 +85,9 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libcodec2_vndk.so', 'libcodec2_vendor.so'),
     'vendor/lib64/libcodec2_vendor.so': blob_fixup()
         .add_needed('libui_shim.so'),
+    'vendor/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc': blob_fixup()
+        .regex_replace('media vendor_secdir', 'media')
+        .regex_replace('vendor_secdir', 'camera'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
