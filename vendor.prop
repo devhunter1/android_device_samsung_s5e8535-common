@@ -18,9 +18,23 @@ bluetooth.profile.pan.nap.enabled=true
 bluetooth.profile.pan.panu.enabled=true
 bluetooth.profile.pbap.server.enabled=true
 
+## Camera
+ro.camera.disableJpegR=true
+
 ## Codec
 debug.stagefright.c2inputsurface=-1
 vendor.debug.c2.sbwc.enable=true
+
+## Crypto
+ro.crypto.volume.options=aes-256-xts:aes-256-cts:v2
+ro.crypto.dm_default_key.options_format.version=2
+ro.crypto.volume.metadata.method=dm-default-key
+
+# Call deleteAllKeys if vold detects a factory reset
+ro.crypto.metadata_init_delete_all_keys.enabled=true
+
+# Dex2oat
+dalvik.vm.dex2oat64.enabled=true
 
 ## Display
 debug.sf.auto_latch_unsignaled=0
@@ -39,20 +53,11 @@ drm.service.enabled=true
 # Filesystem
 fs_mgr.overlayfs.prefer_cache_backing_storage=true
 
-## Verity
-ro.apk_verity.mode=2
-
-## Camera
-ro.camera.disableJpegR=true
-
-## Vol
-ro.config.vc_call_vol_steps=8
-
-## Permission
-ro.control_privapp_permissions=enforce
-
 ## FRP
 ro.frp.pst=/dev/block/persistent
+
+## IncrementalFS
+ro.incremental.enable=yes
 
 ## Manufacturer
 ro.soc.manufacturer=Samsung
@@ -60,35 +65,30 @@ ro.soc.model=s5e8535
 ro.hardware.egl=mali
 ro.hardware.vulkan=mali
 
-## IncrementalFS
-ro.incremental.enable=yes
+## Netflix
+ro.netflix.bsp_rev=EXYNOS1330-36497-1
 
-# Dex2oat
-dalvik.vm.dex2oat64.enabled=true
+## Permission
+#ro.control_privapp_permissions=enforce
 
 ## Power HAL
 vendor.powerhal.disp.idle_support=false
 
-## Crypto
-ro.crypto.volume.options=aes-256-xts:aes-256-cts:v2
-ro.crypto.dm_default_key.options_format.version=2
-ro.crypto.volume.metadata.method=dm-default-key
-
-# Call deleteAllKeys if vold detects a factory reset
-ro.crypto.metadata_init_delete_all_keys.enabled=true
-
 ## RIL
 ro.radio.noril=no
 ro.telephony.default_network=26,26
-
-## Netflix
-ro.netflix.bsp_rev=EXYNOS1330-36497-1
 
 ## Samsung specific
 ro.product_ship=true
 # Set csc support in OMX
 # If not set or set to 0, OMX will only use BT.601 colorspace.
 ro.vendor.cscsupported=1
+
+## Verity
+#ro.apk_verity.mode=2
+
+## Vol
+ro.config.vc_call_vol_steps=8
 
 ## Wi-Fi
 wifi.direct.interface=p2p0

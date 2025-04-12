@@ -6,7 +6,7 @@
 
 cc_library_shared {
     name: "libshim_sensorndkbridge",
-    srcs: ["sensorndkbridge/ASensorManager.cpp"],
+    srcs: ["ASensorManager.cpp"],
     shared_libs: [
         "libbase",
         "libsensorndkbridge",

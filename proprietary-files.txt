@@ -28,6 +28,11 @@ vendor/lib64/libExtIRTA.so
 vendor/lib64/vendor.samsung.hardware.camera.device-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.camera.provider-V1-ndk.so
 
+# Codec2
+vendor/etc/seccomp_policy/codec2.vendor.base.policy
+vendor/etc/seccomp_policy/codec2.vendor.ext.policy
+vendor/etc/seccomp_policy/mediaextractor_sec.policy
+
 # Display
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service.rc
@@ -43,115 +48,6 @@ vendor/etc/init/android.hardware.drm-service.widevine.rc
 vendor/etc/vintf/manifest/manifest_android.hardware.drm-service.widevine.xml
 vendor/lib64/libwvaidl.so
 vendor/lib64/liboemcrypto.so
-
-# Codec2
-vendor/etc/seccomp_policy/codec2.vendor.base.policy
-vendor/etc/seccomp_policy/codec2.vendor.ext.policy
-vendor/etc/seccomp_policy/mediaextractor_sec.policy
-
-# Software Media codecs
-vendor/bin/hw/samsung.software.media.c2@1.0-service
-vendor/etc/init/samsung.software.media.c2@1.0-service.rc
-vendor/lib64/libSecC2ComponentStore.so
-vendor/lib64/libcodec2_vndk.so:vendor/lib64/libcodec2_vendor.so;FIX_SONAME
-vendor/lib/libstagefright_foundation_vendor.so
-vendor/lib64/libstagefright_foundation_vendor.so
-vendor/etc/seccomp_policy/samsung.software.media.c2-base-policy
-vendor/etc/seccomp_policy/samsung.software.media.c2-ext-policy
-vendor/etc/vintf/manifest/sec_c2_manifest_default0_1_2.xml
-
-# TEE (TEEgris)
-vendor/lib/libteecl.so
-vendor/lib64/libteecl.so
-vendor/lib64/libuuid.so;MODULE_SUFFIX=_vendor
-vendor/lib/libuuid.so;MODULE_SUFFIX=_vendor
-vendor/bin/tzdaemon
-vendor/bin/tzts_daemon
-vendor/etc/init/teegris.rc
-
-# Gatekeeper
-vendor/lib/hw/gatekeeper.s5e8535.so
-vendor/lib64/hw/gatekeeper.s5e8535.so
-
-# GPS
-vendor/bin/hw/gps.sh
-vendor/bin/hw/vendor.samsung.hardware.gnss-service
-vendor/etc/gnss/ca.pem
-vendor/etc/gnss/deleteLogCommands
-vendor/etc/gnss/gps.cfg
-vendor/etc/gnss/gps.debug.cfg
-vendor/etc/gnss/gps.issuetracker.cfg
-vendor/etc/gnss/hardware_factors.conf
-vendor/etc/init/init.gps.rc
-vendor/etc/init/vendor.samsung.hardware.gnss-service.rc
-vendor/lib/libwrappergps.so
-vendor/lib64/libwrappergps.so
-vendor/lib/vendor.samsung.hardware.gnss-V3-ndk.so
-vendor/lib64/vendor.samsung.hardware.gnss-V3-ndk.so
-
-# Media (Dolby)
-vendor/etc/dolby/dax-default.xml
-
-# Media Codecs
-vendor/etc/media_codecs.xml
-vendor/etc/media_codecs_c2.xml
-vendor/etc/media_codecs_performance.xml
-vendor/etc/media_profiles_V1_0.xml
-
-# Light
-vendor/bin/hw/vendor.samsung.hardware.light-service
-vendor/etc/init/lights-default-sec.rc
-vendor/etc/vintf/manifest/lights-default-sec.xml
-vendor/lib64/vendor.samsung.hardware.light-V1-ndk.so
-
-# RIL
-vendor/bin/cbd
-vendor/etc/plmn_delta.bin
-vendor/etc/plmn_delta_attaio.bin
-vendor/etc/plmn_delta_hktw.bin
-vendor/etc/plmn_delta_usagsm.bin
-vendor/etc/plmn_se13.bin
-vendor/etc/init/cass.rc
-vendor/etc/init/init.baseband.rc
-vendor/etc/init/init.vendor.rilcommon.rc
-vendor/etc/init/vendor.samsung.rilchip.slsi.rc
-vendor/etc/vintf/manifest/vendor.samsung.hardware.radio.exclude.slsi.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.radio_manifest_2_33.xml
-vendor/etc/vintf/manifest/vendor.samsung.hardware.sehradio_manifest_2_33.xml
-vendor/etc/mtu-conf.xml
-vendor/etc/pdpcnt-conf.xml
-
-# Security
-vendor/bin/hw/android.hardware.security.keymint-service:vendor/bin/hw/android.hardware.security.keymint-service.samsung
-vendor/etc/init/android.hardware.security.keymint-service.rc:vendor/etc/init/android.hardware.security.keymint-service-samsung.rc
-vendor/lib64/libskeymint10device.so
-vendor/lib64/libskeymint_cli.so
-vendor/lib64/vendor.samsung.hardware.keymint-V2-ndk.so
-
-# Sensors
-vendor/etc/init/init.sensorhub.rc
-
-# Vibrator
-vendor/bin/hw/vendor.samsung.hardware.vibrator-service
-vendor/etc/init/vendor.samsung.hardware.vibrator-default.rc
-vendor/etc/vintf/manifest/vendor.samsung.hardware.vibrator-default.xml
-vendor/lib64/vendor.samsung.hardware.vibrator-V5-ndk.so
-
-# Wi-Fi configs
-vendor/etc/wifi/indoorchannel.info
-vendor/etc/wifi/mx140.bin
-vendor/etc/wifi/mx140_common.hcf
-vendor/etc/wifi/mx140_wlan_sw.hcf
-vendor/etc/wifi/mx140_wlan_t_sw.hcf
-vendor/etc/wifi/slsi_reg_database.bin
-vendor/etc/init/wifi.rc
-vendor/etc/init/wifi_slsi.rc
-
-# Vaultkeeperd
-vendor/bin/vaultkeeperd
-vendor/lib64/libvkservice.so
-vendor/lib64/libstork_shared.so
-vendor/etc/init/vaultkeeper_common.rc
 
 # fingerprint
 vendor/etc/init/init.fingerprint.rc
@@ -193,3 +89,107 @@ vendor/firmware/sb_others.bin
 vendor/firmware/sectiongraph_tplg.bin
 vendor/firmware/secure_configuration.flm.cfg.bin
 vendor/firmware/volumemonitor.bin
+
+# Gatekeeper
+vendor/lib/hw/gatekeeper.s5e8535.so
+vendor/lib64/hw/gatekeeper.s5e8535.so
+
+# GPS
+vendor/bin/hw/gps.sh
+vendor/bin/hw/vendor.samsung.hardware.gnss-service
+vendor/etc/gnss/ca.pem
+vendor/etc/gnss/deleteLogCommands
+vendor/etc/gnss/gps.cfg
+vendor/etc/gnss/gps.debug.cfg
+vendor/etc/gnss/gps.issuetracker.cfg
+vendor/etc/gnss/hardware_factors.conf
+vendor/etc/init/init.gps.rc
+vendor/etc/init/vendor.samsung.hardware.gnss-service.rc
+vendor/lib/libwrappergps.so
+vendor/lib64/libwrappergps.so
+vendor/lib/vendor.samsung.hardware.gnss-V3-ndk.so
+vendor/lib64/vendor.samsung.hardware.gnss-V3-ndk.so
+
+# Keymint
+vendor/bin/hw/android.hardware.security.keymint-service:vendor/bin/hw/android.hardware.security.keymint-service.samsung
+vendor/etc/init/android.hardware.security.keymint-service.rc:vendor/etc/init/android.hardware.security.keymint-service-samsung.rc
+vendor/lib64/libskeymint10device.so
+vendor/lib64/libskeymint_cli.so
+vendor/lib64/vendor.samsung.hardware.keymint-V2-ndk.so
+
+# Light
+vendor/bin/hw/vendor.samsung.hardware.light-service
+vendor/etc/init/lights-default-sec.rc
+vendor/etc/vintf/manifest/lights-default-sec.xml
+vendor/lib64/vendor.samsung.hardware.light-V1-ndk.so
+
+# Media (Dolby)
+vendor/etc/dolby/dax-default.xml
+
+# Media Codecs
+vendor/etc/media_codecs.xml
+vendor/etc/media_codecs_c2.xml
+vendor/etc/media_codecs_performance.xml
+vendor/etc/media_profiles_V1_0.xml
+
+# RIL
+vendor/bin/cbd
+vendor/etc/plmn_delta.bin
+vendor/etc/plmn_delta_attaio.bin
+vendor/etc/plmn_delta_hktw.bin
+vendor/etc/plmn_delta_usagsm.bin
+vendor/etc/plmn_se13.bin
+vendor/etc/init/cass.rc
+vendor/etc/init/init.baseband.rc
+vendor/etc/init/init.vendor.rilcommon.rc
+vendor/etc/init/vendor.samsung.rilchip.slsi.rc
+vendor/etc/vintf/manifest/vendor.samsung.hardware.radio.exclude.slsi.xml
+vendor/etc/vintf/manifest/vendor.samsung.hardware.radio_manifest_2_33.xml
+vendor/etc/vintf/manifest/vendor.samsung.hardware.sehradio_manifest_2_33.xml
+vendor/etc/mtu-conf.xml
+vendor/etc/pdpcnt-conf.xml
+
+# Sensors
+vendor/etc/init/init.sensorhub.rc
+
+# Software Media codecs
+vendor/bin/hw/samsung.software.media.c2@1.0-service
+vendor/etc/init/samsung.software.media.c2@1.0-service.rc
+vendor/lib64/libSecC2ComponentStore.so
+vendor/lib64/libcodec2_vndk.so:vendor/lib64/libcodec2_vendor.so;FIX_SONAME
+vendor/lib/libstagefright_foundation_vendor.so
+vendor/lib64/libstagefright_foundation_vendor.so
+vendor/etc/seccomp_policy/samsung.software.media.c2-base-policy
+vendor/etc/seccomp_policy/samsung.software.media.c2-ext-policy
+vendor/etc/vintf/manifest/sec_c2_manifest_default0_1_2.xml
+
+# TEE (TEEgris)
+vendor/lib/libteecl.so
+vendor/lib64/libteecl.so
+vendor/lib64/libuuid.so;MODULE_SUFFIX=_vendor
+vendor/lib/libuuid.so;MODULE_SUFFIX=_vendor
+vendor/bin/tzdaemon
+vendor/bin/tzts_daemon
+vendor/etc/init/teegris.rc
+
+# Vaultkeeperd
+vendor/bin/vaultkeeperd
+vendor/lib64/libvkservice.so
+vendor/lib64/libstork_shared.so
+vendor/etc/init/vaultkeeper_common.rc
+
+# Vibrator
+vendor/bin/hw/vendor.samsung.hardware.vibrator-service
+vendor/etc/init/vendor.samsung.hardware.vibrator-default.rc
+vendor/etc/vintf/manifest/vendor.samsung.hardware.vibrator-default.xml
+vendor/lib64/vendor.samsung.hardware.vibrator-V5-ndk.so
+
+# Wi-Fi configs
+vendor/etc/wifi/indoorchannel.info
+vendor/etc/wifi/mx140.bin
+vendor/etc/wifi/mx140_common.hcf
+vendor/etc/wifi/mx140_wlan_sw.hcf
+vendor/etc/wifi/mx140_wlan_t_sw.hcf
+vendor/etc/wifi/slsi_reg_database.bin
+vendor/etc/init/wifi.rc
+vendor/etc/init/wifi_slsi.rc

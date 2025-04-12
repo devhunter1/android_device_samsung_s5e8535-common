@@ -8,12 +8,8 @@ COMMON_PATH := device/samsung/universal8535-common
 
 BUILD_BROKEN_DUP_RULES := true
 
-## Board
-BOARD_VENDOR := samsung
-TARGET_BOOTLOADER_BOARD_NAME := s5e8535
-TARGET_BOARD_PLATFORM := universal8535
-TARGET_SOC := s5e8535
-TARGET_NO_BOOTLOADER := true
+# Inherit the proprietary files
+include vendor/samsung/universal8535-common/BoardConfigVendor.mk
 
 # Architecture
 TARGET_ARCH := arm64
@@ -64,42 +60,18 @@ ifeq ($(PRODUCT_DEVICE),m14x)
     BOARD_DTBO_CFG := $(COMMON_PATH)/configs/kernel/m14x.cfg
 endif
 
+## Board
+BOARD_VENDOR := samsung
+TARGET_BOOTLOADER_BOARD_NAME := s5e8535
+TARGET_BOARD_PLATFORM := universal8535
+TARGET_SOC := s5e8535
+TARGET_NO_BOOTLOADER := true
 
 # Display
 TARGET_SCREEN_DENSITY := 420
 
 # DTBO
 BOARD_KERNEL_SEPARATED_DTBO := true
-
-# Init Boot
-BOARD_INIT_BOOT_HEADER_VERSION := 4
-BOARD_MKBOOTIMG_INIT_ARGS += --header_version $(BOARD_INIT_BOOT_HEADER_VERSION)
-
-# Kernel
-BOARD_RAMDISK_USE_LZ4 := true
-TARGET_KERNEL_ARCH := arm64
-BOARD_USES_GENERIC_KERNEL_IMAGE := true
-BOARD_INCLUDE_RECOVERY_DTBO := true
-
-BOARD_BOOTCONFIG := buildtime_bootconfig=enable
-
-# Partitions
-BOARD_FLASH_BLOCK_SIZE := 262144
-BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
-BOARD_RECOVERYIMAGE_PARTITION_SIZE := 100663296
-BOARD_INIT_BOOT_IMAGE_PARTITION_SIZE := 16777216
-BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 33554432
-BOARD_DTBOIMG_PARTITION_SIZE := 8388608        
-BOARD_SUPER_PARTITION_SIZE := 8287944704
-BOARD_USES_METADATA_PARTITION := true
-BOARD_CACHEIMAGE_PARTITION_SIZE := 209715200
-
-# Reserved Partition size
--include vendor/lineage/config/BoardConfigReservedSize.mk
-
-
-BOARD_ROOT_EXTRA_FOLDERS := \
-    efs
 
 # Dynamic Partitions
 BOARD_SUPER_PARTITION_GROUPS := samsung_dynamic_partitions
@@ -119,15 +91,51 @@ TARGET_COPY_OUT_SYSTEM_DLKM := system_dlkm
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 
+# Init Boot
+BOARD_INIT_BOOT_HEADER_VERSION := 4
+BOARD_MKBOOTIMG_INIT_ARGS += --header_version $(BOARD_INIT_BOOT_HEADER_VERSION)
+
+# Kernel
+BOARD_RAMDISK_USE_LZ4 := true
+TARGET_KERNEL_ARCH := arm64
+BOARD_USES_GENERIC_KERNEL_IMAGE := true
+BOARD_INCLUDE_RECOVERY_DTBO := true
+
+BOARD_BOOTCONFIG := buildtime_bootconfig=enable
+
+## Lineage Health
+TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/power_supply/battery/batt_slate_mode
+TARGET_HEALTH_CHARGING_CONTROL_CHARGING_ENABLED := 0
+TARGET_HEALTH_CHARGING_CONTROL_CHARGING_DISABLED := 1
+TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
+TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_TOGGLE := true
+TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_DEADLINE := false
+
+# Manifest
+DEVICE_MANIFEST_FILE += $(COMMON_PATH)/vintf/manifest.xml
+DEVICE_MATRIX_FILE := $(COMMON_PATH)/vintf/compatibility_matrix.xml
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
+    $(COMMON_PATH)/vintf/device_framework_matrix.xml \
+    vendor/lineage/config/device_framework_matrix.xml
+
+# Partitions
+BOARD_FLASH_BLOCK_SIZE := 262144
+BOARD_BOOTIMAGE_PARTITION_SIZE := 67108864
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 100663296
+BOARD_INIT_BOOT_IMAGE_PARTITION_SIZE := 16777216
+BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 33554432
+BOARD_DTBOIMG_PARTITION_SIZE := 8388608        
+BOARD_SUPER_PARTITION_SIZE := 8287944704
+BOARD_USES_METADATA_PARTITION := true
+BOARD_CACHEIMAGE_PARTITION_SIZE := 209715200
+
+# Reserved Partition size
+-include vendor/lineage/config/BoardConfigReservedSize.mk
+
+BOARD_ROOT_EXTRA_FOLDERS := efs
 
 # Platform
 TARGET_BOARD_PLATFORM := universal8535
-
-# Renderer
-TARGET_USES_VULKAN := true
-
-# USB gadget
-$(call soong_config_set,samsungUsbGadgetVars,gadget_name,13200000.dwc3)
 
 # Properties
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
@@ -148,20 +156,8 @@ BOARD_RECOVERY_MKBOOTIMG_ARGS += --dtb_offset 0x00000000
 BOARD_INCLUDE_RECOVERY_DTBO := true
 TARGET_USES_MKE2FS := true
 
-## Lineage Health
-TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH := /sys/class/power_supply/battery/batt_slate_mode
-TARGET_HEALTH_CHARGING_CONTROL_CHARGING_ENABLED := 0
-TARGET_HEALTH_CHARGING_CONTROL_CHARGING_DISABLED := 1
-TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_BYPASS := false
-TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_TOGGLE := true
-TARGET_HEALTH_CHARGING_CONTROL_SUPPORTS_DEADLINE := false
-
-# Manifest
-DEVICE_MANIFEST_FILE += $(COMMON_PATH)/configs/vintf/manifest.xml
-DEVICE_MATRIX_FILE := $(COMMON_PATH)/configs/vintf/compatibility_matrix.xml
-DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-    $(COMMON_PATH)/configs/vintf/device_framework_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
+# Renderer
+TARGET_USES_VULKAN := true
 
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(COMMON_PATH)/releasetools
@@ -180,6 +176,8 @@ include device/samsung_slsi/sepolicy/sepolicy.mk
 
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 
+# USB gadget
+$(call soong_config_set,samsungUsbGadgetVars,gadget_name,13200000.dwc3)
 
 # Vendor_boot
 BOARD_VENDOR_RAMDISK_FRAGMENTS := dlkm
@@ -203,6 +201,3 @@ BOARD_HOSTAPD_PRIVATE_LIB        := lib_driver_cmd_slsi
 WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION           := VER_0_8_X
-
-# Inherit the proprietary files
-$(call inherit-product, vendor/samsung/universal8535-common/BoardConfigVendor.mk)
