@@ -4,12 +4,12 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-COMMON_PATH := device/samsung/universal8535-common
+COMMON_PATH := device/samsung/s5e8535-common
 
 BUILD_BROKEN_DUP_RULES := true
 
 # Inherit the proprietary files
-include vendor/samsung/universal8535-common/BoardConfigVendor.mk
+include vendor/samsung/s5e8535-common/BoardConfigVendor.mk
 
 # Architecture
 TARGET_ARCH := arm64
@@ -63,7 +63,7 @@ endif
 ## Board
 BOARD_VENDOR := samsung
 TARGET_BOOTLOADER_BOARD_NAME := s5e8535
-TARGET_BOARD_PLATFORM := universal8535
+TARGET_BOARD_PLATFORM := erd8535
 TARGET_SOC := s5e8535
 TARGET_NO_BOOTLOADER := true
 
@@ -133,9 +133,6 @@ BOARD_CACHEIMAGE_PARTITION_SIZE := 209715200
 -include vendor/lineage/config/BoardConfigReservedSize.mk
 
 BOARD_ROOT_EXTRA_FOLDERS := efs
-
-# Platform
-TARGET_BOARD_PLATFORM := universal8535
 
 # Properties
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop

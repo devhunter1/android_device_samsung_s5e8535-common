@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-COMMON_PATH := device/samsung/universal8535-common
+COMMON_PATH := device/samsung/s5e8535-common
 
 # Enable updating of APEXes
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
@@ -14,7 +14,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 
 # Inherit the proprietary files
-$(call inherit-product, vendor/samsung/universal8535-common/universal8535-common-vendor.mk)
+$(call inherit-product, vendor/samsung/s5e8535-common/s5e8535-common-vendor.mk)
 
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)

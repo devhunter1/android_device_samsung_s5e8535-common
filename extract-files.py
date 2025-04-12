@@ -19,7 +19,7 @@ from extract_utils.main import (
 )
 
 namespace_imports = [
-    'device/samsung/universal8535-common',
+    'device/samsung/s5e8535-common',
     'hardware/samsung',
 ]
 
@@ -58,7 +58,7 @@ blob_fixups: blob_fixups_user_type = {
 }  # fmt: skip
 
 module = ExtractUtilsModule(
-    'universal8535-common',
+    's5e8535-common',
     'samsung',
     namespace_imports=namespace_imports,
     blob_fixups=blob_fixups,
