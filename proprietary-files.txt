@@ -1,127 +1,25 @@
 # All unpinned blobs are extracted from A146BXXS8CYB2
 
 # Audio
-vendor/lib/hw/audio.primary.s5e8535.so
-vendor/lib64/hw/audio.primary.s5e8535.so
-vendor/lib/libaudioproxy2.so
-vendor/lib64/libaudioproxy2.so
-vendor/lib/libalsautils_sec.so
-vendor/lib64/libalsautils_sec.so
-vendor/lib/libsehbluetooth_audio_session_aidl.so
-vendor/lib64/libsehbluetooth_audio_session_aidl.so
-vendor/lib/vendor.samsung.hardware.bluetooth.audio-V1-ndk.so
-vendor/lib64/vendor.samsung.hardware.bluetooth.audio-V1-ndk.so
-vendor/lib/libsecaudioinfo.so
-vendor/lib64/libsecaudioinfo.so
-vendor/lib/libSamsungPostProcessConvertor.so
-vendor/lib64/libSamsungPostProcessConvertor.so
-vendor/lib/lib_soundaliveresampler.so
-vendor/lib64/lib_soundaliveresampler.so
-vendor/lib/lib_SoundAlive_SRC384_ver320.so
-vendor/lib64/lib_SoundAlive_SRC384_ver320.so
-vendor/lib/librecordalive.so
-vendor/lib64/librecordalive.so
-vendor/lib/lib_SamsungRec_07010.so
-vendor/lib64/lib_SamsungRec_07010.so
-vendor/lib/libsecaudiolevel.so
-vendor/lib64/libsecaudiolevel.so
-vendor/lib/libaboxpcmdump.so
-vendor/lib64/libaboxpcmdump.so
-vendor/lib/libdatamod.so
-vendor/lib64/libdatamod.so
-vendor/lib/liblastaboxmsg.so
-vendor/lib64/liblastaboxmsg.so
-vendor/lib/libaudioparamupdate.so
-vendor/lib64/libaudioparamupdate.so
-vendor/lib/libaudio-ril.so
-vendor/lib64/libaudio-ril.so
-vendor/lib/libfloatingfeature.so
-vendor/lib64/libfloatingfeature.so
-vendor/etc/floating_feature.xml
-vendor/etc/mixer_gains.xml
-vendor/etc/mixer_paths.xml
-vendor/etc/sec_audio_volume_curve.xml
-vendor/etc/SoundBoosterParam.txt
-vendor/etc/usb_audio_policy_configuration.xml
-
-# VNDK
-vendor/lib64/vndk/libaudioroute.so:vendor/lib64/libaudioroute_vendor.so;FIX_SONAME
-vendor/lib/vndk/libaudioroute.so:vendor/lib/libaudioroute_vendor.so;FIX_SONAME
-vendor/lib64/vndk/libtinyalsa.so:vendor/lib64/libtinyalsa_vendor.so;FIX_SONAME
-vendor/lib/vndk/libtinyalsa.so:vendor/lib/libtinyalsa_vendor.so;FIX_SONAME
-
-# Audio calibration
 vendor/lib/hw/audio.sec_primary.default.so
 vendor/lib64/hw/audio.sec_primary.default.so
+vendor/etc/sec_audio_volume_curve.xml
+vendor/etc/usb_audio_policy_configuration.xml
 vendor/lib/libspeakercalibration.so
 vendor/lib64/libspeakercalibration.so
 
 # Audio (FX modules)
-vendor/lib/soundfx/libaudioeffectoffload.so
-vendor/lib/soundfx/libaudiosaplus_sec.so
 vendor/lib/soundfx/libmyspace.so
-vendor/lib/soundfx/libsamsungSoundbooster_plus.so
-vendor/lib/soundfx/libswdap.so
-vendor/lib/soundfx/libswspatializer.so
-vendor/lib64/soundfx/libaudioeffectoffload.so
-vendor/lib64/soundfx/libaudiosaplus_sec.so
 vendor/lib64/soundfx/libmyspace.so
-vendor/lib64/soundfx/libsamsungSoundbooster_plus.so
-vendor/lib64/soundfx/libswdap.so
-vendor/lib64/soundfx/libswspatializer.so
-vendor/lib/lib_SoundAlive_play_plus_ver500.so
-vendor/lib64/lib_SoundAlive_play_plus_ver500.so
-vendor/lib/lib_SoundAlive_AlbumArt_ver105.so
-vendor/lib64/lib_SoundAlive_AlbumArt_ver105.so
 vendor/lib/lib_SoundAlive_3DPosition_ver202.so
 vendor/lib64/lib_SoundAlive_3DPosition_ver202.so
-vendor/lib/lib_SoundBooster_ver1100.so
-vendor/lib64/lib_SoundBooster_ver1100.so
-vendor/lib/libprofileparamstorage.so
-vendor/lib64/libprofileparamstorage.so
-vendor/lib/libspatializerparamstorage.so
-vendor/lib64/libspatializerparamstorage.so
-vendor/lib/libsecaudiocoreutils.so
-vendor/lib64/libsecaudiocoreutils.so
 
 # Camera
 vendor/bin/hw/vendor.samsung.hardware.camera.provider-service_64
 vendor/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc
-vendor/lib64/hw/camera.s5e8535.so
+vendor/etc/vintf/manifest/vendor.samsung.hardware.camera.provider-service.xml
 
 # Camera Dependencies
-vendor/lib/libexynosv4l2.so
-vendor/lib64/libexynosv4l2.so
-vendor/lib/libexynosutils.so
-vendor/lib64/libexynosutils.so
-vendor/lib/libion_exynos.so
-vendor/lib64/libion_exynos.so
-vendor/lib64/libcsc.so
-vendor/lib64/libexynosscaler.so
-vendor/lib64/libIRTA.so
-vendor/lib/libhwjpeg.so
-vendor/lib64/libhwjpeg.so
-vendor/lib/libgiantmscl.so
-vendor/lib64/libgiantmscl.so
-vendor/lib64/libvpl.so
-vendor/lib/libvra.so
-vendor/lib64/libvra.so
-vendor/lib64/libremosaic_wrapper.so
-vendor/lib64/libremosaiclib.so
-vendor/lib64/libdlrmsc.so
-vendor/lib64/libomp.so
-vendor/lib64/libuniapi.so
-vendor/lib/libuniplugin.so
-vendor/lib64/libuniplugin.so
-vendor/lib/libvdis_interface.so
-vendor/lib64/libvdis_interface.so
-vendor/lib/libeis_core.so
-vendor/lib64/libeis_core.so
-vendor/lib64/libsensorlistener.so
-vendor/lib/libsecnativefeature.so
-vendor/lib64/libsecnativefeature.so
-vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
-vendor/lib64/libsec2lsi_conversion.so
 vendor/lib64/lib_profiler.so
 vendor/lib64/libsamsungcamerahal.so
 vendor/lib64/libsamsungcamerahalutils.so
@@ -133,28 +31,10 @@ vendor/lib64/vendor.samsung.hardware.camera.provider-V1-ndk.so
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service
 vendor/etc/init/android.hardware.graphics.allocator@4.0-service.rc
 vendor/lib/egl/libGLES_mali.so;SYMLINK=vendor/lib/libOpenCL.so;SYMLINK=vendor/lib/libOpenCL.so.1;SYMLINK=vendor/lib/libOpenCL.so.1.1;SYMLINK=vendor/lib/hw/vulkan.universal8535.so
-vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl.so
-vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl.so
 vendor/lib/hw/vulkan.mali.so
-vendor/lib/arm.graphics-V1-ndk.so
-vendor/lib/libdrmresource.so
 vendor/lib64/egl/libGLES_mali.so;SYMLINK=vendor/lib64/libOpenCL.so;SYMLINK=vendor/lib64/libOpenCL.so.1;SYMLINK=vendor/lib64/libOpenCL.so.1.1;SYMLINK=vendor/lib64/hw/vulkan.universal8535.so
-vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl.so
-vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl.so
 vendor/lib64/hw/vulkan.mali.so
-vendor/lib64/arm.graphics-V1-ndk.so
-vendor/lib64/libdrmresource.so
 vendor/etc/beauty/settings.dat
-
-# HWC
-vendor/lib/hw/hwcomposer.s5e8535.so
-vendor/lib64/hw/hwcomposer.s5e8535.so
-vendor/lib/libExynosHWCService.so
-vendor/lib64/libExynosHWCService.so
-vendor/lib/libexynosdisplay.so
-vendor/lib64/libexynosdisplay.so
-vendor/lib64/libacryl.so
-vendor/lib/libacryl.so
 
 # DRM
 vendor/bin/hw/android.hardware.drm-service.widevine
@@ -164,28 +44,6 @@ vendor/lib64/libwvaidl.so
 vendor/lib64/liboemcrypto.so
 
 # Codec2
-vendor/bin/hw/samsung.hardware.media.c2@1.2-service
-vendor/etc/init/samsung.hardware.media.c2@1.2-service.rc
-vendor/lib/libExynosC2ComponentStore.so
-vendor/lib64/libExynosC2ComponentStore.so
-vendor/lib/libexynosgraphicbuffer.so
-vendor/lib64/libexynosgraphicbuffer.so
-vendor/lib/libepicoperator.so
-vendor/lib64/libepicoperator.so
-vendor/lib/vendor.samsung_slsi.hardware.epic@1.0.so
-vendor/lib64/vendor.samsung_slsi.hardware.epic@1.0.so
-vendor/lib/libExynosC2H264Dec.so
-vendor/lib64/libExynosC2H264Dec.so
-vendor/lib/libExynosC2H264Enc.so
-vendor/lib64/libExynosC2H264Enc.so
-vendor/lib/libExynosC2HevcDec.so
-vendor/lib64/libExynosC2HevcDec.so
-vendor/lib/libExynosC2HevcEnc.so
-vendor/lib64/libExynosC2HevcEnc.so
-vendor/lib/libExynosC2Vp8Dec.so
-vendor/lib64/libExynosC2Vp8Dec.so
-vendor/lib/libExynosC2Vp8Enc.so
-vendor/lib64/libExynosC2Vp8Enc.so
 vendor/etc/seccomp_policy/codec2.vendor.base.policy
 vendor/etc/seccomp_policy/codec2.vendor.ext.policy
 vendor/etc/seccomp_policy/mediaextractor_sec.policy
@@ -214,8 +72,7 @@ vendor/etc/init/teegris.rc
 vendor/lib/hw/gatekeeper.s5e8535.so
 vendor/lib64/hw/gatekeeper.s5e8535.so
 
-# GNSS configs
-vendor/bin/hw/gpsd
+# GPS
 vendor/bin/hw/gps.sh
 vendor/bin/hw/vendor.samsung.hardware.gnss-service
 vendor/etc/gnss/ca.pem
@@ -247,53 +104,30 @@ vendor/etc/vintf/manifest/lights-default-sec.xml
 vendor/lib64/vendor.samsung.hardware.light-V1-ndk.so
 
 # RIL
-vendor/bin/hw/rild
-vendor/bin/cass
 vendor/bin/cbd
-vendor/lib64/libril_sem.so
-vendor/lib64/vendor.samsung.hardware.radio-V1-ndk.so
-vendor/lib64/vendor.samsung.hardware.radio.bridge-V1-ndk.so
-vendor/lib64/vendor.samsung.hardware.radio.data-V1-ndk.so
-vendor/lib64/vendor.samsung.hardware.radio.messaging-V1-ndk.so
-vendor/lib64/vendor.samsung.hardware.radio.sim-V1-ndk.so
-vendor/lib/libsecril-client.so;MODULE_SUFFIX=_vendor
-vendor/lib64/libsecril-client.so;MODULE_SUFFIX=_vendor
-vendor/lib/libsemnativecarrierfeature.so
-vendor/lib64/libsemnativecarrierfeature.so
-vendor/lib64/libSemDataProps.so
-vendor/lib64/libSemTelephonyProps.so
-vendor/lib64/libengmode_client.so
-vendor/lib64/libvkmanager_vendor.so
 vendor/etc/plmn_delta.bin
 vendor/etc/plmn_delta_attaio.bin
 vendor/etc/plmn_delta_hktw.bin
 vendor/etc/plmn_delta_usagsm.bin
 vendor/etc/plmn_se13.bin
-vendor/lib64/libsec-ril.so
-vendor/lib64/vendor.samsung.hardware.radio.channel-V1-ndk.so
 vendor/etc/init/cass.rc
 vendor/etc/init/init.baseband.rc
 vendor/etc/init/init.vendor.rilcommon.rc
 vendor/etc/init/vendor.samsung.rilchip.slsi.rc
 vendor/etc/vintf/manifest/vendor.samsung.hardware.radio.exclude.slsi.xml
+vendor/etc/vintf/manifest/vendor.samsung.hardware.radio_manifest_2_33.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.sehradio_manifest_2_33.xml
 vendor/etc/mtu-conf.xml
 vendor/etc/pdpcnt-conf.xml
 
 # Security
 vendor/bin/hw/android.hardware.security.keymint-service:vendor/bin/hw/android.hardware.security.keymint-service.samsung
-vendor/etc/init/android.hardware.security.keymint-service.rc
+vendor/etc/init/android.hardware.security.keymint-service.rc:vendor/etc/init/android.hardware.security.keymint-service-samsung.rc
 vendor/lib64/libskeymint10device.so
 vendor/lib64/libskeymint_cli.so
 vendor/lib64/vendor.samsung.hardware.keymint-V2-ndk.so
 
 # Sensors
-vendor/lib/sensors.grip.so
-vendor/lib/sensors.inputvirtual.so
-vendor/lib/sensors.sensorhub.so
-vendor/lib64/sensors.grip.so
-vendor/lib64/sensors.inputvirtual.so
-vendor/lib64/sensors.sensorhub.so
 vendor/etc/init/init.sensorhub.rc
 
 # Vibrator
@@ -303,16 +137,11 @@ vendor/etc/vintf/manifest/vendor.samsung.hardware.vibrator-default.xml
 vendor/lib64/vendor.samsung.hardware.vibrator-V5-ndk.so
 
 # Wi-Fi configs
-vendor/etc/wifi/hydra_config.sdb
 vendor/etc/wifi/indoorchannel.info
 vendor/etc/wifi/mx140.bin
-vendor/etc/wifi/mx140_bt.hcf
 vendor/etc/wifi/mx140_common.hcf
-vendor/etc/wifi/mx140_wlan.hcf
 vendor/etc/wifi/mx140_wlan_sw.hcf
-vendor/etc/wifi/mx140_wlan_t.hcf
 vendor/etc/wifi/mx140_wlan_t_sw.hcf
-vendor/etc/wifi/platform.txt
 vendor/etc/wifi/slsi_reg_database.bin
 vendor/etc/init/wifi.rc
 vendor/etc/init/wifi_slsi.rc
@@ -341,44 +170,25 @@ vendor/lib/libqfp_sensortest.so
 vendor/lib64/libqfp_sensortest.so
 
 # Firmware
-vendor/firmware/APDV_AUDIO_SLSI.bin
-vendor/firmware/AP_AUDIO_SLSI.bin
 vendor/firmware/OD_V2.4.2_06_30_QVGA_RICE_VRA_RGB1P.bin
 vendor/firmware/OD_V2.5.1_06_30_VGA_RICE_VRA_RGB1P.bin
 vendor/firmware/SetMultiCalInfo.bin
 vendor/firmware/SoundAlive.bin
-vendor/firmware/SoundBoosterParam.bin
 vendor/firmware/a2dpcom.bin
-vendor/firmware/abox_solution.conf
 vendor/firmware/abox_system.conf
 vendor/firmware/abox_tplg.bin
 vendor/firmware/abox_tplg.conf
 vendor/firmware/avsyncmix.bin
 vendor/firmware/calliope_dram.bin
-vendor/firmware/calliope_sram.bin
 vendor/firmware/camera_tilt_calibration_info_1_4
 vendor/firmware/cs40l26.wmfw
 vendor/firmware/dax_param.bin
 vendor/firmware/default_configuration.flm.cfg.bin
 vendor/firmware/dolby.bin
 vendor/firmware/listenbackeffect.bin
-vendor/firmware/mfc_fw.bin
-vendor/firmware/os.checked.bin
-vendor/firmware/pablo_icpufw.bin
-vendor/firmware/rxse.bin
 vendor/firmware/sb_ll.bin
 vendor/firmware/sb_music.bin
 vendor/firmware/sb_others.bin
 vendor/firmware/sectiongraph_tplg.bin
-vendor/firmware/sectiongraph_tplg.conf
 vendor/firmware/secure_configuration.flm.cfg.bin
-vendor/firmware/setfile_3l6.bin
-vendor/firmware/setfile_gc02m1.bin
-vendor/firmware/setfile_gc02m2.bin
-vendor/firmware/setfile_hi1336.bin
-vendor/firmware/setfile_jn1.bin
-vendor/firmware/setfile_sc201.bin
-vendor/firmware/setfile_sc201_macro.bin
-vendor/firmware/txse1.bin
-vendor/firmware/txse2.bin
 vendor/firmware/volumemonitor.bin
