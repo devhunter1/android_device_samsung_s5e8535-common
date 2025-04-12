@@ -35,6 +35,8 @@ vendor/lib/libaudioparamupdate.so
 vendor/lib64/libaudioparamupdate.so
 vendor/lib/libaudio-ril.so
 vendor/lib64/libaudio-ril.so
+vendor/lib/libfloatingfeature.so
+vendor/lib64/libfloatingfeature.so
 vendor/etc/floating_feature.xml
 vendor/etc/mixer_gains.xml
 vendor/etc/mixer_paths.xml
@@ -86,7 +88,6 @@ vendor/lib64/libsecaudiocoreutils.so
 vendor/bin/hw/vendor.samsung.hardware.camera.provider-service_64
 vendor/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc
 vendor/lib64/hw/camera.s5e8535.so
-vendor/lib64/hw/camera.unihal.default.so
 
 # Camera Dependencies
 vendor/lib/libexynosv4l2.so
@@ -102,8 +103,6 @@ vendor/lib/libhwjpeg.so
 vendor/lib64/libhwjpeg.so
 vendor/lib/libgiantmscl.so
 vendor/lib64/libgiantmscl.so
-vendor/lib/libfloatingfeature.so
-vendor/lib64/libfloatingfeature.so
 vendor/lib64/libvpl.so
 vendor/lib/libvra.so
 vendor/lib64/libvra.so
@@ -114,20 +113,20 @@ vendor/lib64/libomp.so
 vendor/lib64/libuniapi.so
 vendor/lib/libuniplugin.so
 vendor/lib64/libuniplugin.so
+vendor/lib/libvdis_interface.so
+vendor/lib64/libvdis_interface.so
+vendor/lib/libeis_core.so
+vendor/lib64/libeis_core.so
 vendor/lib64/libsensorlistener.so
 vendor/lib/libsecnativefeature.so
 vendor/lib64/libsecnativefeature.so
 vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
 vendor/lib64/libsec2lsi_conversion.so
-vendor/lib64/unihal_entry.so
-vendor/lib64/unihal_cutils.so
-vendor/lib64/unihal_android.so
 vendor/lib64/lib_profiler.so
 vendor/lib64/libsamsungcamerahal.so
 vendor/lib64/libsamsungcamerahalutils.so
 vendor/lib64/vendor.samsung.hardware.camera.device-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.camera.provider-V1-ndk.so
-vendor/etc/init/camera.unihal.rc
 
 # Display
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service
