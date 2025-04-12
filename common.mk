@@ -103,10 +103,6 @@ PRODUCT_PACKAGES += \
 # OTA
 AB_OTA_UPDATER := false
 PRODUCT_SOONG_NAMESPACES += bootable/deprecated-ota
-
-# VIB
-PRODUCT_PACKAGES += \
-    android.hardware.vibrator-service.samsung
     
 # Memtrack
 PRODUCT_PACKAGES += \
