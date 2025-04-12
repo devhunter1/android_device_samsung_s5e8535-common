@@ -10,6 +10,9 @@
 struct HyPerToken {
 };
 
+void hyper_acquire(HyPerToken, int, std::vector<int, std::allocator<int> >) {
+}
+
 void hyper_getNewHyPerToken(void) {
 }
 
@@ -19,14 +22,11 @@ void hyper_setTokenProcName(HyPerToken*, std::string) {
 void hyper_checkResourceExist(int) {
 }
 
-void hyper_acquire(HyPerToken, std::vector<int>) {
-}
-
-void hyper_setProcName(std::string) {
-}
-
-void hyper_getSupportedFrequency(int, int) {
-}
-
 void hyper_release(HyPerToken) {
+}
+
+void hyper_checkHintExist(int) {
+}
+
+void hyper_init(void) {
 }
