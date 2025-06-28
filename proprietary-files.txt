@@ -1,12 +1,17 @@
-# All unpinned blobs are extracted from A146BXXS8CYB2
+# All unpinned blobs are extracted from A146BXXU8DYF4
 
 # Audio
+vendor/bin/hw/secaudiohalaidl
 vendor/lib/hw/audio.sec_primary.default.so
 vendor/lib64/hw/audio.sec_primary.default.so
+vendor/lib64/hw/libsecaudiohal_aidl.so
+vendor/etc/init/secaudiohalaidl.rc
 vendor/etc/sec_audio_volume_curve.xml
 vendor/etc/usb_audio_policy_configuration.xml
 vendor/lib/libspeakercalibration.so
 vendor/lib64/libspeakercalibration.so
+vendor/lib64/vendor.samsung.hardware.audio-V1-ndk.so
+vendor/etc/vintf/manifest/secaudiohalaidl_manifest.xml
 
 # Audio (FX modules)
 vendor/lib/soundfx/libmyspace.so
@@ -101,17 +106,11 @@ vendor/etc/gnss/gps.issuetracker.cfg
 vendor/etc/gnss/hardware_factors.conf
 vendor/etc/init/init.gps.rc
 vendor/etc/init/vendor.samsung.hardware.gnss-service.rc
-vendor/lib/libwrappergps.so
-vendor/lib64/libwrappergps.so
 vendor/lib/vendor.samsung.hardware.gnss-V3-ndk.so
 vendor/lib64/vendor.samsung.hardware.gnss-V3-ndk.so
 
 # Keymint
-vendor/bin/hw/android.hardware.security.keymint-service:vendor/bin/hw/android.hardware.security.keymint-service.samsung
 vendor/etc/init/android.hardware.security.keymint-service.rc:vendor/etc/init/android.hardware.security.keymint-service-samsung.rc
-vendor/lib64/libskeymint10device.so
-vendor/lib64/libskeymint_cli.so
-vendor/lib64/vendor.samsung.hardware.keymint-V2-ndk.so
 
 # Light
 vendor/bin/hw/vendor.samsung.hardware.light-service
@@ -133,17 +132,19 @@ vendor/bin/cbd
 vendor/etc/plmn_delta.bin
 vendor/etc/plmn_delta_attaio.bin
 vendor/etc/plmn_delta_hktw.bin
+vendor/etc/plmn_delta_ltn.bin
 vendor/etc/plmn_delta_usagsm.bin
-vendor/etc/plmn_se13.bin
+vendor/etc/plmn_se13_prebuilt.bin
 vendor/etc/init/cass.rc
 vendor/etc/init/init.baseband.rc
 vendor/etc/init/init.vendor.rilcommon.rc
-vendor/etc/init/vendor.samsung.rilchip.slsi.rc
+vendor/etc/init/vendor.samsung.rild.rc
 vendor/etc/vintf/manifest/vendor.samsung.hardware.radio.exclude.slsi.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.radio_manifest_2_33.xml
 vendor/etc/vintf/manifest/vendor.samsung.hardware.sehradio_manifest_2_33.xml
 vendor/etc/mtu-conf.xml
 vendor/etc/pdpcnt-conf.xml
+vendor/etc/mvno_list.xml
 
 # Sensors
 vendor/etc/init/init.sensorhub.rc
@@ -182,10 +183,10 @@ vendor/lib64/vendor.samsung.hardware.vibrator-V5-ndk.so
 
 # Wi-Fi configs
 vendor/etc/wifi/indoorchannel.info
-vendor/etc/wifi/mx140.bin
-vendor/etc/wifi/mx140_common.hcf
-vendor/etc/wifi/mx140_wlan_sw.hcf
-vendor/etc/wifi/mx140_wlan_t_sw.hcf
-vendor/etc/wifi/slsi_reg_database.bin
+vendor/firmware/wifi/mx140.bin
+vendor/firmware/wifi/mx140_common.hcf
+vendor/firmware/wifi/mx140_wlan_sw.hcf
+vendor/firmware/wifi/mx140_wlan_t_sw.hcf
+vendor/firmware/wifi/slsi_reg_database.bin
 vendor/etc/init/wifi.rc
 vendor/etc/init/wifi_slsi.rc
