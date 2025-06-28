@@ -170,6 +170,8 @@
 /dev/is_tuning_json       0660   cameraserver   camera
 /dev/is_tuning_socket     0660   cameraserver   camera
 
+# param
+/dev/block/by-name/param  0660  root           system
 
 # For FRP
 /dev/block/by-name/persist	      0600   system          system
@@ -236,6 +238,7 @@
 /dev/ramdump_memshare       0660   system     radio
 /dev/rmnet*                 0660   radio      inet
 /dev/usnet*                 0660   radio      inet
+/dev/umts_ciq*              0660   system     system_ext_bridge_rw
 
 # dev ril bridge
 /dev/drb	                0660   system     radio
