@@ -53,6 +53,9 @@ drm.service.enabled=true
 # Filesystem
 fs_mgr.overlayfs.prefer_cache_backing_storage=true
 
+# Fingerprint
+ro.vendor.fingerprint.type=side
+
 ## FRP
 ro.frp.pst=/dev/block/persistent
 
