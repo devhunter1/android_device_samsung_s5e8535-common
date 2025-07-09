@@ -10,7 +10,7 @@
 
 #include <libinit_utils.h>
 
-void property_override(std::string prop, std::string value, bool add) {
+void property_override(const std::string& prop, const std::string& value, bool add) {
     auto pi = (prop_info *) __system_property_find(prop.c_str());
     if (pi != nullptr) {
         __system_property_update(pi, value.c_str(), value.length());
