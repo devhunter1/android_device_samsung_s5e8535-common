@@ -20,5 +20,6 @@ cc_library_static {
     srcs: ["init_s5e8535.cpp"],
     whole_static_libs: ["libinit_s5e8535"],
     include_dirs: ["system/core/init"],
+    header_libs: ["libbase_headers"],
     recovery_available: true,
 }
