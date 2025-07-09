@@ -55,6 +55,7 @@ fs_mgr.overlayfs.prefer_cache_backing_storage=true
 
 # Fingerprint
 ro.vendor.fingerprint.type=side
+ro.vendor.fingerprint.force_calibrate=true
 
 ## FRP
 ro.frp.pst=/dev/block/persistent
