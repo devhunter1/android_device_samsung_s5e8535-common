@@ -33,10 +33,11 @@ vendor/lib64/libExtIRTA.so
 vendor/lib64/vendor.samsung.hardware.camera.device-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.camera.provider-V1-ndk.so
 
-# Codec2
-vendor/etc/seccomp_policy/codec2.vendor.base.policy
+## Codec2 - from gta4xlswifi - lineage-22.2-20250416-UNOFFICIAL-gta4xlswifi.zip
+vendor/etc/seccomp_policy/codec2.vendor.base.policy|aca50440011e47b3f877996d7dd352a9e9980cec
+
+# Codecs
 vendor/etc/seccomp_policy/codec2.vendor.ext.policy
-vendor/etc/seccomp_policy/mediaextractor_sec.policy
 
 # Display
 vendor/bin/hw/android.hardware.graphics.allocator@4.0-service
@@ -141,17 +142,6 @@ vendor/etc/mvno_list.xml
 
 # Sensors
 vendor/etc/init/init.sensorhub.rc
-
-# Software Media codecs
-vendor/bin/hw/samsung.software.media.c2@1.0-service
-vendor/etc/init/samsung.software.media.c2@1.0-service.rc
-vendor/lib64/libSecC2ComponentStore.so
-vendor/lib64/libcodec2_vndk.so:vendor/lib64/libcodec2_vendor.so;FIX_SONAME
-vendor/lib/libstagefright_foundation_vendor.so
-vendor/lib64/libstagefright_foundation_vendor.so
-vendor/etc/seccomp_policy/samsung.software.media.c2-base-policy
-vendor/etc/seccomp_policy/samsung.software.media.c2-ext-policy
-vendor/etc/vintf/manifest/sec_c2_manifest_default0_1_2.xml
 
 # TEE (TEEgris)
 vendor/lib/libteecl.so

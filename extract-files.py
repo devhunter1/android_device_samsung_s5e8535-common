@@ -40,10 +40,6 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libprotobuf-cpp-lite-3.9.1.so', 'libprotobuf-cpp-full-3.9.1.so'),
     'vendor/lib64/libsamsungcamerahal.so': blob_fixup()
         .sig_replace('10 8A', 'C0 8A'),
-    'vendor/lib64/libSecC2ComponentStore.so': blob_fixup()
-        .replace_needed('libcodec2_vndk.so', 'libcodec2_vendor.so'),
-    'vendor/lib64/libcodec2_vendor.so': blob_fixup()
-        .add_needed('libui_shim.so'),
     'vendor/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc': blob_fixup()
         .regex_replace('media vendor_secdir', 'media')
         .regex_replace('vendor_secdir', 'camera'),
