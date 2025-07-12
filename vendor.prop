@@ -18,12 +18,11 @@ bluetooth.profile.pan.nap.enabled=true
 bluetooth.profile.pan.panu.enabled=true
 bluetooth.profile.pbap.server.enabled=true
 
-## Camera
-ro.camera.disableJpegR=true
-
 ## Codec
 debug.stagefright.c2inputsurface=-1
-vendor.debug.c2.sbwc.enable=true
+
+## Camera
+ro.camera.disableJpegR=true
 
 ## Crypto
 ro.crypto.volume.options=aes-256-xts:aes-256-cts:v2
