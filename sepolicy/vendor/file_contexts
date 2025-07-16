@@ -73,3 +73,5 @@
 
 ## Vendor
 /(vendor|system/vendor)/bin/hw/gps.sh        u:object_r:gpsd_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.camera\.provider-service            			u:object_r:hal_camera_default_exec:s0
+/(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.vibrator-service               u:object_r:hal_vibrator_default_exec:s0
