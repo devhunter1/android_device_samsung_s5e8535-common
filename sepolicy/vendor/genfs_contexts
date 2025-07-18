@@ -21,6 +21,9 @@ genfscon sysfs /devices/virtual/sensors/light_sensor/hall_ic                    
 # Firmware
 genfscon sysfs /firmware/devicetree/base/sound/mixer-paths                                                     u:object_r:sysfs_audio:s0
 
+# GPU
+genfscon sysfs /kernel/gpu/gpu_mm_min_clock                                  u:object_r:sysfs_gpu:s0
+
 # Kernel
 genfscon sysfs /kernel/mm/vmscan/mem_boost_mode                                                                u:object_r:sysfs_camera_writable:s0
 
