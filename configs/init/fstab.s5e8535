@@ -28,4 +28,4 @@ odm					/odm			ext4		ro,errors=panic		wait,logical,first_stage_mount
 
 # VOLD
 /devices/platform/13200000.usb*                                 auto    vfat    default    voldmanaged=usb:auto
-/devices/platform/100e0000.dwmmc2/mmc_host*                     auto    auto    default    voldmanaged=sdcard:auto
+/devices/platform/100e0000.dwmmc2/mmc_host*                     auto    auto    default    voldmanaged=sdcard:auto,encryptable=userdata
