@@ -36,8 +36,8 @@ def AddImage(info, basename, dest):
 
 def OTA_InstallEnd(info):
   info.script.Print("Patching firmware images...")
-  AddImage(info, "dtbo.img", "/dev/block/bootdevice/by-name/dtbo")
-  AddImage(info, "init_boot.img", "/dev/block/bootdevice/by-name/init_boot")
-  AddImage(info, "vbmeta.img", "/dev/block/bootdevice/by-name/vbmeta")
-  AddImage(info, "vendor_boot.img", "/dev/block/bootdevice/by-name/vendor_boot")
+  AddImage(info, "dtbo.img", "/dev/block/by-name/dtbo")
+  AddImage(info, "init_boot.img", "/dev/block/by-name/init_boot")
+  AddImage(info, "vbmeta.img", "/dev/block/by-name/vbmeta")
+  AddImage(info, "vendor_boot.img", "/dev/block/by-name/vendor_boot")
   return
