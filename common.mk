@@ -139,9 +139,7 @@ PRODUCT_PACKAGES += \
 
 # init	
 PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/configs/init/fstab.s5e8535:$(TARGET_COPY_OUT_RAMDISK)/fstab.s5e8535 \
     $(COMMON_PATH)/configs/init/fstab.s5e8535:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/fstab.s5e8535 \
-    $(COMMON_PATH)/configs/init/fstab.s5e8535:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.s5e8535 \
     $(COMMON_PATH)/configs/init/init.recovery.s5e8535.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.s5e8535.rc \
     $(COMMON_PATH)/configs/init/init.recovery.samsung.rc:$(TARGET_COPY_OUT_RECOVERY)/root/init.recovery.samsung.rc \
     $(COMMON_PATH)/configs/init/init.insmod.s5e8535.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/init.insmod.s5e8535.cfg \
