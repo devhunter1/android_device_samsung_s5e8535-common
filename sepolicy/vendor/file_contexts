@@ -72,4 +72,5 @@
 /sys/devices/platform/(.*)/wakeup[0-9]*(/.*)?                 u:object_r:sysfs_wakeup:s0
 
 ## Vendor
+/vendor/bin/hw/rild                                                                                       u:object_r:rild_exec:s0
 /(vendor|system/vendor)/bin/hw/gps.sh        u:object_r:gpsd_exec:s0
