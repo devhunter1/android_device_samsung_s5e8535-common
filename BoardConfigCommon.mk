@@ -51,14 +51,7 @@ BOARD_MKBOOTIMG_ARGS += --dtb_offset $(BOARD_DTB_OFFSET)
 # Build dtbs
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_DTB_CFG := $(COMMON_PATH)/configs/kernel/s5e8535.cfg
-
-ifeq ($(PRODUCT_DEVICE),a14x)
-    BOARD_DTBO_CFG := $(COMMON_PATH)/configs/kernel/a14x.cfg
-endif
-
-ifeq ($(PRODUCT_DEVICE),m14x)
-    BOARD_DTBO_CFG := $(COMMON_PATH)/configs/kernel/m14x.cfg
-endif
+BOARD_DTBO_CFG := $(COMMON_PATH)/configs/kernel/$(PRODUCT_DEVICE).cfg
 
 ## Board
 BOARD_VENDOR := samsung
