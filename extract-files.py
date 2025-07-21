@@ -43,6 +43,12 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc': blob_fixup()
         .regex_replace('media vendor_secdir', 'media')
         .regex_replace('vendor_secdir', 'camera'),
+    (
+        'vendor/bin/vaultkeeperd',
+        'vendor/lib64/libvkservice.so',
+    ): blob_fixup()
+        .sig_replace('72 6F 2E 66 61 63 74 6F 72 79 2E 66 61 63 74 6F 72 79 5F 62 69 6E 61 72 79', 
+                     '72 6F 2E 76 65 6E 64 6F 72 2E 66 61 63 74 6F 72 79 5F 62 69 6E 61 72 79 00'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
