@@ -1,1 +1,4 @@
 teegris_use(hal_gatekeeper_default);
+
+allow hal_gatekeeper_default dak_efs_file:dir create_dir_perms;
+allow hal_gatekeeper_default dak_efs_file:file create_file_perms;

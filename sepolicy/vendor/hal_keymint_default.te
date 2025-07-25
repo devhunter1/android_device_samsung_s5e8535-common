@@ -1,0 +1,5 @@
+allow hal_keymint_default dak_efs_file:dir create_dir_perms;
+allow hal_keymint_default dak_efs_file:file create_file_perms;
+
+allow hal_keymint_default prov_efs_file:dir create_dir_perms;
+allow hal_keymint_default prov_efs_file:file create_file_perms;
