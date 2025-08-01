@@ -5457,21 +5457,28 @@ void proxy_set_volume(void *proxy, int volume_type, float left, float right)
         val[0] = (int)(left * CALL_PLAYBACK_VOLUME_MAX);
 
         ctrl = mixer_get_ctl_by_name(aproxy->mixer, CALL_VOLUME_CONTROL_NAME);
-    } else if (volume_type == VOLUME_TYPE_CALL_MUTE) {
+    } else if (volume_type == VOLUME_TYPE_CALL_TX_MUTE) {
         val[0] = (left != 0.0) ? 1 : 0;
 
         ctrl = mixer_get_ctl_by_name(aproxy->mixer, CALL_TX_MUTE_CONTROL_NAME);
+    } else if (volume_type == VOLUME_TYPE_CALL_RX_MUTE) {
+        val[0] = (left != 0.0) ? 1 : 0;
+
+        ctrl = mixer_get_ctl_by_name(aproxy->mixer, CALL_RX_MUTE_CONTROL_NAME);
 	}
 
     if (ctrl) {
-        if (volume_type == VOLUME_TYPE_OFFLOAD)
-            ret = mixer_ctl_set_array(ctrl, val, sizeof(val)/sizeof(val[0]));
-        else if (volume_type == VOLUME_TYPE_MMAP)
-            ret = mixer_ctl_set_value(ctrl, 0, val[0]);
-        else if (volume_type == VOLUME_TYPE_CALL)
-            ret = mixer_ctl_set_value(ctrl, 0, val[0]);
-        else if (volume_type == VOLUME_TYPE_CALL_MUTE)
-            ret = mixer_ctl_set_value(ctrl, 0, val[0]);
+        switch(volume_type) {
+            case VOLUME_TYPE_OFFLOAD:
+                ret = mixer_ctl_set_array(ctrl, val, sizeof(val)/sizeof(val[0]));
+                break;
+            case VOLUME_TYPE_MMAP:
+            case VOLUME_TYPE_CALL:
+            case VOLUME_TYPE_CALL_TX_MUTE:
+            case VOLUME_TYPE_CALL_RX_MUTE:
+                ret = mixer_ctl_set_value(ctrl, 0, val[0]);
+                break;
+        }
 
         if (ret != 0)
             ALOGE("proxy-%s: failed to set Volume", __func__);
