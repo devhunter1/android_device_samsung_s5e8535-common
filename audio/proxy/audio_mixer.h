@@ -67,6 +67,8 @@
 #define ABOX_BIT_WIDTH_WDMA3_NAME       "ABOX WDMA3 Width"
 #define ABOX_PERIOD_SIZE_WDMA3_NAME     "ABOX WDMA3 Period"
 
+#define CALL_TX_MUTE_CONTROL_NAME "ABOX DVTx Tx Mute"
+
 typedef enum {
     USBMODE        = 0,
     MUTE_CONTROL,
