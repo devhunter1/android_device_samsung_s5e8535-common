@@ -188,6 +188,24 @@ on post-fs-data
     mkdir /data/vendor/biometrics 0770 system system
     mkdir /data/vendor/fpSnrTest 0770 system system
 
+on early-boot
+    mkdir /efs/taas 0770 system system
+    mkdir /mnt/vendor/efs/taas 0770 system system
+    chown system system /dev/tspio
+    chown system system /dev/tsp_data
+    chown system system /sys/class/sec/tsp/input/enabled
+    chown system system /sys/class/sec/tsp1/input/enabled
+    chown system system /sys/class/sec/tsp2/input/enabled
+    chown system system /sys/class/sec/sec_epen/input/enabled
+    chown system system /sys/class/sec/tsp/enabled
+    chown system system /sys/class/sec/tsp1/enabled
+    chown system system /sys/class/sec/tsp2/enabled
+    chown system system /sys/class/sec/sec_epen/enabled
+    chown system system /sys/class/sec/digital_hall/digital_hall_thd
+
+    # pogo keyboard
+    chown system system /sys/class/sec/sec_keypad/fw_update
+
 on boot
     # MSP: FactoryApp directory generation
     mkdir /efs/FactoryApp 0775 system system
@@ -277,6 +295,8 @@ on boot
 
     # Permissions for Touchscreen
     chown system system /sys/class/sec/tsp/cmd
+    chown system system /sys/class/sec/tsp/input/enabled
+    chmod 0660 /sys/class/sec/tsp/input/enabled
     chown system system /sys/class/sec/tsp/enabled
     chmod 0660 /sys/class/sec/tsp/enabled
     chown root system /proc/tsp_msg
@@ -300,6 +320,42 @@ on boot
     chown system system /sys/class/sec/tsp/ear_detect_enable
     chown system system /sys/class/sec/tsp/ta_mode
     chown system system /sys/class/sec/tsp/virtual_prox
+    chown system system /sys/class/sec/tsp/hw_param
+    chown system system /sys/class/sec/tsp/input/trusted_touch_enable
+    chown system system /sys/class/sec/tsp/input/trusted_touch_event
+    chown system system /sys/class/sec/tsp/input/trusted_touch_type
+    
+    # Permissions for Touchscreen-1
+    chown system system /sys/class/sec/tsp1/cmd
+    chown system system /sys/class/sec/tsp1/input/enabled
+    chmod 0660 /sys/class/sec/tsp1/input/enabled
+    chown system system /sys/class/sec/tsp1/multi_count
+    chown system system /sys/class/sec/tsp1/wet_mode
+    chown system system /sys/class/sec/tsp1/noise_mode
+    chown system system /sys/class/sec/tsp1/comm_err_count
+    chown system system /sys/class/sec/tsp1/checksum
+    chown system system /sys/class/sec/tsp1/all_touch_count
+    chown system system /sys/class/sec/tsp1/z_value
+    chown system system /sys/class/sec/tsp1/sensitivity_mode
+    chown system system /sys/class/sec/tsp1/prox_power_off
+    chown system system /sys/class/sec/tsp1/ic_reset_count
+    chown system system /sys/class/sec/tsp1/mode_change_failed_count
+    
+    # Permissions for Touchscreen-2
+    chown system system /sys/class/sec/tsp2/cmd
+    chown system system /sys/class/sec/tsp2/input/enabled
+    chmod 0660 /sys/class/sec/tsp2/input/enabled
+    chown system system /sys/class/sec/tsp2/multi_count
+    chown system system /sys/class/sec/tsp2/wet_mode
+    chown system system /sys/class/sec/tsp2/noise_mode
+    chown system system /sys/class/sec/tsp2/comm_err_count
+    chown system system /sys/class/sec/tsp2/checksum
+    chown system system /sys/class/sec/tsp2/all_touch_count
+    chown system system /sys/class/sec/tsp2/z_value
+    chown system system /sys/class/sec/tsp2/sensitivity_mode
+    chown system system /sys/class/sec/tsp2/prox_power_off
+    chown system system /sys/class/sec/tsp2/ic_reset_count
+    chown system system /sys/class/sec/tsp2/mode_change_failed_count
 
     # Permissions for Wacom
     chown system radio /sys/class/sec/sec_epen/cmd
