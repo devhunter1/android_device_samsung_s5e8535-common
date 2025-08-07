@@ -50,3 +50,5 @@ FILE.write(random)
 print("AVB HEADER OFFSET: ", find_avb_str)
 print("AVB Digest: ", random.hex())
 print("-----AVB Patched successfully-----")
+
+FILE.close()
