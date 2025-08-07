@@ -106,12 +106,6 @@ vendor/lib64/vendor.samsung.hardware.gnss-V3-ndk.so
 # Keymint
 vendor/etc/init/android.hardware.security.keymint-service.rc:vendor/etc/init/android.hardware.security.keymint-service-samsung.rc
 
-# Light
-vendor/bin/hw/vendor.samsung.hardware.light-service
-vendor/etc/init/lights-default-sec.rc
-vendor/etc/vintf/manifest/lights-default-sec.xml
-vendor/lib64/vendor.samsung.hardware.light-V1-ndk.so
-
 # Media (Dolby)
 vendor/etc/dolby/dax-default.xml
 
