@@ -152,12 +152,6 @@ vendor/lib64/libvkservice.so
 vendor/lib64/libstork_shared.so
 vendor/etc/init/vaultkeeper_common.rc
 
-# Vibrator
-vendor/bin/hw/vendor.samsung.hardware.vibrator-service
-vendor/etc/init/vendor.samsung.hardware.vibrator-default.rc
-vendor/etc/vintf/manifest/vendor.samsung.hardware.vibrator-default.xml
-vendor/lib64/vendor.samsung.hardware.vibrator-V5-ndk.so
-
 # Wi-Fi configs
 vendor/etc/wifi/indoorchannel.info
 vendor/firmware/wifi/mx140.bin
