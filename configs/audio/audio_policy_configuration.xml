@@ -38,7 +38,13 @@
                 <devicePort role="sink" tagName="Wired Headphone" type="AUDIO_DEVICE_OUT_WIRED_HEADPHONE">
                     <profile channelMasks="AUDIO_CHANNEL_OUT_STEREO" format="AUDIO_FORMAT_PCM_16_BIT" name="" samplingRates="48000" />
                 </devicePort>
-                <devicePort role="sink" tagName="Bt Sco All" type="AUDIO_DEVICE_OUT_BLUETOOTH_SCO_HEADSET">
+                <devicePort role="sink" tagName="Bt Sco" type="AUDIO_DEVICE_OUT_BLUETOOTH_SCO">
+                    <profile channelMasks="AUDIO_CHANNEL_OUT_STEREO" format="AUDIO_FORMAT_PCM_16_BIT" name="" samplingRates="48000" />
+                </devicePort>
+                <devicePort role="sink" tagName="Bt Sco Headset" type="AUDIO_DEVICE_OUT_BLUETOOTH_SCO_HEADSET">
+                    <profile channelMasks="AUDIO_CHANNEL_OUT_STEREO" format="AUDIO_FORMAT_PCM_16_BIT" name="" samplingRates="48000" />
+                </devicePort>
+                <devicePort role="sink" tagName="Bt Sco Car Kit" type="AUDIO_DEVICE_OUT_BLUETOOTH_SCO_CARKIT">
                     <profile channelMasks="AUDIO_CHANNEL_OUT_STEREO" format="AUDIO_FORMAT_PCM_16_BIT" name="" samplingRates="48000" />
                 </devicePort>
                 <devicePort role="sink" tagName="Aux Device Out" type="AUDIO_DEVICE_OUT_AUX_DIGITAL">
@@ -71,7 +77,9 @@
                 <route sink="Speaker" sources="primary-out,fast,mmap_no_irq_out" type="mix" />
                 <route sink="Wired Headset" sources="primary-out,fast" type="mix" />
                 <route sink="Wired Headphone" sources="primary-out,fast" type="mix" />
-                <route sink="Bt Sco All" sources="primary-out,fast" type="mix" />
+                <route sink="Bt Sco" sources="primary-out,fast" type="mix" />
+                <route sink="Bt Sco Headset" sources="primary-out,fast" type="mix" />
+                <route sink="Bt Sco Car Kit" sources="primary-out,fast" type="mix" />
                 <route sink="primary-in" sources="Built-In Mic,Built-In Back Mic,Wired Headset Mic,Bt Sco Headset Mic,Aux Device In,Voice Call Mic,FM Mic" type="mix" />
             </routes>
         </module>
