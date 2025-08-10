@@ -72,7 +72,7 @@
                 <route sink="Wired Headset" sources="primary-out,fast" type="mix" />
                 <route sink="Wired Headphone" sources="primary-out,fast" type="mix" />
                 <route sink="Bt Sco All" sources="primary-out,fast" type="mix" />
-                <route sink="primary-in" sources="Built-In Mic,Built-In Back Mic,Wired Headset Mic,Bt Sco Headset Mic,Aux Device In,Voice Call Mic,FM Mic" type="mix" />
+                <route sink="primary-in" sources="Built-In Mic,Wired Headset Mic,Bt Sco Headset Mic,Aux Device In,Voice Call Mic,FM Mic" type="mix" />
             </routes>
         </module>
         <module halVersion="2.0" name="a2dpsink">
