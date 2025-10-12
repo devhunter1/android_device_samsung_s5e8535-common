@@ -20,5 +20,5 @@
     <dimen name="rounded_corner_content_padding">20px</dimen>
     
     <!-- the padding on the start of the statusbar -->
-    <dimen name="status_bar_padding_start">5dp</dimen>
+    <dimen name="status_bar_padding_start">12dp</dimen>
 </resources>
