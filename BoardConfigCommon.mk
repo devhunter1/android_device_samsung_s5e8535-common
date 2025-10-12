@@ -98,10 +98,6 @@ BOARD_INCLUDE_RECOVERY_DTBO := true
 
 BOARD_BOOTCONFIG := buildtime_bootconfig=enable
 
-# libinit
-TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):init_s5e8535
-TARGET_RECOVERY_DEVICE_MODULES := libinit_s5e8535
-
 # Manifest
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/vintf/manifest.xml
 DEVICE_MATRIX_FILE := $(COMMON_PATH)/vintf/compatibility_matrix.xml
