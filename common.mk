@@ -198,7 +198,8 @@ PRODUCT_SOONG_NAMESPACES += bootable/deprecated-ota
 
 # Overlays
 PRODUCT_PACKAGES += \
-    WifiOverlay
+    WifiOverlay \
+    NcmTetheringOverlay
     
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
 
