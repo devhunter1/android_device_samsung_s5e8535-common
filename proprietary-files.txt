@@ -33,17 +33,6 @@ vendor/lib64/libExtIRTA.so
 vendor/lib64/vendor.samsung.hardware.camera.device-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.camera.provider-V1-ndk.so
 
-## Codec2 - from gta4xlswifi - lineage-22.2-20250416-UNOFFICIAL-gta4xlswifi.zip
-vendor/etc/seccomp_policy/codec2.vendor.base.policy|aca50440011e47b3f877996d7dd352a9e9980cec
-
-# Codecs
-vendor/etc/seccomp_policy/codec2.vendor.ext.policy
-
-# Display
-vendor/bin/hw/android.hardware.graphics.allocator@4.0-service
-vendor/etc/init/android.hardware.graphics.allocator@4.0-service.rc
-vendor/etc/beauty/settings.dat
-
 # DRM
 vendor/bin/hw/android.hardware.drm-service.widevine
 vendor/etc/init/android.hardware.drm-service.widevine.rc
@@ -102,6 +91,21 @@ vendor/etc/init/init.gps.rc
 vendor/etc/init/vendor.samsung.hardware.gnss-service.rc
 vendor/lib/vendor.samsung.hardware.gnss-V3-ndk.so
 vendor/lib64/vendor.samsung.hardware.gnss-V3-ndk.so
+
+# Gralloc
+vendor/bin/hw/android.hardware.graphics.allocator@4.0-service
+vendor/etc/init/android.hardware.graphics.allocator@4.0-service.rc
+vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl.so
+vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl.so
+vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl.so
+vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl.so
+
+# Graphics
+vendor/lib/egl/libGLES_mali.so;SYMLINK=vendor/lib/libOpenCL.so;SYMLINK=vendor/lib/libOpenCL.so.1;SYMLINK=vendor/lib/libOpenCL.so.1.1
+vendor/lib/hw/vulkan.mali.so
+vendor/lib64/egl/libGLES_mali.so;SYMLINK=vendor/lib64/libOpenCL.so;SYMLINK=vendor/lib64/libOpenCL.so.1;SYMLINK=vendor/lib64/libOpenCL.so.1.1
+vendor/lib64/hw/vulkan.mali.so
+vendor/etc/beauty/settings.dat
 
 # Keymint
 vendor/etc/init/android.hardware.security.keymint-service.rc:vendor/etc/init/android.hardware.security.keymint-service-samsung.rc
