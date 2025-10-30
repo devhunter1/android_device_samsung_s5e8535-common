@@ -67,6 +67,20 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     charger_res_images_vendor
 
+# Codec2
+PRODUCT_PACKAGES += \
+    samsung.hardware.media.c2@1.2-service \
+    libExynosC2H264Dec \
+    libExynosC2H264Enc \
+    libExynosC2HevcDec \
+    libExynosC2HevcEnc \
+    libExynosC2Vp8Dec \
+    libExynosC2Vp8Enc
+
+PRODUCT_PACKAGES += \
+    codec2.vendor.base.policy \
+    codec2.vendor.ext.policy
+
 # ConfigStore
 PRODUCT_PACKAGES += \
     disable_configstore
@@ -88,7 +102,7 @@ PRODUCT_PACKAGES += \
 
 # Display
 PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.4-service
+    android.hardware.composer.hwc3-service.slsi
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.opengles.aep.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.opengles.aep.xml \
@@ -157,10 +171,6 @@ PRODUCT_COPY_FILES += \
 
 # Libinit
 $(call soong_config_set,libinit,vendor_init_lib,//$(COMMON_PATH):init_s5e8535)
-
-# Light
-PRODUCT_PACKAGES += \
-    android.hardware.light-service.samsung
 
 # Lineage Health
 PRODUCT_PACKAGES += \
@@ -263,6 +273,8 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/samsung_slsi/libbt \
     hardware/samsung_slsi/scsc_wifibt/wifi_hal \
     hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib
+
+$(call inherit-product, hardware/samsung_slsi-linaro/config/config.mk)
 
 # Telephony
 PRODUCT_COPY_FILES += \

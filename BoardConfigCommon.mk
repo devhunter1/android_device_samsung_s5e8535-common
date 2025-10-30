@@ -60,7 +60,10 @@ TARGET_BOARD_PLATFORM := erd8535
 TARGET_SOC := s5e8535
 TARGET_NO_BOOTLOADER := true
 
+include hardware/samsung_slsi-linaro/config/BoardConfig8535.mk
+
 # Display
+BOARD_MINIMUM_DISPLAY_BRIGHTNESS := 1
 TARGET_SCREEN_DENSITY := 450
 
 # DTBO
