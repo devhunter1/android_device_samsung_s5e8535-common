@@ -7,7 +7,6 @@ vendor/lib64/hw/audio.sec_primary.default.so
 vendor/lib64/hw/libsecaudiohal_aidl.so
 vendor/etc/init/secaudiohalaidl.rc
 vendor/etc/sec_audio_volume_curve.xml
-vendor/etc/usb_audio_policy_configuration.xml
 vendor/lib/libspeakercalibration.so
 vendor/lib64/libspeakercalibration.so
 vendor/lib64/vendor.samsung.hardware.audio-V1-ndk.so
