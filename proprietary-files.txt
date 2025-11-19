@@ -1,4 +1,4 @@
-# All unpinned blobs are extracted from A146BXXS9DYH1
+# All unpinned blobs are extracted from A146BXXUADYJ2
 
 # Audio
 vendor/bin/hw/secaudiohalaidl
