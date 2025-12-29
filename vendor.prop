@@ -21,6 +21,7 @@ bluetooth.profile.pbap.server.enabled=true
 
 ## Codec
 debug.stagefright.c2inputsurface=-1
+ro.vendor.gpu.dataspace=1
 
 ## Camera
 ro.camera.disableJpegR=true
