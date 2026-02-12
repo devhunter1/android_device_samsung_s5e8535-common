@@ -768,4 +768,4 @@ service insmod_sh_common /vendor/bin/init.insmod.sh /vendor/etc/init.insmod.${ro
 
 # SSWAP
 on boot
-    write /proc/sys/vm/swappiness 160
+    write /proc/sys/vm/swappiness 100
