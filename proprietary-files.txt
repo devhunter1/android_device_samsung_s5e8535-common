@@ -91,14 +91,6 @@ vendor/etc/init/vendor.samsung.hardware.gnss-service.rc
 vendor/lib/vendor.samsung.hardware.gnss-V3-ndk.so
 vendor/lib64/vendor.samsung.hardware.gnss-V3-ndk.so
 
-# Gralloc
-vendor/bin/hw/android.hardware.graphics.allocator@4.0-service
-vendor/etc/init/android.hardware.graphics.allocator@4.0-service.rc
-vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl.so
-vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl.so
-vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl.so
-vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl.so
-
 # Graphics
 vendor/lib/egl/libGLES_mali.so;SYMLINK=vendor/lib/libOpenCL.so;SYMLINK=vendor/lib/libOpenCL.so.1;SYMLINK=vendor/lib/libOpenCL.so.1.1
 vendor/lib/hw/vulkan.mali.so
