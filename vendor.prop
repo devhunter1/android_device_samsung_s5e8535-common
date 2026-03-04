@@ -58,7 +58,6 @@ ro.surface_flinger.set_idle_timer_ms=250
 ro.surface_flinger.set_touch_timer_ms=300
 ro.surface_flinger.supports_background_blur=1
 ro.sf.blurs_are_expensive=1
-ro.vendor.ddk.set.afbc=1
 
 ## DRM
 drm.service.enabled=true
