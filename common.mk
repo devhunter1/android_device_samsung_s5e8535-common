@@ -63,6 +63,12 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.autofocus.xml \
     frameworks/native/data/etc/android.hardware.camera.front.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.front.xml
 
+# cbd
+PRODUCT_PACKAGES += \
+    cbd
+
+$(call soong_config_set,cbd,protocol,sipc)
+
 # Charger
 PRODUCT_PACKAGES += \
     charger_res_images_vendor
@@ -287,7 +293,8 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/lineage/compat \
     hardware/samsung_slsi/libbt \
     hardware/samsung_slsi/scsc_wifibt/wifi_hal \
-    hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib
+    hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib \
+    hardware/samsung_slsi-linaro/exynos/cpboot_v3
 
 $(call inherit-product, hardware/samsung_slsi-linaro/config/config.mk)
 
