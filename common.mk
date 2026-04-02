@@ -21,6 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
 # Audio
 PRODUCT_PACKAGES += \
+    audio.primary.erd8535 \
     android.hardware.audio@7.0-impl \
     android.hardware.audio.service \
     android.hardware.audio.effect@7.0-impl \
@@ -28,7 +29,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth.audio-impl \
     audio.r_submix.default \
     audio.usbv2.default
-    
+
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/audio/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
     $(COMMON_PATH)/configs/audio/audio_board_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_board_info.xml \
@@ -294,7 +295,8 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/samsung_slsi/libbt \
     hardware/samsung_slsi/scsc_wifibt/wifi_hal \
     hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib \
-    hardware/samsung_slsi-linaro/exynos/cpboot_v3
+    hardware/samsung_slsi-linaro/exynos/cpboot_v3 \
+    hardware/samsung_slsi-linaro/exynos/libaudio/audiohal_comv1
 
 $(call inherit-product, hardware/samsung_slsi-linaro/config/config.mk)
 

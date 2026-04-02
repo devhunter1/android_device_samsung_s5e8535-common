@@ -1,17 +1,5 @@
 # All unpinned blobs are extracted from A146BXXUBDYL1
 
-# Audio
-vendor/bin/hw/secaudiohalaidl
-vendor/lib/hw/audio.sec_primary.default.so
-vendor/lib64/hw/audio.sec_primary.default.so
-vendor/lib64/hw/libsecaudiohal_aidl.so
-vendor/etc/init/secaudiohalaidl.rc
-vendor/etc/sec_audio_volume_curve.xml
-vendor/lib/libspeakercalibration.so
-vendor/lib64/libspeakercalibration.so
-vendor/lib64/vendor.samsung.hardware.audio-V1-ndk.so
-vendor/etc/vintf/manifest/secaudiohalaidl_manifest.xml
-
 # Audio (FX modules)
 vendor/lib/soundfx/libmyspace.so
 vendor/lib64/soundfx/libmyspace.so
