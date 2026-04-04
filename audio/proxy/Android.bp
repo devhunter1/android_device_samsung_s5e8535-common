@@ -16,7 +16,7 @@
 soong_config_module_type {
     name: "audioproxy",
     module_type: "cc_defaults",
-    config_namespace: "universal9830AudioVars",
+    config_namespace: "s5e8535AudioVars",
     bool_variables: [
         "use_bta2dp_offload",
         "use_direct_rcvspk_path",
@@ -53,7 +53,7 @@ audioproxy {
         use_soundtrigger_hal: {
             cflags: [
                 "-DSUPPORT_STHAL_INTERFACE",
-                "-DTARGET_SOC_NAME=exynos9830",
+                "-DTARGET_SOC_NAME=s5e8535",
             ],
         },
         use_usb_offload: {
