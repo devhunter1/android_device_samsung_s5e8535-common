@@ -91,6 +91,10 @@ typedef enum {
 #define ABOX_DVTX_CONTROL_NAME "ABOX DVTx PROCESS"
 #define MIXER_CTL_ABOX_NREC_CONTROL_PARAMS_CNT 1
 
+// Call volume
+#define CALL_VOLUME_CONTROL_NAME "ABOX Speech Volume"
+#define CALL_PLAYBACK_VOLUME_MAX   7
+
 typedef enum {
     UPSCALE_NONE        = 0,
     UPSCALE_48K_16B,

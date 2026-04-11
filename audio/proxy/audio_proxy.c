@@ -5453,12 +5453,18 @@ void proxy_set_volume(void *proxy, int volume_type, float left, float right)
         val[1] = (int)(right * MMAP_PLAYBACK_VOLUME_MAX);
 
         ctrl = mixer_get_ctl_by_name(aproxy->mixer, MIXER_CTL_ABOX_MMAP_OUT_VOLUME_CONTROL);
+    } else if (volume_type == VOLUME_TYPE_CALL) {
+        val[0] = (int)(left * CALL_PLAYBACK_VOLUME_MAX);
+
+        ctrl = mixer_get_ctl_by_name(aproxy->mixer, CALL_VOLUME_CONTROL_NAME);
     }
 
     if (ctrl) {
         if (volume_type == VOLUME_TYPE_OFFLOAD)
             ret = mixer_ctl_set_array(ctrl, val, sizeof(val)/sizeof(val[0]));
         else if (volume_type == VOLUME_TYPE_MMAP)
+            ret = mixer_ctl_set_value(ctrl, 0, val[0]);
+        else if (volume_type == VOLUME_TYPE_CALL)
             ret = mixer_ctl_set_value(ctrl, 0, val[0]);
 
         if (ret != 0)
