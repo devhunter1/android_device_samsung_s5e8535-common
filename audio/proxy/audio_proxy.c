@@ -5895,34 +5895,6 @@ bool proxy_get_uhqa_stream_config(void *proxy_stream)
     return uhqa_stream_config;
 }
 
-void proxy_init_offload_effect_lib(void *proxy)
-{
-    struct audio_proxy *aproxy = proxy;
-
-    if(access(OFFLOAD_EFFECT_LIBRARY_PATH, R_OK) == 0){
-        aproxy->offload_effect_lib = dlopen(OFFLOAD_EFFECT_LIBRARY_PATH, RTLD_NOW);
-        if(aproxy->offload_effect_lib == NULL){
-            ALOGI("proxy-%s: dlopen %s failed", __func__, OFFLOAD_EFFECT_LIBRARY_PATH);
-        } else {
-            aproxy->offload_effect_lib_update =
-                (void (*)(struct mixer *, int))dlsym(aproxy->offload_effect_lib,
-                "effect_update_by_hal");
-            aproxy->offload_effect_lib_update(aproxy->mixer, 0);
-        }
-    } else {
-        ALOGI("proxy-%s: access %s failed", __func__, OFFLOAD_EFFECT_LIBRARY_PATH);
-    }
-    return;
-}
-
-void proxy_update_offload_effect(void *proxy, int type){
-    struct audio_proxy *aproxy = proxy;
-
-    if (type && (aproxy->offload_effect_lib_update != NULL)) {
-        aproxy->offload_effect_lib_update(aproxy->mixer, type);
-    }
-}
-
 void proxy_set_dual_speaker_mode(void *proxy, bool state)
 {
     struct audio_proxy *aproxy = proxy;
