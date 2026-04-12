@@ -22,7 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 # Audio
 PRODUCT_PACKAGES += \
     audio.primary.erd8535 \
-    android.hardware.audio@7.0-impl \
+    android.hardware.audio@7.1-impl \
     android.hardware.audio.service \
     android.hardware.audio.effect@7.0-impl \
     audio.bluetooth.default \
