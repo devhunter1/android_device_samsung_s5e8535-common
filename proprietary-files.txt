@@ -1,5 +1,13 @@
 # All unpinned blobs are extracted from A146BXXUBDYL1
 
+# Audio
+vendor/lib64/libSamsungPostProcessConvertor.so
+vendor/lib/libSamsungPostProcessConvertor.so
+vendor/lib64/lib_soundaliveresampler.so
+vendor/lib/lib_soundaliveresampler.so
+vendor/lib64/lib_SoundAlive_SRC384_ver320.so
+vendor/lib/lib_SoundAlive_SRC384_ver320.so
+
 # Audio (FX modules)
 vendor/lib/soundfx/libmyspace.so
 vendor/lib64/soundfx/libmyspace.so

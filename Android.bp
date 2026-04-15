@@ -9,5 +9,6 @@ soong_namespace {
         "hardware/google/interfaces",
         "hardware/google/pixel",
         "hardware/samsung",
+        "vendor/samsung/s5e8535-common",
     ],
 }

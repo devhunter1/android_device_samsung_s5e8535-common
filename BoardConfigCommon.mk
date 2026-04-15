@@ -31,6 +31,7 @@ DEXPREOPT_GENERATE_APEX_IMAGE := true
 $(call soong_config_set,exynos_audio,PREDEFINED_LOW_CAPTURE_DURATION,20)
 $(call soong_config_set,exynos_audio,PROXY_LIBRARY,//device/samsung/s5e8535-common:libaudioproxy)
 $(call soong_config_set_bool,s5e8535AudioVars,use_usb_offload,true)
+$(call soong_config_set_bool,s5e8535AudioVars,use_sec_audio_resampler,true)
 $(call soong_config_set_bool,exynos_audio,SUPPORT_USB_OFFLOAD,true)
 
 ## Bluetooth
