@@ -249,4 +249,8 @@ struct audio_proxy
 #define VC_MULTI_MIC_CAPTURE_CHANNELS 4
 #endif
 
+#ifdef SEC_AUDIO_SAMSUNGRECORD
+int32_t proxy_get_last_format(void *proxy_stream);
+#endif
+
 #endif /* AUDIO_PROXY_H */
