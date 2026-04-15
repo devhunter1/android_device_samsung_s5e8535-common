@@ -70,7 +70,10 @@
 #endif
 
 #ifdef SEC_AUDIO_RESAMPLER
-#include "PostProcessConvertor.h"
+typedef audio_format_t (*audio_format_from_pcm_format_t)(uint32_t format);
+void * PostProcessConvertorInit(unsigned int requested_sample_rate, uint32_t rate, uint32_t channels, audio_format_t proxy_last_format, audio_format_t audio_format_from_pcm_format);
+extern size_t PostProcessConvertorProcess(void* resampler, void* conversion_buffer, int16_t* actual_read_buf, uint32_t period_size);
+extern int PostProcessConvertorClear(void * resampler);
 #endif
 
 #ifdef SEC_AUDIO_PARAM_UPDATE

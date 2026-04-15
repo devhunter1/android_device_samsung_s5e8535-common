@@ -23,6 +23,7 @@ soong_config_module_type {
         "use_soundtrigger_hal",
         "use_usb_offload",
         "use_quad_mic",
+        "use_sec_audio_resampler",
     ],
     properties: [
         "cflags",
@@ -62,6 +63,12 @@ audioproxy {
         },
         use_quad_mic: {
             cflags: ["-DSUPPORT_QUAD_MIC"],
+        },
+        use_sec_audio_resampler: {
+            cflags: ["-DSEC_AUDIO_RESAMPLER"],
+            shared_libs: [
+                "libSamsungPostProcessConvertor",
+            ],
         },
     },
 }
