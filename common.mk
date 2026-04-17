@@ -6,5 +6,8 @@
 
 COMMON_PATH := device/samsung/s5e8535-common
 
+# Enforce generic ramdisk allow list
+$(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
+
 # Product characteristics
 PRODUCT_CHARACTERISTICS := phone
