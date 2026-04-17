@@ -1,0 +1,29 @@
+# AAudio
+aaudio.mmap_policy=2
+aaudio.mmap_exclusive_policy=2
+aaudio.hw_burst_min_usec=2000
+audio.offload.min.duration.secs=30
+
+# Camera
+ro.camera.disableJpegR=true
+
+# FRP
+ro.frp.pst=/dev/block/persistent
+
+# Graphics
+ro.opengles.version=196610
+
+## Manufacturer
+ro.soc.manufacturer=Samsung
+ro.soc.model=s5e8535
+ro.hardware.egl=mali
+ro.hardware.vulkan=mali
+
+## Netflix
+ro.netflix.bsp_rev=EXYNOS1330-36497-1
+
+# RIL
+ro.radio.noril=no
+
+## Vol
+ro.config.vc_call_vol_steps=8
