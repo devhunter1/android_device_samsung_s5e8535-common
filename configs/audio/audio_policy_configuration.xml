@@ -248,6 +248,9 @@
 
         </module>
 
+        <!-- Bluetooth Audio HAL -->
+        <xi:include href="bluetooth_audio_policy_configuration_7_0.xml"/>
+
     </modules>
 
     <!-- Volume section -->
