@@ -6,6 +6,9 @@
 
 COMMON_PATH := device/samsung/s5e8535-common
 
+# Updatable APEX
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
 # Enforce generic ramdisk allow list
 $(call inherit-product, $(SRC_TARGET_DIR)/product/generic_ramdisk.mk)
 
