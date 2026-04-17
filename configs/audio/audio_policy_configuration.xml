@@ -98,35 +98,12 @@
                 <route sink="a2dp input" sources="BT A2DP In" type="mix" />
             </routes>
         </module>
-        <module halVersion="2.0" name="r_submix">
-            <attachedDevices>
-                <item>Remote Submix In</item>
-            </attachedDevices>
-            <mixPorts>
-                <mixPort name="r_submix output" role="source">
-                    <profile channelMasks="AUDIO_CHANNEL_OUT_STEREO" format="AUDIO_FORMAT_PCM_16_BIT" name="" samplingRates="48000" />
-                </mixPort>
-                <mixPort name="r_submix input" role="sink">
-                    <profile channelMasks="AUDIO_CHANNEL_IN_STEREO" format="AUDIO_FORMAT_PCM_16_BIT" name="" samplingRates="48000" />
-                </mixPort>
-            </mixPorts>
-            <devicePorts>
-                <devicePort role="sink" tagName="Remote Submix Out" type="AUDIO_DEVICE_OUT_REMOTE_SUBMIX">
-                    <profile channelMasks="AUDIO_CHANNEL_OUT_STEREO" format="AUDIO_FORMAT_PCM_16_BIT" name="" samplingRates="48000" />
-                </devicePort>
-                <devicePort role="source" tagName="Remote Submix In" type="AUDIO_DEVICE_IN_REMOTE_SUBMIX">
-                    <profile channelMasks="AUDIO_CHANNEL_IN_STEREO" format="AUDIO_FORMAT_PCM_16_BIT" name="" samplingRates="48000" />
-                </devicePort>
-            </devicePorts>
-            <routes>
-                <route sink="Remote Submix Out" sources="r_submix output" type="mix" />
-                <route sink="r_submix input" sources="Remote Submix In" type="mix" />
-            </routes>
-        </module>
         <!-- Bluetooth Audio HAL -->
         <xi:include href="bluetooth_audio_policy_configuration_7_0.xml"/>
         <!-- USB Audio HAL -->
         <xi:include href="usb_audio_policy_configuration.xml"/>
+        <!-- Remote Submix Audio HAL -->
+        <xi:include href="r_submix_audio_policy_configuration.xml"/>
     </modules>
     <xi:include href="audio_policy_volumes.xml" />
     <xi:include href="default_volume_tables.xml" />
