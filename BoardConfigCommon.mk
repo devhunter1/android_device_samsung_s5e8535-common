@@ -78,6 +78,8 @@ TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 # Reserved Partition size
 -include vendor/lineage/config/BoardConfigReservedSize.mk
 
+BOARD_ROOT_EXTRA_FOLDERS := efs
+
 # Init_boot
 BOARD_INIT_BOOT_HEADER_VERSION := 4
 BOARD_MKBOOTIMG_INIT_ARGS += --header_version $(BOARD_INIT_BOOT_HEADER_VERSION)
