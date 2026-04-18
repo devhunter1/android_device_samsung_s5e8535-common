@@ -74,6 +74,16 @@ vendor/etc/vintf/manifest/manifest_android.hardware.drm-service.widevine.xml
 vendor/lib64/libwvaidl.so
 vendor/lib64/liboemcrypto.so
 
+# fingerprint
+vendor/etc/init/init.fingerprint.rc
+vendor/lib64/libsfp_sensor.so
+vendor/lib64/libsfp_teegw.so
+vendor/lib64/vendor.samsung.hardware.biometrics.fingerprint-V1-ndk.so
+vendor/lib64/libsynaFpSensorTestNwd.so
+vendor/lib64/libegis_fp_normal_sensor_test.so
+vendor/lib64/libgf_in_system_lib.so
+vendor/lib64/libqfp_sensortest.so
+
 # Firmware
 vendor/firmware/OD_V2.4.2_06_30_QVGA_RICE_VRA_RGB1P.bin
 vendor/firmware/OD_V2.5.1_06_30_VGA_RICE_VRA_RGB1P.bin
