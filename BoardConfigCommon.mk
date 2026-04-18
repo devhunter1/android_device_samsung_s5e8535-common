@@ -8,6 +8,9 @@ COMMON_PATH := device/samsung/s5e8535-common
 
 BUILD_BROKEN_DUP_RULES := true
 
+# Inherit the proprietary files
+include vendor/samsung/s5e8535-common/BoardConfigVendor.mk
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-2a-dotprod
@@ -135,6 +138,9 @@ BOARD_RECOVERY_MKBOOTIMG_ARGS += --pagesize $(BOARD_KERNEL_PAGESIZE) --board $(B
 BOARD_RECOVERY_MKBOOTIMG_ARGS += --dtb_offset 0x00000000
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 100663296
+
+# Security patch level
+VENDOR_SECURITY_PATCH := 2025-12-01
 
 # Vendor_boot
 BOARD_VENDOR_RAMDISK_FRAGMENTS := dlkm
