@@ -50,6 +50,8 @@ blob_fixups: blob_fixups_user_type = {
        'vendor/lib/hw/audio.primary.s5e8535.so',
    ): blob_fixup()
         .replace_needed('libaudioroute.so', 'libaudioroute_vendor.so'),
+   'vendor/etc/init/android.hardware.security.keymint-service.samsung.rc': blob_fixup()
+        .regex_replace('android.hardware.security.keymint-service', 'android.hardware.security.keymint-service.samsung'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
