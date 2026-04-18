@@ -5,20 +5,6 @@ on early-init
     exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor_dlkm/lib/modules input_booster_lkm.ko
 
 on init
-    # See storage config details at http://source.android.com/tech/storage/
-    mkdir /storage/sdcard 0000 root root
-    mkdir /storage/usb1 0000 root root
-    mkdir /storage/usb2 0000 root root
-    mkdir /mnt/media_rw/sdcard 0700 media_rw media_rw
-    mkdir /mnt/media_rw/usb1 0700 media_rw media_rw
-    mkdir /mnt/media_rw/usb2 0700 media_rw media_rw
-
-    export SECONDARY_STORAGE /storage/sdcard:/storage/usb1:/storage/usb2
-
-    # Support legacy paths
-    symlink /storage/sdcard /mnt/ext_sd
-    symlink /data/app /factory
-
     symlink /dev/block/by-name/steady /dev/block/steady
     symlink /dev/block/by-name/persistent /dev/block/persistent
     symlink /dev/block/by-name/param /dev/block/param
@@ -135,7 +121,7 @@ on init
     write /dev/cpuset/background/cpus 0-3
     write /dev/cpuset/system-background/cpus 0-3
     write /dev/cpuset/dexopt/cpus 0-6
-	
+
 # foreground-boost
     mkdir /dev/cpuset/foreground-boost
     copy /dev/cpuset/cpus /dev/cpuset/foreground-boost/cpus
@@ -153,9 +139,6 @@ on init
     copy /dev/cpuset/cpus /dev/cpuset/foreground-boost/cpus
     copy /dev/cpuset/mems /dev/cpuset/foreground-boost/mems
     write /dev/cpuset/foreground-boost/cpus 0-7
-
-# set property to boost-optimize
-    setprop sys.perf.boostopt true
 
     # sf cpuset
     mkdir /dev/cpuset/sf
@@ -181,9 +164,6 @@ on init
     write /proc/sys/net/ipv4/tcp_wmem "4194304 8388608 16388608"
     write /proc/sys/net/ipv4/tcp_mem "44259 59012 88518"
     write /proc/sys/net/ipv4/udp_mem "88518 118025 177036"
-
-    #SystemPerformance - ActivityManagerPerformance
-    setprop sys.config.amp_to_app_switch 6000
 	
     start watchdogd
 
@@ -456,7 +436,7 @@ on post-fs-data
     chown system radio /sys/class/sensors/grip_sensor/noti_enable
     chown system radio /sys/class/sensors/grip_sensor/motion
     chown system radio /sys/class/sensors/grip_sensor/unknown_state
-	chown system radio /sys/class/sensors/grip_sensor/unknown_state_2ch
+    chown system radio /sys/class/sensors/grip_sensor/unknown_state_2ch
     chown system radio /sys/class/sensors/grip_sensor/grip_irq_count
     chown system radio /sys/class/sensors/grip_sensor/grip_threshold
     chown system radio /sys/class/sensors/grip_sensor/grip_total_cap
@@ -535,7 +515,7 @@ on post-fs-data
     chown system radio /sys/class/sensors/grip_sensor_sub/motion
     chown system radio /sys/class/sensors/grip_sensor_sub/unknown_state
     chown system radio /sys/class/sensors/grip_sensor_sub/unknown_state_2ch
-	chown system radio /sys/class/sensors/grip_sensor_sub/noti_enable
+    chown system radio /sys/class/sensors/grip_sensor_sub/noti_enable
 
 on early-boot
     # Update dm-verity state and set partition.*.verified properties
@@ -547,8 +527,6 @@ on boot
     # SCSC do not enable autorecovery in dev builds
     # write /sys/module/scsc_mx/parameters/disable_recovery_handling 0
     #settings put global captive_portal_mode 0
-
-    setprop ro.radio.noril no
 
     # Change permission for A-Box firmware logs file & GPR dump
     chown audioserver system /sys/devices/platform/14e50000.abox/0.abox-debug/gicd
@@ -584,9 +562,6 @@ on boot
     chown mediacodec system /sys/kernel/gpu/gpu_mm_min_clock
     chmod 0664 /sys/kernel/gpu/gpu_mm_min_clock
 
-# remove resampling
-    setprop ro.input.resampling 0
-
 # SDHMS Slowdown : Cpuset
     write /dev/cpuset/moderate/cpus 0-2
 
@@ -603,8 +578,6 @@ on fs
 
     wait /dev/block/by-name/sec_efs
     mount ext4 /dev/block/by-name/sec_efs /efs nosuid nodev noatime noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic
-
-    setprop ro.crypto.fuse_sdcard true
 
     restorecon_recursive /mnt/vendor/efs
     restorecon_recursive /mnt/vendor/cpefs
@@ -729,24 +702,9 @@ on fs
 #load ecd firmware
     write /proc/ecd/load_firmware 1
 
-service fuse_sdcard /system/bin/sdcard -u 1023 -g 1023 -d /mnt/media_rw/sdcard /storage/sdcard
-    class late_start
-    disabled
-service fuse_usb1 /system/bin/sdcard -u 1023 -g 1023 -d /mnt/media_rw/usb1 /storage/usb1
-    class late_start
-    disabled
-service fuse_usb2 /system/bin/sdcard -u 1023 -g 1023 -d /mnt/media_rw/usb2 /storage/usb2
-    class late_start
-    disabled
-
 # Write build info to kdebuginfo
 on property:ro.build.fingerprint=*
     write /sys/module/debug_kinfo/parameters/build_info ${ro.build.fingerprint}
-
-service abox_log /vendor/bin/abox_log sec-audio-debug /data/vendor/log/abox
-    class late_start
-    user audioserver
-    group system
 
 # Set watchdog timer to 30 seconds and fed it every 10 seconds to get a 20 second margin
 service watchdogd /system/bin/watchdogd 10 20
@@ -789,31 +747,6 @@ service watchdogd /system/bin/watchdogd 10 20
     #oneshot
     #seclabel u:r:hal_wifi_supplicant_default:s0
 
-service dhcpcd_wlan0 /vendor/bin/dhcpcd -aABDKL
-        class main
-        disabled
-        oneshot
-
-service iprenew_wlan0 /vendor/bin/dhcpcd -n
-        class main
-        disabled
-        oneshot
-
-service dhcpcd_p2p /vendor/bin/dhcpcd -aABKL
-        class main
-        disabled
-        oneshot
-
-service iprenew_p2p /vendor/bin/dhcpcd -n
-        class main
-        disabled
-        oneshot
-
-# on userdebug and eng builds, enable kgdb on the serial console
-on property:ro.debuggable=1
-    write /sys/module/kgdboc/parameters/kgdboc ttyFIQ1
-    write /sys/module/fiq_debugger/parameters/kgdb_enable 1
-
 on property:sys.boot_completed=1
     start insmod_sh_common
 
@@ -827,14 +760,3 @@ service insmod_sh_common /vendor/bin/init.insmod.sh /vendor/etc/init.insmod.${ro
 # SSWAP
 on boot
     write /proc/sys/vm/swappiness 160
-
-# Pageboostd
-on property:sys.boot_completed=1
-    start pageboostd
-
-service pageboostd /system/bin/pageboostd
-    class main
-    user system
-    group system mount radio net_bt sdcard_rw shell media media_rw
-    socket pageboostd seqpacket 0660 system system
-    disabled
