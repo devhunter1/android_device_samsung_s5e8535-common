@@ -113,8 +113,6 @@ BOARD_USES_METADATA_PARTITION := true
 
 # Properties
 TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
-TARGET_PRODUCT_PROP += $(COMMON_PATH)/product.prop
-
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(COMMON_PATH)/configs/init/fstab.s5e8535
