@@ -32,6 +32,11 @@ bluetooth.profile.vcp.controller.enabled=false
 # Camera
 ro.camera.disableJpegR=true
 
+# Fingerprint
+ro.vendor.fingerprint.type=side
+ro.vendor.fingerprint.force_calibrate=true
+ro.vendor.fingerprint.sensor_location=1080|350|300
+
 # FRP
 ro.frp.pst=/dev/block/persistent
 
