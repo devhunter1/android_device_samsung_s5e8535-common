@@ -52,6 +52,11 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libaudioroute.so', 'libaudioroute_vendor.so'),
    'vendor/etc/init/android.hardware.security.keymint-service.samsung.rc': blob_fixup()
         .regex_replace('android.hardware.security.keymint-service', 'android.hardware.security.keymint-service.samsung'),
+   ( 
+       'vendor/lib64/libskeymint10device.so',
+       'vendor/bin/hw/android.hardware.security.keymint-service.samsung',
+   ): blob_fixup()
+        .add_needed('android.hardware.security.rkp-V3-ndk.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
