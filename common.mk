@@ -129,6 +129,10 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/samsung_slsi/scsc_wifibt/wifi_hal \
     hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib
 
+# USB
+PRODUCT_PACKAGES += \
+    android.hardware.usb-service.samsung
+
 # WIFI
 PRODUCT_PACKAGES += \
     hostapd \
