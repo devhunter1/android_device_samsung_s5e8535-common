@@ -1,0 +1,92 @@
+<!--
+     Copyright (C) 2026 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<compatibility-matrix version="5.0" type="framework">
+    <hal format="aidl">
+        <name>vendor.samsung.hardware.audio</name>
+        <version>1</version>
+        <interface>
+            <name>ISecAudioHal</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.samsung.hardware.gnss</name>
+        <version>3</version>
+        <interface>
+            <name>ISehGnss</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.samsung.hardware.keymint</name>
+        <version>1-2</version>
+        <interface>
+            <name>ISehKeyMintExtension</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.samsung.hardware.keymint</name>
+        <version>1-2</version>
+        <interface>
+            <name>ISehKeyMintFactory</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal override="true" format="hidl">
+        <name>vendor.samsung_slsi.hardware.radio</name>
+        <transport>hwbinder</transport>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.samsung.hardware.radio.network</name>
+        <interface>
+            <name>ISehRadioNetwork</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.samsung.hardware.radio.channel</name>
+        <interface>
+            <name>ISehRadioChannel</name>
+            <instance>imsd</instance>
+            <instance>imsd2</instance>
+            <instance>epdgd</instance>
+            <instance>epdgd2</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.samsung.hardware.radio.bridge</name>
+        <interface>
+            <name>ISehRadioBridge</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.samsung.hardware.radio.data</name>
+        <interface>
+            <name>ISehRadioData</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.samsung.hardware.radio.sim</name>
+        <interface>
+            <name>ISehRadioSim</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.samsung.hardware.radio.messaging</name>
+        <interface>
+            <name>ISehRadioMessaging</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+</compatibility-matrix>
