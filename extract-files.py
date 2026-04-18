@@ -19,6 +19,7 @@ from extract_utils.main import (
 
 namespace_imports = [
     'device/samsung/s5e8535-common',
+    'hardware/lineage/compat',
 ]
 
 def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
@@ -56,7 +57,10 @@ blob_fixups: blob_fixups_user_type = {
        'vendor/lib64/libskeymint10device.so',
        'vendor/bin/hw/android.hardware.security.keymint-service.samsung',
    ): blob_fixup()
-        .add_needed('android.hardware.security.rkp-V3-ndk.so'),
+        .add_needed('android.hardware.security.rkp-V3-ndk.so')
+        .replace_needed('libcrypto.so', 'libcrypto-v33.so'),
+   'vendor/lib64/libskeymint_cli.so': blob_fixup()
+        .replace_needed('libcrypto.so', 'libcrypto-v33.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
