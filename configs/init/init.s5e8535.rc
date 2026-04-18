@@ -166,6 +166,8 @@ on init
     write /proc/sys/net/ipv4/udp_mem "88518 118025 177036"
 	
     start watchdogd
+    
+    setprop ro.boot.hardware.revision ${ro.revision}
 
 on post-fs
     # set RLIMIT_MEMLOCK to 64MB
