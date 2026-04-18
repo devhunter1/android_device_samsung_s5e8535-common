@@ -32,6 +32,9 @@ bluetooth.profile.vcp.controller.enabled=false
 # Camera
 ro.camera.disableJpegR=true
 
+# DRM
+drm.service.enabled=true
+
 # FRP
 ro.frp.pst=/dev/block/persistent
 
