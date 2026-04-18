@@ -110,8 +110,8 @@ vendor/lib/vendor.samsung.hardware.gnss-V3-ndk.so
 vendor/lib64/vendor.samsung.hardware.gnss-V3-ndk.so
 
 # Keymint
-vendor/bin/hw/android.hardware.security.keymint-service
-vendor/etc/init/android.hardware.security.keymint-service.rc
+vendor/bin/hw/android.hardware.security.keymint-service:vendor/bin/hw/android.hardware.security.keymint-service.samsung
+vendor/etc/init/android.hardware.security.keymint-service.rc:vendor/etc/init/android.hardware.security.keymint-service.samsung.rc
 vendor/lib64/libskeymint10device.so
 vendor/lib64/libskeymint_cli.so
 vendor/lib64/vendor.samsung.hardware.keymint-V2-ndk.so
