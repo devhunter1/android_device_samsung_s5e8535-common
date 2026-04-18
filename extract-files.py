@@ -32,6 +32,24 @@ lib_fixups: lib_fixups_user_type = {
 } # fmt: skip
 
 blob_fixups: blob_fixups_user_type = {
+   (
+       'vendor/lib64/libaboxpcmdump.so',
+       'vendor/lib/libaboxpcmdump.so',
+       'vendor/lib64/libaudioparamupdate.so',
+       'vendor/lib/libaudioparamupdate.so',
+   ): blob_fixup()
+        .replace_needed('libaudioroute.so', 'libaudioroute_vendor.so'),
+   (
+       'vendor/lib/libaudioproxy2.so',
+       'vendor/lib64/libaudioproxy2.so',
+   ): blob_fixup()
+        .replace_needed('libaudioroute.so', 'libaudioroute_vendor.so')
+        .replace_needed('libtinyalsa.so', 'libtinyalsa_vendor.so'),
+   (
+       'vendor/lib64/hw/audio.primary.s5e8535.so',
+       'vendor/lib/hw/audio.primary.s5e8535.so',
+   ): blob_fixup()
+        .replace_needed('libaudioroute.so', 'libaudioroute_vendor.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
