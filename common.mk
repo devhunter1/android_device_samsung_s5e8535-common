@@ -111,6 +111,13 @@ PRODUCT_PACKAGES += \
 # Product characteristics
 PRODUCT_CHARACTERISTICS := phone
 
+# RIL
+PRODUCT_PACKAGES += \
+    sehradiomanager
+
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/ril/sehradiomanager.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sehradiomanager.conf
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors-service.samsung-multihal
