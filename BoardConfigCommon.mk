@@ -142,6 +142,9 @@ BOARD_RECOVERYIMAGE_PARTITION_SIZE := 100663296
 # Security patch level
 VENDOR_SECURITY_PATCH := 2025-12-01
 
+# USB gadget
+$(call soong_config_set,samsungUsbGadgetVars,gadget_name,13200000.dwc3)
+
 # Vendor_boot
 BOARD_VENDOR_RAMDISK_FRAGMENTS := dlkm
 BOARD_VENDOR_RAMDISK_FRAGMENT.dlkm.KERNEL_MODULE_DIRS := top
