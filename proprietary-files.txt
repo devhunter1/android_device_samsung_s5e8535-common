@@ -119,6 +119,13 @@ vendor/etc/init/vendor.samsung.hardware.gnss-service.rc
 vendor/lib/vendor.samsung.hardware.gnss-V3-ndk.so
 vendor/lib64/vendor.samsung.hardware.gnss-V3-ndk.so
 
+# Graphics
+vendor/lib/egl/libGLES_mali.so;SYMLINK=vendor/lib/libOpenCL.so;SYMLINK=vendor/lib/libOpenCL.so.1;SYMLINK=vendor/lib/libOpenCL.so.1.1
+vendor/lib/hw/vulkan.mali.so
+vendor/lib64/egl/libGLES_mali.so;SYMLINK=vendor/lib64/libOpenCL.so;SYMLINK=vendor/lib64/libOpenCL.so.1;SYMLINK=vendor/lib64/libOpenCL.so.1.1
+vendor/lib64/hw/vulkan.mali.so
+vendor/etc/beauty/settings.dat
+
 # Keymint
 vendor/bin/hw/android.hardware.security.keymint-service:vendor/bin/hw/android.hardware.security.keymint-service.samsung
 vendor/etc/init/android.hardware.security.keymint-service.rc:vendor/etc/init/android.hardware.security.keymint-service.samsung.rc
