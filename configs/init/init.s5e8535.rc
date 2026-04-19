@@ -560,6 +560,8 @@ on boot
     chmod 0660 /sys/class/sec/switch/uart_sel
     chown system system /sys/class/sec/switch/uart_sel
 
+    setprop vendor.powerhal.init 1
+
 # Permission for GPU
     chown mediacodec system /sys/kernel/gpu/gpu_mm_min_clock
     chmod 0664 /sys/kernel/gpu/gpu_mm_min_clock

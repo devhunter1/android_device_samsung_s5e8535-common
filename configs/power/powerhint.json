@@ -1,0 +1,129 @@
+{
+    "Nodes": [
+        {
+            "Name": "GPUMinFreq",
+            "Path": "/sys/kernel/gpu/gpu_mm_min_clock",
+            "Values": [
+                "845000",
+                "728000",
+                "507000",
+                "312000",
+            ],
+            "ResetOnInit": true
+        },
+        {
+            "Name": "TABoost",
+            "Path": "/dev/cpuctl/top-app/cpu.uclamp.min",
+            "Values": [
+                "30",
+                "5"
+            ],
+            "ResetOnInit": true
+        },
+        {
+            "Name": "PMQoSCpuDmaLatency",
+            "Path": "/dev/cpu_dma_latency",
+            "Values": [
+                "0x0000002c",
+                "0x00000064"
+            ],
+            "HoldFd": true
+        },
+        {
+            "Name": "TouchscreenEnable",
+            "Path": "/sys/class/sec/tsp/enabled",
+            "Values": [
+                "2,1",
+                "1,0"
+            ],
+            "ResetOnInit": true
+        },
+        {
+            "Name": "LCDEnable",
+            "Path": "/sys/class/power_supply/battery/lcd",
+            "Values": [
+                "1",
+                "0"
+            ],
+            "ResetOnInit": true
+        },
+        {
+            "Name": "DoubleTapToWakeEnable",
+            "Path": "/sys/class/sec/tsp/cmd",
+            "Values": [
+                "aot_enable,0",
+                "aot_enable,1"
+            ],
+            "DefaultIndex": 0,
+            "ResetOnInit": false
+        }
+    ],
+    "Actions": [
+        {
+            "PowerHint": "INTERACTION",
+            "Node": "TABoost",
+            "Duration": 0,
+            "Value": "30"
+        },
+        {
+            "PowerHint": "INTERACTION",
+            "Node": "GPUMinFreq",
+            "Duration": 0,
+            "Value": "728000"
+        },
+        {
+            "PowerHint": "LAUNCH",
+            "Node": "PMQoSCpuDmaLatency",
+            "Duration": 5000,
+            "Value": "0x0000002c"
+        },
+        {
+            "PowerHint": "CAMERA_LAUNCH",
+            "Node": "PMQoSCpuDmaLatency",
+            "Duration": 1000,
+            "Value": "0x0000002c"
+        },
+        {
+            "PowerHint": "CAMERA_SHOT",
+            "Node": "PMQoSCpuDmaLatency",
+            "Duration": 1000,
+            "Value": "0x0000002c"
+        },
+        {
+            "PowerHint": "AUDIO_LAUNCH",
+            "Node": "PMQoSCpuDmaLatency",
+            "Duration": 2000,
+            "Value": "0x0000002c"
+        },
+        {
+            "PowerHint": "AUDIO_STREAMING_LOW_LATENCY",
+            "Node": "PMQoSCpuDmaLatency",
+            "Duration": 0,
+            "Value": "0x0000002c"
+        },
+        {
+            "PowerHint": "INTERACTIVE",
+            "Node": "TouchscreenEnable",
+            "Duration": 0,
+            "Value": "2,1"
+        },
+        {
+            "PowerHint": "INTERACTIVE",
+            "Node": "LCDEnable",
+            "Duration": 0,
+            "Value": "1"
+        },
+        {
+            "PowerHint": "DOUBLE_TAP_TO_WAKE",
+            "Node": "DoubleTapToWakeEnable",
+            "Duration": 0,
+            "Value": "aot_enable,1"
+        },
+        {
+            "PowerHint": "EXPENSIVE_RENDERING",
+            "Node": "GPUMinFreq",
+            "Duration": 0,
+            "Value": "845000"
+        }
+    ]
+}
