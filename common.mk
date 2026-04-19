@@ -115,6 +115,9 @@ $(call soong_config_set,lineage_health,charging_control_charging_disabled,1)
 $(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
 $(call soong_config_set,lineage_health,charging_control_supports_toggle,true)
 $(call soong_config_set,lineage_health,charging_control_supports_deadline,false)
+$(call soong_config_set,lineage_health,fast_charge_node,/sys/class/sec/switch/afc_disable)
+$(call soong_config_set,lineage_health,fast_charge_value_none,1)
+$(call soong_config_set,lineage_health,fast_charge_value_fast_charge,0)
 
 # Memtrack
 PRODUCT_PACKAGES += \
