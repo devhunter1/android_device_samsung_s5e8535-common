@@ -1,0 +1,117 @@
+{
+    "Nodes": [
+        {
+            "Name": "GPUMinFreq",
+            "Path": "/sys/kernel/gpu/gpu_min_clock",
+            "Values": [
+                "312000",
+                "507000",
+                "845000"
+            ],
+            "ResetOnInit": true
+        },
+        {
+            "Name": "LPMDisable",
+            "Path": "/sys/devices/platform/exynos-ufcc/ucc/cstate_control",
+            "Values": [
+                "1",
+                "0"
+            ],
+            "DefaultIndex": 0,
+            "ResetOnInit": true
+        },
+        {
+            "Name": "LPMDisableLevel",
+            "Path": "/sys/devices/platform/exynos-ufcc/ucc/cstate_control_level",
+            "Values": [
+                "0",
+                "1"
+            ],
+            "DefaultIndex": 0,
+            "ResetOnInit": true
+        },
+        {
+            "Name": "KernelAppStartNotify",
+            "Path": "/sys/kernel/mm/vmscan/am_app_launch",
+            "Values": [
+                "0",
+                "1"
+            ],
+            "DefaultIndex": 0,
+            "ResetOnInit": true
+        },
+        {
+            "Name": "TABoost",
+            "Path": "/dev/cpuctl/top-app/cpu.uclamp.min",
+            "Values": [
+                "0",
+                "40"
+            ],
+            "DefaultIndex": 0,
+            "ResetOnInit": true
+        },
+        {
+            "Name": "TouchscreenEnable",
+            "Path": "/sys/class/sec/tsp/enabled",
+            "Values": [
+                "2,1",
+                "1,0"
+            ],
+            "ResetOnInit": true
+        },
+        {
+            "Name": "DoubleTapToWakeEnable",
+            "Path": "/sys/class/sec/tsp/cmd",
+            "Values": [
+                "aot_enable,0",
+                "aot_enable,1"
+            ],
+            "DefaultIndex": 0,
+            "ResetOnInit": false
+        }
+    ],
+    "Actions": [
+        {
+            "PowerHint": "LAUNCH",
+            "Node": "GPUMinFreq",
+            "Duration": 0,
+            "Value": "507000"
+        },
+        {
+            "PowerHint": "LAUNCH",
+            "Node": "TABoost",
+            "Duration": 0,
+            "Value": "40"
+        },
+        {
+            "PowerHint": "LAUNCH",
+            "Node": "LPMDisable",
+            "Duration": 1000,
+            "Value": "0"
+        },
+        {
+            "PowerHint": "LAUNCH",
+            "Node": "KernelAppStartNotify",
+            "Duration": 1000,
+            "Value": "1"
+        },
+        {
+            "PowerHint": "INTERACTIVE",
+            "Node": "TouchscreenEnable",
+            "Duration": 0,
+            "Value": "2,1"
+        },
+        {
+            "PowerHint": "DOUBLE_TAP_TO_WAKE",
+            "Node": "DoubleTapToWakeEnable",
+            "Duration": 0,
+            "Value": "aot_enable,1"
+        },
+        {
+            "PowerHint": "EXPENSIVE_RENDERING",
+            "Node": "GPUMinFreq",
+            "Duration": 0,
+            "Value": "845000"
+        }
+    ]
+}
