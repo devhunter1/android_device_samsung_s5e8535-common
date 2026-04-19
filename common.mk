@@ -117,7 +117,8 @@ PRODUCT_CHARACTERISTICS := phone
 
 # RIL
 PRODUCT_PACKAGES += \
-    sehradiomanager
+    sehradiomanager \
+    secril_config_svc
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/ril/sehradiomanager.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sehradiomanager.conf
