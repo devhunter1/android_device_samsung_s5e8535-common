@@ -116,6 +116,10 @@ PRODUCT_PACKAGES += \
 # Product characteristics
 PRODUCT_CHARACTERISTICS := phone
 
+# Protobuf
+PRODUCT_PACKAGES += \
+    libprotobuf-cpp-full-3.9.1-vendorcompat
+
 # RIL
 PRODUCT_PACKAGES += \
     sehradiomanager \
