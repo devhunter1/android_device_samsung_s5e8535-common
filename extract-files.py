@@ -61,6 +61,8 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libcrypto.so', 'libcrypto-v33.so'),
    'vendor/lib64/libskeymint_cli.so': blob_fixup()
         .replace_needed('libcrypto.so', 'libcrypto-v33.so'),
+   'vendor/lib64/libwvaidl.so': blob_fixup()
+        .replace_needed('libprotobuf-cpp-lite-3.9.1.so', 'libprotobuf-cpp-full-3.9.1.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
