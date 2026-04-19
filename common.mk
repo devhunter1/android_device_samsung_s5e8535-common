@@ -131,7 +131,8 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb-service.samsung
+    android.hardware.usb-service.samsung \
+    android.hardware.usb.gadget-service.samsung
 
 # Vendor service manager
 PRODUCT_PACKAGES += \
