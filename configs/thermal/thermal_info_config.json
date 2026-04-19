@@ -1,0 +1,85 @@
+{
+    "Sensors": [
+        {
+            "Name": "BIG",
+            "Type": "CPU",
+            "Multiplier": 0.001
+        },
+        {
+            "Name": "LITTLE",
+            "Type": "CPU",
+            "Multiplier": 0.001
+        },
+        {
+            "Name": "G3D",
+            "Type": "GPU",
+            "Multiplier": 0.001
+        },
+        {
+            "Name": "ISP",
+            "Type": "CPU",
+            "Multiplier": 0.001
+        },
+        {
+            "Name": "CP",
+            "Type": "UNKNOWN",
+            "Multiplier": 0.001
+        },
+        {
+            "Name": "ac",
+            "Type": "USB_PORT",
+            "HotThreshold": [
+                "NAN",
+                "NAN",
+                "NAN",
+                "NAN",
+                "NAN",
+                "60.0",
+                "NAN"
+            ],
+            "HotHysteresis": [
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                0.0,
+                5.0,
+                0.0
+            ],
+            "Multiplier": 0.001,
+            "Monitor": true
+        },
+        {
+            "Name": "battery",
+            "Type": "BATTERY",
+            "HotThreshold": [
+                "NAN",
+                "NAN",
+                "NAN",
+                "NAN",
+                "NAN",
+                "NAN",
+                60.0
+            ],
+            "Multiplier": 0.001
+        }
+    ],
+    "CoolingDevices": [
+        {
+            "Name": "thermal-cpufreq-0",
+            "Type": "CPU"
+        },
+        {
+            "Name": "thermal-cpufreq-1",
+            "Type": "CPU"
+        },
+        {
+            "Name": "thermal-gpufreq-0",
+            "Type": "GPU"
+        },
+        {
+            "Name": "thermal-isp-0",
+            "Type": "COMPONENT"
+        }
+    ]
+}
