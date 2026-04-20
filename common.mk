@@ -181,6 +181,9 @@ $(call soong_config_set,lineage_health,fast_charge_value_fast_charge,0)
 PRODUCT_PACKAGES += \
     android.hardware.memtrack-service.samsung-mali
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.pixel-libperfmgr
