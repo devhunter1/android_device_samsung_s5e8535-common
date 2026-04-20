@@ -63,3 +63,4 @@ ro.config.vc_call_vol_steps=8
 
 # wifi
 wifi.direct.interface=p2p0
+ro.boot.wificountrycode=00
