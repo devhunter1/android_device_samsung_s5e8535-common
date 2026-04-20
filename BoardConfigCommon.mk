@@ -60,6 +60,8 @@ PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 # Display
 TARGET_SCREEN_DENSITY := 450
 
+include hardware/samsung_slsi-linaro/config/BoardConfig8535.mk
+
 # DTBO / dtbs
 BOARD_KERNEL_SEPARATED_DTBO := true
 BOARD_DTBOIMG_PARTITION_SIZE := 8388608
