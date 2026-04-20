@@ -211,6 +211,8 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/samsung_slsi/scsc_wifibt/wifi_hal \
     hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib
 
+$(call inherit-product, hardware/samsung_slsi-linaro/config/config.mk)
+
 # Telephony
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml \
