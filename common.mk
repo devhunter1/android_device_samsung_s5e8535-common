@@ -193,7 +193,10 @@ PRODUCT_COPY_FILES += \
 # RIL
 PRODUCT_PACKAGES += \
     sehradiomanager \
-    secril_config_svc
+    secril_config_svc \
+    cbd
+
+$(call soong_config_set,cbd,protocol,sipc)
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/ril/sehradiomanager.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sehradiomanager.conf
@@ -224,7 +227,8 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/samsung \
     hardware/samsung_slsi/libbt \
     hardware/samsung_slsi/scsc_wifibt/wifi_hal \
-    hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib
+    hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib \
+    hardware/samsung_slsi-linaro/exynos/cpboot_v3
 
 $(call inherit-product, hardware/samsung_slsi-linaro/config/config.mk)
 
