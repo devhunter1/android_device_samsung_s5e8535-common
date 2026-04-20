@@ -76,6 +76,14 @@ PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
 
+# Display
+PRODUCT_PACKAGES += \
+    android.hardware.composer.hwc3-service.slsi
+
+PRODUCT_PACKAGES += \
+    android.hardware.graphics.allocator@4.0-service \
+    android.hardware.graphics.mapper@4.0-impl
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
