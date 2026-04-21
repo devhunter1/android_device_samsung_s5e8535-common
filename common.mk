@@ -179,6 +179,11 @@ PRODUCT_PACKAGES += \
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
 
+PRODUCT_PACKAGES += \
+    WifiOverlay
+
+PRODUCT_ENFORCE_RRO_TARGETS += *
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service.pixel-libperfmgr
