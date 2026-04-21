@@ -100,6 +100,10 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@4.0-service \
     android.hardware.graphics.mapper@4.0-impl
 
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.software.freeform_window_management.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.freeform_window_management.xml \
+    frameworks/native/data/etc/android.software.picture_in_picture.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.picture_in_picture.xml
+
 # Fastbootd
 PRODUCT_PACKAGES += \
     fastbootd
