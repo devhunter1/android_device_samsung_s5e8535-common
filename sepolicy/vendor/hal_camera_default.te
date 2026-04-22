@@ -24,3 +24,5 @@ allow hal_camera_default app_efs_file:dir search;
 allow hal_camera_default proc_meminfo:file r_file_perms;
 
 dontaudit hal_camera_default default_prop:file read;
+
+allow hal_camera_default camera_efs_file:dir create_dir_perms;
