@@ -35,6 +35,15 @@ ro.camera.disableJpegR=true
 # DRM
 drm.service.enabled=true
 
+# Display
+ro.surface_flinger.max_frame_buffer_acquired_buffers=3
+ro.surface_flinger.vsync_event_phase_offset_ns=0
+ro.surface_flinger.vsync_sf_event_phase_offset_ns=0
+debug.sf.high_fps_late_app_phase_offset_ns=0
+debug.sf.high_fps_late_sf_phase_offset_ns=0
+ro.surface_flinger.set_idle_timer_ms=250
+ro.surface_flinger.set_touch_timer_ms=300
+
 # Fingerprint
 ro.vendor.fingerprint.type=side
 ro.vendor.fingerprint.force_calibrate=true
