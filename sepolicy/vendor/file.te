@@ -3,6 +3,9 @@ type camera_vendor_data_file, file_type, data_file_type;
 type media_vendor_data_file, file_type, data_file_type;
 type mediadrm_vendor_data_file, file_type, data_file_type;
 
+# dev types
+type goodix_device, dev_type;
+
 # efs types
 type cpdebug_efs_file, fs_type;
 type dsms_efs_file, fs_type;
@@ -12,6 +15,9 @@ type kpm_efs_file, fs_type;
 type mb_po_efs_file, fs_type;
 type pdp_efs_file, fs_type;
 type ssm_efs_file, fs_type;
+type camera_efs_file, file_type;
+type taas_efs_file, file_type;
+type rtts_efs_file, file_type;
 
 # proc types
 type proc_simslot_count, fs_type, proc_type;
