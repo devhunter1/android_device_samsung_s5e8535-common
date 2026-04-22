@@ -1,0 +1,9 @@
+set_prop(rild, vendor_radio_prop)
+
+allow rild efs_data_type:dir r_dir_perms;
+allow rild efs_data_type:file r_file_perms;
+
+dontaudit rild system_prop:file read;
+
+allow rild prov_efs_file:dir create_dir_perms;
+allow rild prov_efs_file:file create_file_perms;

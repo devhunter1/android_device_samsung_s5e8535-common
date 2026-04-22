@@ -6,17 +6,31 @@ genfscon proc /sys/vm/swappiness                                                
 # Class
 genfscon sysfs /class/video4linux                                                                              u:object_r:sysfs_v4l:s0
 
+# Battery
+genfscon sysfs /class/power_supply/battery/batt_slate_mode                                                u:object_r:sysfs_battery_writable:s0
+
 # Devices
 genfscon sysfs /devices/platform/13200000.usb/13200000.dwc3/udc/13200000.dwc3/current_speed                      u:object_r:sysfs_usb:s0
 genfscon sysfs /devices/platform/138a0000.hsi2c/i2c-2/2-0049/sm5714-charger/power_supply/sm5714-charger/type     u:object_r:sysfs_battery:s0
 genfscon sysfs /devices/platform/138a0000.hsi2c/i2c-2/2-0049/sm5714-fuelgauge/power_supply/sm5714-fuelgauge/type u:object_r:sysfs_battery:s0
 genfscon sysfs /devices/platform/138a0000.hsi2c/i2c-2/2-0049/sm5714-charger/power_supply/sm5714-otg/type         u:object_r:sysfs_battery:s0
-genfscon sysfs /devices/platform/acpm_mfd_bus@11a00000/i2c-11/11-001f/s2mpu13-gpadc/iio:device0/name             u:object_r:sysfs_iio:s0
+genfscon sysfs /devices/platform/acpm_mfd_bus@11960000/i2c-10/10-001f/s2mpu15-gpadc/iio:device0/name             u:object_r:sysfs_iio:s0
 genfscon sysfs /devices/platform/mfc/video4linux/video6/name                                                     u:object_r:sysfs_v4l:s0
 genfscon sysfs /devices/platform/mfc/video4linux/video7/name                                                     u:object_r:sysfs_v4l:s0
+genfscon sysfs /devices/platform/mfc/video4linux/video8/name                                                     u:object_r:sysfs_v4l:s0
+genfscon sysfs /devices/platform/mfc/video4linux/video9/name                                                     u:object_r:sysfs_v4l:s0
+genfscon sysfs /devices/platform/mfc/video4linux/video10/name                                                     u:object_r:sysfs_v4l:s0
+genfscon sysfs /devices/platform/mfc/video4linux/video11/name                                                     u:object_r:sysfs_v4l:s0
 genfscon sysfs /devices/system/chip-id/revision                                                                  u:object_r:sysfs_chipid:s0
 
 genfscon sysfs /devices/virtual/sensors/light_sensor/hall_ic                                                     u:object_r:sysfs_sensors_writable:s0
+
+# lcd
+genfscon sysfs /class/lcd                                                                                      u:object_r:sysfs_lcd_writable:s0
+genfscon sysfs /devices/platform/panel_drv@0/lcd/panel                                                                                      u:object_r:sysfs_lcd_writable:s0
+genfscon sysfs /devices/platform/panel@0/backlight/panel                                                     u:object_r:sysfs_lcd_writable:s0
+genfscon sysfs /devices/platform/panel/backlight/panel                                                     u:object_r:sysfs_lcd_writable:s0
+genfscon sysfs /devices/platform/panel_drv@0/backlight/panel                                                     u:object_r:sysfs_lcd_writable:s0
 
 # Firmware
 genfscon sysfs /firmware/devicetree/base/sound/mixer-paths                                                     u:object_r:sysfs_audio:s0
@@ -29,3 +43,8 @@ genfscon sysfs /kernel/mm/vmscan/mem_boost_mode                                 
 
 # Module
 genfscon sysfs /module/scsc_bt/parameters/bluetooth_address                                                    u:object_r:sysfs_bt_writable:s0
+
+# Vib
+genfscon sysfs /sys/class/timed_output/vibrator/enable                                                    u:object_r:sysfs_vibrator:s0
+genfscon sysfs /devices/virtual/timed_output/vibrator/current_temp                                        u:object_r:sysfs_vibrator:s0
+genfscon sysfs /devices/virtual/vib_info_class/vib_support_info/functions                                 u:object_r:sysfs_vibrator:s0
