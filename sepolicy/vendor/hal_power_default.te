@@ -2,3 +2,8 @@ allow hal_power_default pm_qos_device:chr_file rw_file_perms;
 
 allow hal_power_default sysfs_battery:dir search;
 allow hal_power_default sysfs_battery_writable:file rw_file_perms;
+
+allow hal_power_default sysfs_battery:lnk_file read;
+
+allow hal_power_default sysfs_ski_memory_writable:file rw_file_perms;
+allow hal_power_default sysfs_ss_writable:file rw_file_perms;
