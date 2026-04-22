@@ -1,0 +1,4 @@
+allow hal_light_default sysfs_lcd_writable:dir r_dir_perms;
+allow hal_light_default sysfs_lcd_writable:file r_file_perms;
+
+allow hal_light_default sysfs_lcd_writable:lnk_file { read getattr };
