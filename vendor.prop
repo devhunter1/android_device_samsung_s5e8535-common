@@ -37,6 +37,7 @@ ro.camera.disableJpegR=true
 
 # Codecs
 debug.stagefright.c2inputsurface=-1
+ro.vendor.gpu.dataspace=1
 
 # Dalvik
 dalvik.vm.dex2oat64.enabled=true
