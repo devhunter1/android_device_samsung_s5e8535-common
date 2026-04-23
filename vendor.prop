@@ -32,6 +32,9 @@ bluetooth.profile.vcp.controller.enabled=false
 # Camera
 ro.camera.disableJpegR=true
 
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+
 # DRM
 drm.service.enabled=true
 
