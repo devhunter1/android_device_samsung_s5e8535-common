@@ -41,6 +41,8 @@ ro.vendor.gpu.dataspace=1
 
 # Dalvik
 dalvik.vm.dex2oat64.enabled=true
+dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5
+dalvik.vm.dex2oat-threads=6
 
 # Display
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
