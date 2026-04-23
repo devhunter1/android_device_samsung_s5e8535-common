@@ -29,6 +29,9 @@ bluetooth.profile.sap.server.enabled=true
 bluetooth.profile.ccp.server.enabled=false
 bluetooth.profile.vcp.controller.enabled=false
 
+# Cache
+fs_mgr.overlayfs.prefer_cache_backing_storage=true
+
 # Camera
 ro.camera.disableJpegR=true
 
