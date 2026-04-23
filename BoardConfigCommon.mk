@@ -113,6 +113,9 @@ BOARD_DTBO_CFG := $(COMMON_PATH)/configs/kernel/$(PRODUCT_DEVICE).cfg
 
 BOARD_BOOTCONFIG := buildtime_bootconfig=enable
 
+# Libinit
+TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):libinit_s5e8535
+
 # Lineage Health
 $(call soong_config_set,lineage_health,charging_control_charging_path,/sys/class/power_supply/battery/batt_slate_mode)
 $(call soong_config_set,lineage_health,charging_control_charging_enabled,0)
