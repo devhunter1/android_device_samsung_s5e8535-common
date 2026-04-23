@@ -1,0 +1,13 @@
+//
+// Copyright (C) 2021-2025 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_library_static {
+    name: "libinit_s5e8535",
+    recovery_available: true,
+    shared_libs: ["libbase"],
+    srcs: ["init_s5e8535.cpp"],
+    include_dirs: ["system/core/init"],
+}
