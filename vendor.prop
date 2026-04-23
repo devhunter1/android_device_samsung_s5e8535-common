@@ -32,6 +32,9 @@ bluetooth.profile.vcp.controller.enabled=false
 # Camera
 ro.camera.disableJpegR=true
 
+# Dalvik
+dalvik.vm.dex2oat64.enabled=true
+
 # Display
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
 ro.surface_flinger.vsync_event_phase_offset_ns=0
