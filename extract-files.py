@@ -68,6 +68,9 @@ blob_fixups: blob_fixups_user_type = {
    'vendor/lib64/libsec-ril.so': blob_fixup()
         .sig_replace('80 0E 40 F9 E1 03 16 AA 82 0C 80 52 E3 03 15 AA',
                      '80 0E 40 F9 E1 03 16 AA 82 0C 80 52 03 00 80 D2'),
+   'vendor/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc': blob_fixup()
+        .regex_replace('media vendor_secdir', 'media')
+        .regex_replace('vendor_secdir', 'camera'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
