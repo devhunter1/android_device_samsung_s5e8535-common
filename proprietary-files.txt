@@ -47,6 +47,17 @@ vendor/lib64/libspeakercalibration.so
 vendor/lib64/vendor.samsung.hardware.audio-V1-ndk.so
 vendor/etc/vintf/manifest/secaudiohalaidl_manifest.xml
 
+# Audio (Dolby)
+vendor/lib/soundfx/libswdap.so
+vendor/lib64/soundfx/libswdap.so
+vendor/lib/libprofileparamstorage.so
+vendor/lib64/libprofileparamstorage.so
+vendor/lib/libspatializerparamstorage.so
+vendor/lib64/libspatializerparamstorage.so
+vendor/lib/libsecaudiocoreutils.so
+vendor/lib64/libsecaudiocoreutils.so
+vendor/etc/dolby/dax-default.xml
+
 # Audio VNDK libs
 vendor/lib64/vndk/libaudioroute.so:vendor/lib64/libaudioroute_vendor.so;FIX_SONAME
 vendor/lib/vndk/libaudioroute.so:vendor/lib/libaudioroute_vendor.so;FIX_SONAME
