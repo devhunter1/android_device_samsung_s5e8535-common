@@ -193,7 +193,8 @@ PRODUCT_PACKAGES += \
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
 
 PRODUCT_PACKAGES += \
-    WifiOverlay
+    WifiOverlay \
+    NcmTetheringOverlay
 
 PRODUCT_ENFORCE_RRO_TARGETS += *
 
