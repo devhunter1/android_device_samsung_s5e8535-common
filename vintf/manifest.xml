@@ -140,5 +140,9 @@
             <name>IGloveMode</name>
             <instance>default</instance>
         </interface>
+        <interface>
+            <name>IHighTouchPollingRate</name>
+            <instance>default</instance>
+        </interface>
     </hal>
 </manifest>
