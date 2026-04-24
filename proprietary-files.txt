@@ -119,6 +119,10 @@ vendor/firmware/sectiongraph_tplg.bin
 vendor/firmware/secure_configuration.flm.cfg.bin
 vendor/firmware/volumemonitor.bin
 
+# Floating feature
+vendor/lib/libfloatingfeature.so
+vendor/lib64/libfloatingfeature.so
+
 # Gatekeeper
 vendor/lib/hw/gatekeeper.s5e8535.so
 vendor/lib64/hw/gatekeeper.s5e8535.so
@@ -163,6 +167,8 @@ vendor/lib64/vendor.samsung.hardware.radio.messaging-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.radio.sim-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.radio.channel-V1-ndk.so
 vendor/lib64/libsec-ril.so
+vendor/lib/libsecnativefeature.so
+vendor/lib64/libsecnativefeature.so
 vendor/lib/libsemnativecarrierfeature.so
 vendor/lib64/libsemnativecarrierfeature.so
 vendor/lib64/libVendorSemDataProps.so
