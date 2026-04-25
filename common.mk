@@ -192,6 +192,19 @@ $(call soong_config_set,lineage_health,fast_charge_value_fast_charge,0)
 PRODUCT_PACKAGES += \
     android.hardware.memtrack-service.samsung-mali
 
+# NFC
+ifeq ($(filter true, $(TARGET_SEC_NFC) $(TARGET_NXP_NFC)),true)
+PRODUCT_PACKAGES += \
+    com.android.nfc_extras \
+    libnfc-nci \
+    libnfc_nci_jni \
+    Tag
+endif
+ifeq ($(TARGET_SEC_NFC),true)
+PRODUCT_PACKAGES += \
+    android.hardware.nfc@1.2-service.samsung
+endif
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
 
