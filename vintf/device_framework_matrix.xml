@@ -35,6 +35,15 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="hidl">
+        <name>vendor.samsung.hardware.nfc</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>ISehNfc</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <hal override="true" format="hidl">
         <name>vendor.samsung_slsi.hardware.radio</name>
         <transport>hwbinder</transport>
