@@ -112,7 +112,7 @@ BOARD_DTBO_CFG := $(COMMON_PATH)/configs/kernel/$(PRODUCT_DEVICE).cfg
 BOARD_BOOTCONFIG := buildtime_bootconfig=enable
 
 # Libinit
-TARGET_INIT_VENDOR_LIB := //$(COMMON_PATH):libinit_s5e8535
+$(call soong_config_set,libinit,vendor_init_lib,//$(COMMON_PATH):libinit_s5e8535)
 
 # Manifest
 DEVICE_MANIFEST_FILE += $(COMMON_PATH)/vintf/manifest.xml
