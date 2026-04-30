@@ -19,7 +19,6 @@ from extract_utils.main import (
 
 namespace_imports = [
     'device/samsung/s5e8535-common',
-    'hardware/lineage/compat',
     'hardware/samsung_slsi-linaro/exynos',
     'hardware/samsung_slsi-linaro/graphics',
 ]
