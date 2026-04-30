@@ -133,6 +133,8 @@ vendor/bin/hw/vendor.samsung.hardware.gnss-service
 vendor/etc/init/vendor.samsung.hardware.gnss-service.rc
 vendor/lib/vendor.samsung.hardware.gnss-V3-ndk.so
 vendor/lib64/vendor.samsung.hardware.gnss-V3-ndk.so
+vendor/lib/libwrappergps.so
+vendor/lib64/libwrappergps.so
 
 # Graphics
 vendor/lib/egl/libGLES_mali.so;SYMLINK=vendor/lib/libOpenCL.so;SYMLINK=vendor/lib/libOpenCL.so.1;SYMLINK=vendor/lib/libOpenCL.so.1.1
