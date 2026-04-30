@@ -92,6 +92,9 @@ PRODUCT_PACKAGES += \
     codec2.vendor.base.policy \
     codec2.vendor.ext.policy
 
+# Debugfs
+PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
+
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := 450dpi
@@ -108,6 +111,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.graphics.allocator@4.0-service \
     android.hardware.graphics.mapper@4.0-impl
+
+# Dynamic partition
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
 # Fastbootd
 PRODUCT_PACKAGES += \
