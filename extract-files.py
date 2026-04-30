@@ -22,6 +22,7 @@ namespace_imports = [
     'device/samsung/s5e8535-common',
     'hardware/samsung_slsi-linaro/exynos',
     'hardware/samsung_slsi-linaro/graphics',
+    'hardware/samsung',
 ]
 
 def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
