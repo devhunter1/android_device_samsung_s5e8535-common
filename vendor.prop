@@ -56,6 +56,9 @@ ro.vendor.fingerprint.sensor_location=1080|350|300
 ## FRP
 ro.frp.pst=/dev/block/persistent
 
+## FUSE
+persist.sys.fuse.passthrough.enable=true
+
 ## Graphics
 debug.sf.auto_latch_unsignaled=0
 debug.sf.latch_unsignaled=1
