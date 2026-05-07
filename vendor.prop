@@ -97,6 +97,9 @@ ro.product_ship=true
 # If not set or set to 0, OMX will only use BT.601 colorspace.
 ro.vendor.cscsupported=1
 
+## Verity
+ro.apk_verity.mode=2
+
 ## Vol
 ro.config.vc_call_vol_steps=8
 
