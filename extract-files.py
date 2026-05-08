@@ -32,7 +32,6 @@ lib_fixups: lib_fixups_user_type = {
     libs_proto_3_9_1: lib_fixup_vendorcompat,
     (
         'libuuid',
-        'libsecril-client',
     ) : lib_fixup_vendor_suffix,
 } # fmt: skip
 
