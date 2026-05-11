@@ -103,6 +103,10 @@ ro.apk_verity.mode=2
 ## Vol
 ro.config.vc_call_vol_steps=8
 
+## Vold
+# Call deleteAllKeys if vold detects a factory reset
+ro.crypto.metadata_init_delete_all_keys.enabled=true
+
 ## wifi
 wifi.direct.interface=p2p0
 ro.boot.wificountrycode=00
