@@ -60,6 +60,7 @@ ro.frp.pst=/dev/block/persistent
 persist.sys.fuse.passthrough.enable=true
 
 ## Graphics
+debug.hwui.skia_atrace_enabled=false
 debug.sf.auto_latch_unsignaled=0
 debug.sf.latch_unsignaled=1
 debug.sf.enable_transaction_tracing=false
