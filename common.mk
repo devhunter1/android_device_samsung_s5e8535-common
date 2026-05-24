@@ -268,6 +268,7 @@ PRODUCT_SHIPPING_API_LEVEL := $(BOARD_SHIPPING_API_LEVEL)
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(COMMON_PATH) \
+    hardware/google/interfaces \
     hardware/google/pixel \
     hardware/samsung \
     hardware/samsung_slsi/libbt \
