@@ -32,6 +32,8 @@ ro.vendor.gpu.dataspace=1
 
 ## Dalvik
 dalvik.vm.dex2oat64.enabled=true
+dalvik.vm.dex2oat-cpu-set=0,1,2,3
+dalvik.vm.dex2oat-threads=4
 
 ## Display
 debug.sf.use_phase_offsets_as_durations=1
