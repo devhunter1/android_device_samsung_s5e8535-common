@@ -805,7 +805,7 @@ on boot
     #settings put global captive_portal_mode 0
 
     # Permissions for Touchscreen
-    chown system radio /sys/class/sec/tsp/cmd
+    chown system system /sys/class/sec/tsp/cmd
     chown system system /sys/class/sec/tsp/input/enabled
     chmod 0660 /sys/class/sec/tsp/input/enabled
     chown system system /sys/class/sec/tsp/enabled
