@@ -169,18 +169,12 @@
         <item>"/system/bin/surfaceflinger"</item>
     </string-array>
 
-        <!-- Flag specifying whether VoLTE should be available for carrier: independent of
-         carrier provisioning. If false: hard disabled. If true: then depends on carrier
-         provisioning, availability etc -->
-    <!-- TBD: When we have IMS service available for this device, enable this. -->
-    <!-- <bool name="config_carrier_volte_available">true</bool> -->
-
-    <!-- Flag specifying whether VoLTE is available on device -->
-    <!-- TBD: When we have IMS service available for this device, enable this. -->
-    <!-- <bool name="config_device_volte_available">true</bool> -->
-
-    <!-- Flag specifying whether VT is available on device -->
+    <bool name="config_carrier_volte_available">true</bool>
+    <bool name="config_device_volte_available">true</bool>
     <bool name="config_device_vt_available">true</bool>
+    <string name="config_wlan_data_service_package">com.google.android.iwlan</string>
+    <string name="config_wlan_network_service_package">com.google.android.iwlan</string>
+    <string name="config_qualified_networks_service_package">com.android.telephony.qns</string>
 
     <!-- Should the pinner service pin the Home application? -->
     <bool name="config_pinnerHomeApp">true</bool>
