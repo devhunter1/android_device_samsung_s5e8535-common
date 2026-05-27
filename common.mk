@@ -21,6 +21,13 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Inherit the proprietary files
 $(call inherit-product, vendor/samsung/s5e8535-common/s5e8535-common-vendor.mk)
 
+# Inherit from those products
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+
+# Inherit some common Lineage stuff.
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
 # Audio
 PRODUCT_PACKAGES += \
     android.hardware.audio@7.0-impl \
