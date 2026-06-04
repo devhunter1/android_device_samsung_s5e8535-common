@@ -28,6 +28,12 @@ ro.camera.disableJpegR=true
 
 ## Codecs
 debug.stagefright.c2inputsurface=-1
+debug.stagefright.ccodec_strict_type=true
+debug.stagefright.ccodec_lax_type=true
+debug.stagefright.c2-poolmask=458752
+media.c2.dmabuf.padding=512
+debug.c2.use_dmabufheaps=1
+debug.stagefright.ccodec_delayed_params=1
 ro.vendor.gpu.dataspace=1
 
 ## Dalvik
