@@ -150,12 +150,6 @@ vendor/lib64/libskeymint10device.so
 vendor/lib64/libskeymint_cli.so
 vendor/lib64/vendor.samsung.hardware.keymint-V2-ndk.so
 
-# Media Codecs
-vendor/etc/media_codecs.xml
-vendor/etc/media_codecs_c2.xml
-vendor/etc/media_codecs_performance_c2.xml
-vendor/etc/media_profiles_V1_0.xml
-
 # RIL
 vendor/bin/hw/rild
 vendor/bin/cass

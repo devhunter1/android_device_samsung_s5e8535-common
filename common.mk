@@ -96,6 +96,11 @@ PRODUCT_PACKAGES += \
     codec2.vendor.base.policy \
     codec2.vendor.ext.policy
 
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/media/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
+    $(COMMON_PATH)/configs/media/media_codecs_performance_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_c2.xml \
+    $(COMMON_PATH)/configs/media/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
+
 # Debugfs
 PRODUCT_SET_DEBUGFS_RESTRICTIONS := true
 
