@@ -25,4 +25,4 @@ odm                                     /odm                    ext4            
 /dev/block/by-name/cache                /cache                  ext4            noatime,nosuid,nodev,noauto_da_alloc,discard,journal_checksum,data=ordered,errors=panic                        wait,formattable,check
 /devices/platform/13200000.usb*                                 auto    vfat    defaults    voldmanaged=usb:auto
 /devices/platform/100e0000.dwmmc2/mmc_host*                     auto    auto    defaults    voldmanaged=sdcard:auto
-/dev/block/zram0                        none                    swap            defaults                zramsize=2147483648,auto_configure
+/dev/block/zram0                        none                    swap            defaults                zramsize=2147483648,zram_loopback_path=/data/unencrypted/zram_swap,zram_loopback_size=512M
