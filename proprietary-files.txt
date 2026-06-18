@@ -48,8 +48,6 @@ vendor/lib64/vendor.samsung.hardware.audio-V1-ndk.so
 vendor/etc/vintf/manifest/secaudiohalaidl_manifest.xml
 
 # Audio (Dolby)
-vendor/lib/soundfx/libswdap.so
-vendor/lib64/soundfx/libswdap.so
 vendor/lib/libprofileparamstorage.so
 vendor/lib64/libprofileparamstorage.so
 vendor/lib/libspatializerparamstorage.so
