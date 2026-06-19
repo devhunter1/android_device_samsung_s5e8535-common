@@ -1,0 +1,5 @@
+allow hal_nfc_default tz_device:chr_file rw_file_perms;
+allow hal_nfc_default nfc_device:chr_file rw_file_perms;
+r_dir_file(hal_nfc_default, sec_efs_file);
+set_prop(hal_nfc_default, vendor_nfc_prop);
+get_prop(hal_nfc_default, vendor_sec_nfc_prop);
