@@ -47,6 +47,7 @@
 /efs/cpdebug(/.*)?                           u:object_r:cpdebug_efs_file:s0
 /efs/cirrus(/.*)?                            u:object_r:sec_efs_file:s0
 /efs/dsms(/.*)?                              u:object_r:dsms_efs_file:s0
+/efs/nxp(/.*)?                               u:object_r:sec_efs_file:s0
 /efs/gatekeeper(/.*)?                        u:object_r:gatekeeper_efs_file:s0
 /efs/knoxai(/.*)?                            u:object_r:knoxai_efs_file:s0
 /efs/lpm(/.*)?                               u:object_r:sec_efs_file:s0
@@ -62,6 +63,7 @@
 /efs/mc(/.*)?	                             u:object_r:prov_efs_file:s0
 /efs/security(/.*)?                          u:object_r:prov_efs_file:s0
 /mnt/vendor/efs/mc(/.*)?	             u:object_r:prov_efs_file:s0
+/mnt/vendor/efs/nxp(/.*)?                    u:object_r:sec_efs_file:s0
 /mnt/vendor/efs/TEE(/.*)?                    u:object_r:prov_efs_file:s0
 /mnt/vendor/efs/security(/.*)?               u:object_r:prov_efs_file:s0
 /mnt/vendor/efs/camera(/.*)?	             u:object_r:camera_efs_file:s0
@@ -109,3 +111,4 @@
 /vendor/bin/hw/android\.hardware\.drm-service\.widevine  							u:object_r:hal_drm_widevine_exec:s0
 /vendor/bin/hw/secaudiohalaidl                                                   u:object_r:hal_audio_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.gnss-service           u:object_r:hal_gnss_default_exec:s0
+/vendor/bin/hw/nxp.android.hardware.nfc@1.2-service                              u:object_r:hal_nfc_default_exec:s0
