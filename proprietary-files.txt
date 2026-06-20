@@ -2,65 +2,41 @@
 
 # Audio
 vendor/bin/hw/secaudiohalaidl
-vendor/lib/hw/audio.primary.s5e8535.so
 vendor/lib64/hw/audio.primary.s5e8535.so
-vendor/lib/libaudioproxy2.so
 vendor/lib64/libaudioproxy2.so
-vendor/lib/libalsautils_sec.so
 vendor/lib64/libalsautils_sec.so
-vendor/lib/libsehbluetooth_audio_session_aidl.so
 vendor/lib64/libsehbluetooth_audio_session_aidl.so
-vendor/lib/vendor.samsung.hardware.bluetooth.audio-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.bluetooth.audio-V1-ndk.so
-vendor/lib/libsecaudioinfo.so
 vendor/lib64/libsecaudioinfo.so
-vendor/lib/libSamsungPostProcessConvertor.so
 vendor/lib64/libSamsungPostProcessConvertor.so
-vendor/lib/lib_soundaliveresampler.so
 vendor/lib64/lib_soundaliveresampler.so
-vendor/lib/lib_SoundAlive_SRC384_ver320.so
 vendor/lib64/lib_SoundAlive_SRC384_ver320.so
-vendor/lib/librecordalive.so
 vendor/lib64/librecordalive.so
-vendor/lib/lib_SamsungRec_07010.so
 vendor/lib64/lib_SamsungRec_07010.so
-vendor/lib/libsecaudiolevel.so
 vendor/lib64/libsecaudiolevel.so
-vendor/lib/libaboxpcmdump.so
 vendor/lib64/libaboxpcmdump.so
-vendor/lib/libdatamod.so
 vendor/lib64/libdatamod.so
-vendor/lib/liblastaboxmsg.so
 vendor/lib64/liblastaboxmsg.so
-vendor/lib/libaudioparamupdate.so
 vendor/lib64/libaudioparamupdate.so
-vendor/lib/libaudio-ril.so
 vendor/lib64/libaudio-ril.so
 vendor/etc/SoundBoosterParam.txt
-vendor/lib/hw/audio.sec_primary.default.so
 vendor/lib64/hw/audio.sec_primary.default.so
 vendor/lib64/hw/libsecaudiohal_aidl.so
 vendor/etc/init/secaudiohalaidl.rc
 vendor/etc/sec_audio_volume_curve.xml
-vendor/lib/libspeakercalibration.so
 vendor/lib64/libspeakercalibration.so
 vendor/lib64/vendor.samsung.hardware.audio-V1-ndk.so
 vendor/etc/vintf/manifest/secaudiohalaidl_manifest.xml
 
 # Audio (Dolby)
-vendor/lib/libprofileparamstorage.so
 vendor/lib64/libprofileparamstorage.so
-vendor/lib/libspatializerparamstorage.so
 vendor/lib64/libspatializerparamstorage.so
-vendor/lib/libsecaudiocoreutils.so
 vendor/lib64/libsecaudiocoreutils.so
 vendor/etc/dolby/dax-default.xml
 
 # Audio VNDK libs
 vendor/lib64/vndk/libaudioroute.so:vendor/lib64/libaudioroute_vendor.so;FIX_SONAME
-vendor/lib/vndk/libaudioroute.so:vendor/lib/libaudioroute_vendor.so;FIX_SONAME
 vendor/lib64/vndk/libtinyalsa.so:vendor/lib64/libtinyalsa_vendor.so;FIX_SONAME
-vendor/lib/vndk/libtinyalsa.so:vendor/lib/libtinyalsa_vendor.so;FIX_SONAME
 
 # Camera Provider hal
 vendor/bin/hw/vendor.samsung.hardware.camera.provider-service_64
@@ -118,25 +94,19 @@ vendor/firmware/secure_configuration.flm.cfg.bin
 vendor/firmware/volumemonitor.bin
 
 # Floating feature
-vendor/lib/libfloatingfeature.so
 vendor/lib64/libfloatingfeature.so
 
 # Gatekeeper
-vendor/lib/hw/gatekeeper.s5e8535.so
 vendor/lib64/hw/gatekeeper.s5e8535.so
 
 # GPS
 vendor/bin/hw/gps.sh
 vendor/bin/hw/vendor.samsung.hardware.gnss-service
 vendor/etc/init/vendor.samsung.hardware.gnss-service.rc
-vendor/lib/vendor.samsung.hardware.gnss-V3-ndk.so
 vendor/lib64/vendor.samsung.hardware.gnss-V3-ndk.so
-vendor/lib/libwrappergps.so
 vendor/lib64/libwrappergps.so
 
 # Graphics
-vendor/lib/egl/libGLES_mali.so;SYMLINK=vendor/lib/libOpenCL.so;SYMLINK=vendor/lib/libOpenCL.so.1;SYMLINK=vendor/lib/libOpenCL.so.1.1
-vendor/lib/hw/vulkan.mali.so
 vendor/lib64/egl/libGLES_mali.so;SYMLINK=vendor/lib64/libOpenCL.so;SYMLINK=vendor/lib64/libOpenCL.so.1;SYMLINK=vendor/lib64/libOpenCL.so.1.1
 vendor/lib64/hw/vulkan.mali.so
 vendor/etc/beauty/settings.dat
@@ -151,7 +121,6 @@ vendor/lib64/vendor.samsung.hardware.keymint-V2-ndk.so
 # RIL
 vendor/bin/hw/rild
 vendor/bin/cass
-vendor/lib/libsecril-client.so
 vendor/lib64/libsecril-client.so
 vendor/lib64/libril_sem.so
 vendor/lib64/vendor.samsung.hardware.radio-V1-ndk.so
@@ -161,9 +130,7 @@ vendor/lib64/vendor.samsung.hardware.radio.messaging-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.radio.sim-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.radio.channel-V1-ndk.so
 vendor/lib64/libsec-ril.so
-vendor/lib/libsecnativefeature.so
 vendor/lib64/libsecnativefeature.so
-vendor/lib/libsemnativecarrierfeature.so
 vendor/lib64/libsemnativecarrierfeature.so
 vendor/lib64/libVendorSemDataProps.so
 vendor/lib64/libVendorSemTelephonyProps.so
@@ -190,10 +157,8 @@ vendor/etc/mvno_list.xml
 vendor/etc/init/init.sensorhub.rc
 
 # TEE (TEEgris)
-vendor/lib/libteecl.so
 vendor/lib64/libteecl.so
 vendor/lib64/libuuid.so;MODULE_SUFFIX=_vendor
-vendor/lib/libuuid.so;MODULE_SUFFIX=_vendor
 vendor/bin/tzdaemon
 vendor/bin/tzts_daemon
 vendor/etc/init/teegris.rc
