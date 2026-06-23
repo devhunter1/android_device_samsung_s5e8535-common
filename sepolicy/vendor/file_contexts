@@ -112,3 +112,4 @@
 /vendor/bin/hw/secaudiohalaidl                                                   u:object_r:hal_audio_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.samsung\.hardware\.gnss-service           u:object_r:hal_gnss_default_exec:s0
 /vendor/bin/hw/nxp.android.hardware.nfc@1.2-service                              u:object_r:hal_nfc_default_exec:s0
+/vendor/bin/hw/vendor.samsung.hardware.thermal@1.0-service                       u:object_r:hal_thermal_default_exec:s0
