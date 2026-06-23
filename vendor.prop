@@ -85,6 +85,11 @@ ro.opengles.version=196610
 ## IncrementalFS
 ro.incremental.enable=yes
 
+## LMK
+ro.lmk.use_psi=true
+ro.lmk.kill_heaviest_task=true
+ro.lmk.kill_timeout_ms=100
+
 ## Manufacturer
 ro.soc.manufacturer=Samsung
 ro.soc.model=s5e8535
