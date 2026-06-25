@@ -170,6 +170,8 @@ on init
     chown system system /sys/kernel/ems/emstune/sched_boost
     chown system system /sys/kernel/ems/emstune/task_boost
     chown system system /sys/kernel/ems/emstune/task_boost_del
+    chmod 0664 /sys/kernel/ems/emstune/req_mode
+    chmod 0664 /sys/kernel/ems/emstune/req_level
     chown system system /sys/kernel/ems/energy_step/coregroup0/uclamp_min
     chown system system /sys/kernel/ems/energy_step/coregroup6/uclamp_min
     chown system system /sys/kernel/ems/energy_step/coregroup0/uclamp_max
