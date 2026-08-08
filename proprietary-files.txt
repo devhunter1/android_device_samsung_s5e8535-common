@@ -56,6 +56,26 @@ vendor/lib/libsecaudiocoreutils.so
 vendor/lib64/libsecaudiocoreutils.so
 vendor/etc/dolby/dax-default.xml
 
+# Audio (FX modules)
+vendor/lib/soundfx/libmyspace.so
+vendor/lib/soundfx/libaudioeffectoffload.so
+vendor/lib/soundfx/libaudiosaplus_sec.so
+vendor/lib/soundfx/libsamsungSoundbooster_plus.so
+vendor/lib/soundfx/libswspatializer.so
+vendor/lib64/soundfx/libmyspace.so
+vendor/lib64/soundfx/libaudioeffectoffload.so
+vendor/lib64/soundfx/libaudiosaplus_sec.so
+vendor/lib64/soundfx/libsamsungSoundbooster_plus.so
+vendor/lib64/soundfx/libswspatializer.so
+vendor/lib/lib_SoundAlive_3DPosition_ver202.so
+vendor/lib64/lib_SoundAlive_3DPosition_ver202.so
+vendor/lib/lib_SoundAlive_play_plus_ver500.so
+vendor/lib64/lib_SoundAlive_play_plus_ver500.so
+vendor/lib/lib_SoundAlive_AlbumArt_ver105.so
+vendor/lib64/lib_SoundAlive_AlbumArt_ver105.so
+vendor/lib/lib_SoundBooster_ver1100.so
+vendor/lib64/lib_SoundBooster_ver1100.so
+
 # Audio VNDK libs
 vendor/lib64/vndk/libaudioroute.so:vendor/lib64/libaudioroute_vendor.so;FIX_SONAME
 vendor/lib/vndk/libaudioroute.so:vendor/lib/libaudioroute_vendor.so;FIX_SONAME
