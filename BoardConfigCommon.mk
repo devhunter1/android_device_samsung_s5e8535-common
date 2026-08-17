@@ -24,6 +24,13 @@ TARGET_2ND_CPU_ABI := armeabi-v7a
 TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a55
 
+# Audio
+$(call soong_config_set,exynos_audio,proxy_header,//$(COMMON_PATH):audio_proxy_headers)
+$(call soong_config_set,exynos_audio,sec_resampler_library,//vendor/samsung/s5e8535-common:libSamsungPostProcessConvertor)
+$(call soong_config_set_bool,exynos_audio,use_offload_effect_library,true)
+$(call soong_config_set_bool,exynos_audio,use_usb_offload,true)
+$(call soong_config_set_bool,exynos_audio,use_sec_audio_samsungrecord,true)
+
 ## Board
 BOARD_VENDOR := samsung
 TARGET_BOOTLOADER_BOARD_NAME := s5e8535

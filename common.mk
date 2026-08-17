@@ -30,7 +30,8 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Audio
 PRODUCT_PACKAGES += \
-    android.hardware.audio@7.0-impl \
+    audio.primary.erd8535 \
+    android.hardware.audio@7.1-impl \
     android.hardware.audio.service \
     android.hardware.audio.effect@7.0-impl \
     audio.bluetooth.default \
