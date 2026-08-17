@@ -1,51 +1,12 @@
 # All unpinned blobs are extracted from A146BXXSDDZE1
 
 # Audio
-vendor/bin/hw/secaudiohalaidl
-vendor/lib/hw/audio.primary.s5e8535.so
-vendor/lib64/hw/audio.primary.s5e8535.so
-vendor/lib/libaudioproxy2.so
-vendor/lib64/libaudioproxy2.so
-vendor/lib/libalsautils_sec.so
-vendor/lib64/libalsautils_sec.so
-vendor/lib/libsehbluetooth_audio_session_aidl.so
-vendor/lib64/libsehbluetooth_audio_session_aidl.so
-vendor/lib/vendor.samsung.hardware.bluetooth.audio-V1-ndk.so
-vendor/lib64/vendor.samsung.hardware.bluetooth.audio-V1-ndk.so
-vendor/lib/libsecaudioinfo.so
-vendor/lib64/libsecaudioinfo.so
-vendor/lib/libSamsungPostProcessConvertor.so
 vendor/lib64/libSamsungPostProcessConvertor.so
-vendor/lib/lib_soundaliveresampler.so
+vendor/lib/libSamsungPostProcessConvertor.so
 vendor/lib64/lib_soundaliveresampler.so
-vendor/lib/lib_SoundAlive_SRC384_ver320.so
+vendor/lib/lib_soundaliveresampler.so
 vendor/lib64/lib_SoundAlive_SRC384_ver320.so
-vendor/lib/librecordalive.so
-vendor/lib64/librecordalive.so
-vendor/lib/lib_SamsungRec_07010.so
-vendor/lib64/lib_SamsungRec_07010.so
-vendor/lib/libsecaudiolevel.so
-vendor/lib64/libsecaudiolevel.so
-vendor/lib/libaboxpcmdump.so
-vendor/lib64/libaboxpcmdump.so
-vendor/lib/libdatamod.so
-vendor/lib64/libdatamod.so
-vendor/lib/liblastaboxmsg.so
-vendor/lib64/liblastaboxmsg.so
-vendor/lib/libaudioparamupdate.so
-vendor/lib64/libaudioparamupdate.so
-vendor/lib/libaudio-ril.so
-vendor/lib64/libaudio-ril.so
-vendor/etc/SoundBoosterParam.txt
-vendor/lib/hw/audio.sec_primary.default.so
-vendor/lib64/hw/audio.sec_primary.default.so
-vendor/lib64/hw/libsecaudiohal_aidl.so
-vendor/etc/init/secaudiohalaidl.rc
-vendor/etc/sec_audio_volume_curve.xml
-vendor/lib/libspeakercalibration.so
-vendor/lib64/libspeakercalibration.so
-vendor/lib64/vendor.samsung.hardware.audio-V1-ndk.so
-vendor/etc/vintf/manifest/secaudiohalaidl_manifest.xml
+vendor/lib/lib_SoundAlive_SRC384_ver320.so
 
 # Audio (Dolby)
 vendor/lib/libprofileparamstorage.so
@@ -75,6 +36,9 @@ vendor/lib/lib_SoundAlive_AlbumArt_ver105.so
 vendor/lib64/lib_SoundAlive_AlbumArt_ver105.so
 vendor/lib/lib_SoundBooster_ver1100.so
 vendor/lib64/lib_SoundBooster_ver1100.so
+vendor/lib/libsecaudioinfo.so
+vendor/lib64/libsecaudioinfo.so
+vendor/etc/SoundBoosterParam.txt
 
 # Audio VNDK libs
 vendor/lib64/vndk/libaudioroute.so:vendor/lib64/libaudioroute_vendor.so;FIX_SONAME
