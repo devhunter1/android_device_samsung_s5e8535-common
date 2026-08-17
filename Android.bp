@@ -7,6 +7,11 @@
 soong_namespace {
 }
 
+cc_library_headers {
+    name: "audio_proxy_headers",
+    export_include_dirs: ["include"],
+}
+
 prebuilt_hidl_interfaces {
     name: "hidl_samsung_nfc_interface",
     interfaces: [
