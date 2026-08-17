@@ -5,6 +5,9 @@
 //
 
 soong_namespace {
+    imports: [
+        "vendor/samsung/s5e8535-common"
+    ],
 }
 
 cc_library_headers {
