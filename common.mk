@@ -86,7 +86,7 @@ PRODUCT_PACKAGES += \
 
 # Codec2
 PRODUCT_PACKAGES += \
-    samsung.hardware.media.c2@1.2-service
+    samsung.hardware.media.c2-service
 
 PRODUCT_PACKAGES += \
     libExynosC2H264Dec \
@@ -95,10 +95,6 @@ PRODUCT_PACKAGES += \
     libExynosC2HevcEnc \
     libExynosC2Vp8Dec \
     libExynosC2Vp8Enc
-
-PRODUCT_PACKAGES += \
-    codec2.vendor.base.policy \
-    codec2.vendor.ext.policy
 
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/media/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
