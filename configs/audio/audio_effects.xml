@@ -116,7 +116,16 @@
     -->
 
     <preprocess>
+        <stream type="mic">
+            <apply effect="agc"/>
+            <apply effect="ns"/>
+        </stream>
+        <stream type="camcorder">
+            <apply effect="agc"/>
+            <apply effect="ns"/>
+        </stream>
         <stream type="voice_communication">
+            <apply effect="agc"/>
             <apply effect="aec"/>
             <apply effect="ns"/>
         </stream>
