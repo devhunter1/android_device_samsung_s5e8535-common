@@ -292,6 +292,10 @@ PRODUCT_SOONG_NAMESPACES += \
 
 $(call inherit-product, hardware/samsung_slsi-linaro/config/config.mk)
 
+# Task profile
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/configs/task_profile/task_profiles.json:$(TARGET_COPY_OUT_VENDOR)/etc/task_profiles.json
+
 # Telephony
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.telephony.gsm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.telephony.gsm.xml \
