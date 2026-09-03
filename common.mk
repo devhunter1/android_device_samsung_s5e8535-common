@@ -281,7 +281,8 @@ PRODUCT_SHIPPING_API_LEVEL := $(BOARD_SHIPPING_API_LEVEL)
 PRODUCT_SOONG_NAMESPACES += \
     $(COMMON_PATH) \
     hardware/google/interfaces \
-    hardware/google/pixel \
+    hardware/google/pixel/power-libperfmgr \
+    hardware/google/pixel/thermal \
     hardware/samsung \
     hardware/samsung_slsi/libbt \
     hardware/samsung_slsi/scsc_wifibt/wifi_hal \
