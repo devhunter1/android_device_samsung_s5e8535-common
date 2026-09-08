@@ -340,7 +340,7 @@ on init
 
     chmod 0664 /dev/cpuset/sf/cpus
     chown system system /dev/cpuset/sf/cpus
-    write /dev/cpuset/sf/cpus 0-7
+    write /dev/cpuset/sf/cpus 6-7
 
     # Apply network parameters for high data performance.
     write /proc/sys/net/core/rmem_default 327680
