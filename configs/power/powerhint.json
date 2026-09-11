@@ -73,13 +73,12 @@
             "Name": "GPUMinFreq",
             "Path": "/sys/kernel/gpu/gpu_min_clock",
             "Values": [
-                "208000",
-                "403000",
-                "611000",
+                "949000",
                 "845000",
-                "949000"
+                "611000",
+                "403000",
+                "208000"
             ],
-            "DefaultIndex": 0,
             "ResetOnInit": true
         },
         {
@@ -101,7 +100,6 @@
                 "1352000",
                 "421000"
             ],
-            "DefaultIndex": 2,
             "ResetOnInit": true
         },
         {
@@ -311,6 +309,18 @@
             "Node": "GPUMaxFreq",
             "Duration": 0,
             "Value": "611000"
+        },
+        {
+            "PowerHint": "INTERACTION",
+            "Node": "MIFMinFreq",
+            "Duration": 0,
+            "Value": "1352000"
+        },
+        {
+            "PowerHint": "INTERACTION",
+            "Node": "GPUMinFreq",
+            "Duration": 0,
+            "Value": "403000"
         },
         {
             "PowerHint": "INTERACTIVE",
