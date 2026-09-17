@@ -58,7 +58,9 @@ PRODUCT_COPY_FILES += \
 TARGET_EXCLUDES_AUDIOFX := true
 
 PRODUCT_PACKAGES += \
-    SamsungDAP
+    SamsungDAP \
+    libsamsungSoundbooster_plus \
+    SoundBoosterStage
 
 # Bluetooth
 PRODUCT_PACKAGES += \
