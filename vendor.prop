@@ -3,6 +3,7 @@ aaudio.mmap_policy=2
 aaudio.mmap_exclusive_policy=2
 aaudio.hw_burst_min_usec=2000
 audio.offload.min.duration.secs=30
+ro.audio.spatializer_enabled=true
 
 ## Set supported Bluetooth profiles to enabled
 bluetooth.device.class_of_device=90,2,12
