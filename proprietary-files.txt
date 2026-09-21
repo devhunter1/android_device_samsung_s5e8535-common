@@ -107,6 +107,8 @@ vendor/lib64/hw/gatekeeper.s5e8535.so
 vendor/bin/hw/gps.sh
 vendor/bin/hw/vendor.samsung.hardware.gnss-service
 vendor/etc/init/vendor.samsung.hardware.gnss-service.rc
+vendor/lib64/gnss_aidl_lib.so
+vendor/lib/gnss_aidl_lib.so
 vendor/lib/vendor.samsung.hardware.gnss-V3-ndk.so
 vendor/lib64/vendor.samsung.hardware.gnss-V3-ndk.so
 vendor/lib/libwrappergps.so
@@ -153,6 +155,10 @@ vendor/etc/plmn_delta_hktw.bin
 vendor/etc/plmn_delta_ltn.bin
 vendor/etc/plmn_delta_usagsm.bin
 vendor/etc/plmn_se13_prebuilt.bin
+vendor/etc/locale/plmn_delta_eng.bin
+vendor/etc/locale/plmn_delta_zh-rCN.bin
+vendor/etc/locale/plmn_delta_zh-rHK.bin
+vendor/etc/locale/plmn_delta_zh-rTW.bin
 vendor/etc/init/cass.rc
 vendor/etc/init/init.baseband.rc
 vendor/etc/init/init.vendor.rilcommon.rc
