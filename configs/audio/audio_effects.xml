@@ -33,6 +33,7 @@
         <library name="pre_processing" path="libaudiopreprocessing.so"/>
         <library name="playbackrecorder" path="libplaybackrecorder.so"/>
         <library name="dap" path="libswdap.so"/>
+        <library name="spatializer" path="libswspatializer.so"/>
     </libraries>
 
     <!-- list of effects to load.
@@ -96,6 +97,7 @@
             <libhw library="offload" uuid="a0c30891-8246-4aef-b8ad-d53e26da0253"/>
         </effectProxy>
         <effect name="volumemonitor_hw" library="offload" uuid="052a63b0-f95a-11e9-8f0b-362b9e155667"/>
+        <effect name="spatializer" library="spatializer" uuid="ccd4cf09-a79d-46c2-9aae-06a1698d6c8f"/>
     </effects>
 
     <!-- Audio pre processor configurations.
