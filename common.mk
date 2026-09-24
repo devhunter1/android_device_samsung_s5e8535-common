@@ -74,6 +74,12 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml
 
 # Camera
+PRODUCT_PACKAGES += \
+    android.hardware.camera.provider-service.samsung
+
+$(call soong_config_set_bool,samsungCameraVars,usage_64bit,true)
+$(call soong_config_set_bool,samsungCameraVars,needs_sec_reserved_field,true)
+
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.camera.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.xml \
     frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.camera.flash-autofocus.xml \
