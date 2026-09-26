@@ -88,10 +88,6 @@ vendor/firmware/volumemonitor.bin
 vendor/lib/libfloatingfeature.so
 vendor/lib64/libfloatingfeature.so
 
-# Gatekeeper
-vendor/lib/hw/gatekeeper.s5e8535.so
-vendor/lib64/hw/gatekeeper.s5e8535.so
-
 # GPS
 vendor/bin/hw/gps.sh
 vendor/bin/hw/vendor.samsung.hardware.gnss-service
