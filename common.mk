@@ -176,6 +176,9 @@ PRODUCT_PACKAGES += \
     android.hardware.health-service.samsung \
     android.hardware.health-service.samsung-recovery
 
+# IMS
+$(call inherit-product, hardware/lineage/generic-ims/ims.mk)
+
 # init	
 PRODUCT_COPY_FILES += \
     $(COMMON_PATH)/configs/init/fstab.s5e8535:$(TARGET_COPY_OUT_RAMDISK)/fstab.s5e8535 \
