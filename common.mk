@@ -60,6 +60,12 @@ TARGET_EXCLUDES_AUDIOFX := true
 PRODUCT_PACKAGES += \
     SamsungDAP
 
+PRODUCT_PACKAGES += \
+    libsamsungSoundbooster_plus \
+    SoundBoosterStage
+
+$(call soong_config_set,samsungAudioVars,soundbooster_dsp_library,//vendor/samsung/s5e8535-common:lib_SoundBooster_ver1100)
+
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.1-service \
