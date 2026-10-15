@@ -58,4 +58,3 @@ genfscon sysfs /module/scsc_bt/parameters/bluetooth_address                     
 # Vib
 genfscon sysfs /sys/class/timed_output/vibrator/enable                                                    u:object_r:sysfs_vibrator:s0
 genfscon sysfs /devices/virtual/timed_output/vibrator/current_temp                                        u:object_r:sysfs_vibrator:s0
-genfscon sysfs /devices/virtual/vib_info_class/vib_support_info/functions                                 u:object_r:sysfs_vibrator:s0
