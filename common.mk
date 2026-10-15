@@ -261,7 +261,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     sehradiomanager \
     secril_config_svc \
-    cbd
+    cbd \
+    libsec-ril
 
 $(call soong_config_set,cbd,protocol,sipc)
 
