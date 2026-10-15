@@ -123,7 +123,7 @@ vendor/lib64/vendor.samsung.hardware.radio.data-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.radio.messaging-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.radio.sim-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.radio.channel-V1-ndk.so
-vendor/lib64/libsec-ril.so
+vendor/lib64/libsec-ril.so:vendor/lib64/libsec-ril-impl.so;FIX_SONAME
 vendor/lib/libsecnativefeature.so
 vendor/lib64/libsecnativefeature.so
 vendor/lib/libsemnativecarrierfeature.so
