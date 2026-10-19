@@ -2,39 +2,24 @@
 
 # Audio
 vendor/lib64/libSamsungPostProcessConvertor.so
-vendor/lib/libSamsungPostProcessConvertor.so
 vendor/lib64/lib_soundaliveresampler.so
-vendor/lib/lib_soundaliveresampler.so
 vendor/lib64/lib_SoundAlive_SRC384_ver320.so
-vendor/lib/lib_SoundAlive_SRC384_ver320.so
 
 # Audio (Dolby)
-vendor/lib/libprofileparamstorage.so
 vendor/lib64/libprofileparamstorage.so
-vendor/lib/libspatializerparamstorage.so
 vendor/lib64/libspatializerparamstorage.so
-vendor/lib/libsecaudiocoreutils.so
 vendor/lib64/libsecaudiocoreutils.so
 vendor/etc/dolby/dax-default.xml
 
 # Audio (FX modules)
-vendor/lib/soundfx/libmyspace.so
-vendor/lib/soundfx/libaudioeffectoffload.so
-vendor/lib/soundfx/libaudiosaplus_sec.so
-vendor/lib/soundfx/libswspatializer.so
 vendor/lib64/soundfx/libmyspace.so
 vendor/lib64/soundfx/libaudioeffectoffload.so
 vendor/lib64/soundfx/libaudiosaplus_sec.so
 vendor/lib64/soundfx/libswspatializer.so
-vendor/lib/lib_SoundAlive_3DPosition_ver202.so
 vendor/lib64/lib_SoundAlive_3DPosition_ver202.so
-vendor/lib/lib_SoundAlive_play_plus_ver500.so
 vendor/lib64/lib_SoundAlive_play_plus_ver500.so
-vendor/lib/lib_SoundAlive_AlbumArt_ver105.so
 vendor/lib64/lib_SoundAlive_AlbumArt_ver105.so
-vendor/lib/lib_SoundBooster_ver1100.so
 vendor/lib64/lib_SoundBooster_ver1100.so
-vendor/lib/libsecaudioinfo.so
 vendor/lib64/libsecaudioinfo.so
 vendor/etc/SoundBoosterParam.txt
 
@@ -83,7 +68,6 @@ vendor/firmware/secure_configuration.flm.cfg.bin
 vendor/firmware/volumemonitor.bin
 
 # Floating feature
-vendor/lib/libfloatingfeature.so
 vendor/lib64/libfloatingfeature.so
 
 # GPS
@@ -91,15 +75,10 @@ vendor/bin/hw/gps.sh
 vendor/bin/hw/vendor.samsung.hardware.gnss-service
 vendor/etc/init/vendor.samsung.hardware.gnss-service.rc
 vendor/lib64/gnss_aidl_lib.so
-vendor/lib/gnss_aidl_lib.so
-vendor/lib/vendor.samsung.hardware.gnss-V3-ndk.so
 vendor/lib64/vendor.samsung.hardware.gnss-V3-ndk.so
-vendor/lib/libwrappergps.so
 vendor/lib64/libwrappergps.so
 
 # Graphics
-vendor/lib/egl/libGLES_mali.so;SYMLINK=vendor/lib/libOpenCL.so;SYMLINK=vendor/lib/libOpenCL.so.1;SYMLINK=vendor/lib/libOpenCL.so.1.1
-vendor/lib/hw/vulkan.mali.so
 vendor/lib64/egl/libGLES_mali.so;SYMLINK=vendor/lib64/libOpenCL.so;SYMLINK=vendor/lib64/libOpenCL.so.1;SYMLINK=vendor/lib64/libOpenCL.so.1.1
 vendor/lib64/hw/vulkan.mali.so
 vendor/etc/beauty/settings.dat
@@ -114,7 +93,6 @@ vendor/lib64/vendor.samsung.hardware.keymint-V2-ndk.so
 # RIL
 vendor/bin/hw/rild
 vendor/bin/cass
-vendor/lib/libsecril-client.so
 vendor/lib64/libsecril-client.so
 vendor/lib64/libril_sem.so
 vendor/lib64/vendor.samsung.hardware.radio-V1-ndk.so
@@ -124,9 +102,7 @@ vendor/lib64/vendor.samsung.hardware.radio.messaging-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.radio.sim-V1-ndk.so
 vendor/lib64/vendor.samsung.hardware.radio.channel-V1-ndk.so
 vendor/lib64/libsec-ril.so:vendor/lib64/libsec-ril-impl.so;FIX_SONAME
-vendor/lib/libsecnativefeature.so
 vendor/lib64/libsecnativefeature.so
-vendor/lib/libsemnativecarrierfeature.so
 vendor/lib64/libsemnativecarrierfeature.so
 vendor/lib64/libVendorSemDataProps.so
 vendor/lib64/libVendorSemTelephonyProps.so
@@ -157,10 +133,8 @@ vendor/etc/mvno_list.xml
 vendor/etc/init/init.sensorhub.rc
 
 # TEE (TEEgris)
-vendor/lib/libteecl.so
 vendor/lib64/libteecl.so
 vendor/lib64/libuuid.so;MODULE_SUFFIX=_vendor
-vendor/lib/libuuid.so;MODULE_SUFFIX=_vendor
 vendor/bin/tzdaemon
 vendor/bin/tzts_daemon
 vendor/etc/init/teegris.rc
