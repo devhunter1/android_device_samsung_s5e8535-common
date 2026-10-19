@@ -22,7 +22,7 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 $(call inherit-product, vendor/samsung/s5e8535-common/s5e8535-common-vendor.mk)
 
 # Inherit from those products
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Lineage stuff.
@@ -69,7 +69,7 @@ $(call soong_config_set,samsungAudioVars,soundbooster_dsp_library,//vendor/samsu
 # Bluetooth
 PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.1-service \
-    libbt-vendor:64 \
+    libbt-vendor \
     bt_did.slsi.conf
 
 PRODUCT_COPY_FILES += \
