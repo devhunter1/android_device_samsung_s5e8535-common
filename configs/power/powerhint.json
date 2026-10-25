@@ -53,8 +53,8 @@
             "Name": "LPMDisable",
             "Path": "/sys/devices/platform/exynos-ufcc/ucc/cstate_control",
             "Values": [
-                "1",
-                "0"
+                "0",
+                "1"
             ],
             "DefaultIndex": 0,
             "ResetOnInit": true
@@ -189,6 +189,18 @@
             "Node": "CPUBigClusterMinFreq",
             "Duration": 2000,
             "Value": "9999999"
+        },
+        {
+            "PowerHint": "LAUNCH",
+            "Node": "LPMDisable",
+            "Duration": 2000,
+            "Value": "1"
+        },
+        {
+            "PowerHint": "LAUNCH",
+            "Node": "LPMDisableLevel",
+            "Duration": 2000,
+            "Value": "1"
         },
         {
             "PowerHint": "LAUNCH",
