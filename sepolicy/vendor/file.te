@@ -3,9 +3,6 @@ type camera_vendor_data_file, file_type, data_file_type;
 type media_vendor_data_file, file_type, data_file_type;
 type mediadrm_vendor_data_file, file_type, data_file_type;
 
-# dev types
-type goodix_device, dev_type;
-
 # efs types
 type cpdebug_efs_file, fs_type;
 type dsms_efs_file, fs_type;

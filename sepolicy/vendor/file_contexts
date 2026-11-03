@@ -83,9 +83,6 @@
 /sys/devices/virtual/camera(/.*)                              u:object_r:sysfs_camera:s0
 /sys/devices/virtual/camera/flash/rear_flash                  u:object_r:sysfs_camera_writable:s0
 
-# Fingerprint
-/dev/goodix_fp 				   		      u:object_r:goodix_device:s0
-
 # Net
 /sys/devices/platform/11b40000.scsc_wifibt/net(/.*)/mtu       u:object_r:sysfs_net_mtu_writable:s0
 /sys/devices/virtual/net(/.*)/mtu                             u:object_r:sysfs_net_mtu_writable:s0
