@@ -1,2 +1,2 @@
-allow hal_fingerprint_default goodix_device:chr_file { read write open ioctl getattr };
+allow hal_fingerprint_default fp_sensor_device:chr_file { read write open ioctl getattr };
 allow hal_fingerprint_default self:netlink_socket { read bind create write };
