@@ -1,0 +1,31 @@
+//
+// SPDX-FileCopyrightText: The LineageOS Project
+// SPDX-License-Identifier: Apache-2.0
+//
+
+package {
+    default_applicable_licenses: ["Android-Apache-2.0"],
+}
+
+cc_binary {
+    name: "android.hardware.bluetooth-service.exynos",
+    relative_install_path: "hw",
+    init_rc: ["android.hardware.bluetooth-service.exynos.rc"],
+    vintf_fragments: ["android.hardware.bluetooth-service.exynos.xml"],
+    vendor: true,
+    defaults: ["android.hardware.bluetooth-service-build-defaults"],
+    srcs: [
+        "service.cpp",
+    ],
+    shared_libs: [
+        "android.hardware.bluetooth-V1-ndk",
+        "libbase",
+        "libbinder_ndk",
+        "libhidlbase",
+        "libutils",
+        "liblog",
+    ],
+    static_libs: [
+        "libbluetoothhcihalimpl",
+    ],
+}

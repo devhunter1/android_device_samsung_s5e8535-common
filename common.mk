@@ -68,9 +68,9 @@ $(call soong_config_set,samsungAudioVars,soundbooster_dsp_library,//vendor/samsu
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-    android.hardware.bluetooth@1.1-service \
-    libbt-vendor \
-    bt_did.slsi.conf
+    android.hardware.bluetooth-service.exynos \
+#   libbt-vendor \
+#   bt_did.slsi.conf
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml \
