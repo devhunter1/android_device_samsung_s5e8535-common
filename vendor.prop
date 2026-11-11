@@ -37,6 +37,7 @@ media.c2.hal.selection=aidl
 debug.c2.use_dmabufheaps=1
 debug.stagefright.ccodec_delayed_params=1
 ro.vendor.gpu.dataspace=1
+vendor.media.omx=0
 
 ## Dalvik
 dalvik.vm.dex2oat64.enabled=true
