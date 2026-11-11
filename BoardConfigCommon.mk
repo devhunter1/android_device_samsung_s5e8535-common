@@ -6,8 +6,6 @@
 
 COMMON_PATH := device/samsung/s5e8535-common
 
-BUILD_BROKEN_DUP_RULES := true
-
 # Inherit the proprietary files
 include vendor/samsung/s5e8535-common/BoardConfigVendor.mk
 
