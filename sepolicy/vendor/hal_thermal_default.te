@@ -1,0 +1,5 @@
+allow hal_thermal_default sysfs_battery:dir r_dir_perms;;
+allow hal_thermal_default sysfs_battery:file r_file_perms;
+allow hal_thermal_default sysfs_battery:lnk_file read;
+allow hal_thermal_default sysfs_thermal:file r_file_perms;
+set_prop(hal_thermal_default, vendor_thermal_prop);

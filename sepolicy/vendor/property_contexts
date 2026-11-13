@@ -17,3 +17,7 @@ persist.vendor.cbd.btl_size               u:object_r:vendor_radio_prop:s0
 ro.vendor.radio.default_network           u:object_r:vendor_radio_prop:s0
 ro.vendor.multisim.simslotcount           u:object_r:vendor_radio_prop:s0
 persist.vendor.ril.supportNrModefromCp    u:object_r:vendor_radio_prop:s0
+
+# Thermal
+persist.vendor.thermal.                   u:object_r:vendor_thermal_prop:s0
+persist.vendor.btcon.                     u:object_r:vendor_thermal_prop:s0
