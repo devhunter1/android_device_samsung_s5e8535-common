@@ -139,6 +139,15 @@ vendor/bin/tzdaemon
 vendor/bin/tzts_daemon
 vendor/etc/init/teegris.rc
 
+# Thermal
+vendor/bin/hw/vendor.samsung.hardware.thermal@1.0-service
+vendor/lib64/vendor.samsung.hardware.thermal@1.0.so
+vendor/lib64/vendor.samsung.hardware.audio@1.0.so
+vendor/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc
+vendor/etc/vintf/manifest/vendor.samsung.hardware.thermal@1.0-manifest.xml
+vendor/etc/mercury.json
+vendor/etc/btcon.json
+
 # Vaultkeeperd
 vendor/bin/vaultkeeperd
 vendor/lib64/libvkservice.so
