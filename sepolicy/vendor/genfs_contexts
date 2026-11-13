@@ -46,6 +46,31 @@ genfscon sysfs /devices/platform/exynos-ufcc/ufc/cpufreq_min_limit              
 genfscon sysfs /devices/platform/exynos-ufcc/ufc/cpufreq_max_limit                         u:object_r:sysfs_power_writable:s0
 genfscon sysfs /devices/platform/17000010.devfreq_mif/devfreq/17000010.devfreq_mif/scaling_devfreq_min        u:object_r:sysfs_power_writable:s0
 
+# Thermal
+genfscon sysfs /devices/platform/samsung_mobile_device/samsung_mobile_device:battery/power_supply/battery/temp     u:object_r:sysfs_thermal:s0
+genfscon sysfs /devices/virtual/sec/sec-ap-thermistor/temperature                           u:object_r:sysfs_thermal:s0
+genfscon sysfs /devices/virtual/sec/sec-lte-thermistor/temperature                          u:object_r:sysfs_thermal:s0
+genfscon sysfs /devices/virtual/sec/sec-cp-thermistor/temperature                           u:object_r:sysfs_thermal:s0
+genfscon sysfs /devices/virtual/sec/sec-wf-thermistor/temperature                           u:object_r:sysfs_thermal:s0
+genfscon sysfs /devices/virtual/sec/sec-cf-thermistor/temperature                           u:object_r:sysfs_thermal:s0
+genfscon sysfs /devices/virtual/sec/sec-flash-thermistor/temperature                        u:object_r:sysfs_thermal:s0
+genfscon sysfs /devices/virtual/sec/sec-mmw1-thermistor/temperature                         u:object_r:sysfs_thermal:s0
+genfscon sysfs /devices/virtual/sec/sec-mmw-thermistor/temperature                          u:object_r:sysfs_thermal:s0
+genfscon sysfs /devices/virtual/sec/sec-pa-thermistor/temperature                           u:object_r:sysfs_thermal:s0
+genfscon sysfs /devices/virtual/sec/sec-nr-thermistor/temperature                           u:object_r:sysfs_thermal:s0
+genfscon sysfs /devices/virtual/sec/sec-bk-thermistor/temperature                           u:object_r:sysfs_thermal:s0
+genfscon sysfs /devices/virtual/sec/sec-lp-thermistor/temperature                           u:object_r:sysfs_thermal:s0
+genfscon sysfs /devices/virtual/sec/sec-flash-thermistor/temp_adc                           u:object_r:sysfs_thermal:s0
+genfscon sysfs /devices/virtual/sec/sec-lte-thermistor/temp_adc                             u:object_r:sysfs_thermal:s0
+genfscon sysfs /devices/virtual/sec/sec-ap-thermistor/temp_adc                              u:object_r:sysfs_thermal:s0
+genfscon sysfs /devices/virtual/sec/sec-pa-thermistor/temp_adc                              u:object_r:sysfs_thermal:s0
+genfscon sysfs /devices/virtual/sec/sec-cp-thermistor/temp_adc                              u:object_r:sysfs_thermal:s0
+genfscon sysfs /devices/virtual/sec/sec-wf-thermistor/temp_adc                              u:object_r:sysfs_thermal:s0
+genfscon sysfs /devices/virtual/sec/sec-cf-thermistor/temp_adc                              u:object_r:sysfs_thermal:s0
+genfscon sysfs /devices/virtual/sec/sec-nr-thermistor/temp_adc                              u:object_r:sysfs_thermal:s0
+genfscon sysfs /devices/virtual/sec/sec-bk-thermistor/temp_adc                              u:object_r:sysfs_thermal:s0
+genfscon sysfs /devices/virtual/sec/sec-lp-thermistor/temp_adc                              u:object_r:sysfs_thermal:s0
+
 # Firmware
 genfscon sysfs /firmware/devicetree/base/sound/mixer-paths                                                     u:object_r:sysfs_audio:s0
 
