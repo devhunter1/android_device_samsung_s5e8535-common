@@ -36,6 +36,8 @@ lib_fixups: lib_fixups_user_type = {
 } # fmt: skip
 
 blob_fixups: blob_fixups_user_type = {
+   'vendor/lib64/libssl-v33.so': blob_fixup()
+        .replace_needed('libcrypto.so', 'libcrypto-v33.so'),
    'vendor/etc/init/android.hardware.security.keymint-service.samsung.rc': blob_fixup()
         .regex_replace('android.hardware.security.keymint-service', 'android.hardware.security.keymint-service.samsung'),
    ( 

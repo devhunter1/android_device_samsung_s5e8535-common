@@ -154,6 +154,9 @@ vendor/lib64/libvkservice.so
 vendor/lib64/libstork_shared.so
 vendor/etc/init/vaultkeeper_common.rc
 
+# VNDK - from prebuilts/vndk/v33 - android-17.0.0_r1
+vendor/lib64/libssl.so:vendor/lib64/libssl-v33.so;FIX_SONAME|25d0fcea69b588a9a2eedd8549f62920c92e371f|4e67b53ce82fbc7206db7dbbda57c9f4d690b27b
+
 # Wi-Fi configs
 vendor/etc/wifi/indoorchannel.info
 vendor/firmware/wifi/mx140.bin
