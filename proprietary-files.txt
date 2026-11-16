@@ -92,7 +92,6 @@ vendor/lib64/vendor.samsung.hardware.keymint-V2-ndk.so
 
 # RIL
 vendor/bin/hw/rild
-vendor/bin/cass
 vendor/lib64/libsecril-client.so
 vendor/lib64/libril_sem.so
 vendor/lib64/vendor.samsung.hardware.radio-V1-ndk.so
@@ -118,7 +117,6 @@ vendor/etc/locale/plmn_delta_eng.bin
 vendor/etc/locale/plmn_delta_zh-rCN.bin
 vendor/etc/locale/plmn_delta_zh-rHK.bin
 vendor/etc/locale/plmn_delta_zh-rTW.bin
-vendor/etc/init/cass.rc
 vendor/etc/init/init.baseband.rc
 vendor/etc/init/init.vendor.rilcommon.rc
 vendor/etc/init/vendor.samsung.rild.rc
@@ -147,12 +145,6 @@ vendor/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc
 vendor/etc/vintf/manifest/vendor.samsung.hardware.thermal@1.0-manifest.xml
 vendor/etc/mercury.json
 vendor/etc/btcon.json
-
-# Vaultkeeperd
-vendor/bin/vaultkeeperd
-vendor/lib64/libvkservice.so
-vendor/lib64/libstork_shared.so
-vendor/etc/init/vaultkeeper_common.rc
 
 # VNDK - from prebuilts/vndk/v33 - android-17.0.0_r1
 vendor/lib64/libssl.so:vendor/lib64/libssl-v33.so;FIX_SONAME|25d0fcea69b588a9a2eedd8549f62920c92e371f|4e67b53ce82fbc7206db7dbbda57c9f4d690b27b
