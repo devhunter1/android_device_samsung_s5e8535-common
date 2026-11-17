@@ -105,7 +105,6 @@ vendor/lib64/libsecnativefeature.so
 vendor/lib64/libsemnativecarrierfeature.so
 vendor/lib64/libVendorSemDataProps.so
 vendor/lib64/libVendorSemTelephonyProps.so
-vendor/lib64/libengmode_client.so
 vendor/etc/plmn_delta.bin
 vendor/etc/plmn_delta_attaio.bin
 vendor/etc/plmn_delta_hktw.bin
